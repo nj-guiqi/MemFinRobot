@@ -1,0 +1,28 @@
+{
+  "llm": {
+    "model": "qwen-plus",
+    "model_server": "dashscope",
+    "temperature": 0.7,
+    "max_tokens": 2048
+  },
+  "embedding": {
+    "model_path": "D:\\project\\MemFinRobot\\models\\bge-m3",
+    "device": "cuda"
+  },
+  "reranker": {
+    "model_path": "",
+    "device": "cuda",
+    "threshold": 0.35
+  },
+  "memory": {
+    "max_window_size": 15,
+    "vote_times": 5,
+    "confidence_threshold": 0.6,
+    "top_k_recall": 10,
+    "max_ref_token": 4000,
+    "storage_backend": "file"
+  },
+  "compliance": {
+    "enable_suitability_check": true
+  }
+}

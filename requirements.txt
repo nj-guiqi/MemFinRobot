@@ -1,0 +1,30 @@
+# MemFinRobot 依赖
+
+# 核心框架
+qwen-agent>=0.0.6
+
+# LLM相关
+dashscope>=1.14.0
+openai>=1.0.0
+
+# 向量模型
+FlagEmbedding>=1.2.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 工具
+json5>=0.9.0
+pydantic>=2.0.0
+tqdm>=4.65.0
+
+# 可选：API服务
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+
+# 开发测试
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
