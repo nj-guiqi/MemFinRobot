@@ -69,6 +69,25 @@ class MemoryConfig:
 
 
 @dataclass
+class MarketDataConfig:
+    """行情数据配置"""
+    # 数据源选择
+    provider: str = "tencent"              # 默认数据源: tencent / akshare / mock
+    fallback_provider: str = "mock"        # 降级数据源
+    
+    # 超时与重试
+    timeout_seconds: float = 8.0           # 请求超时时间
+    retry_times: int = 1                   # 失败重试次数
+    
+    # 限频配置
+    rate_limit_seconds: float = 1.0        # 同一symbol的请求间隔（秒）
+    cache_ttl_seconds: float = 2.0         # 内存缓存有效期（秒）
+    
+    # 调试与日志
+    enable_source_tracking: bool = True    # 在结果中标注数据来源
+
+
+@dataclass
 class ComplianceConfig:
     """合规配置"""
     # 禁语列表
@@ -100,6 +119,7 @@ class Settings:
     reranker: RerankerConfig = field(default_factory=RerankerConfig)
     memory: MemoryConfig = field(default_factory=MemoryConfig)
     compliance: ComplianceConfig = field(default_factory=ComplianceConfig)
+    market_data: MarketDataConfig = field(default_factory=MarketDataConfig)
     
     # Prompt模板路径
     prompt_dir: Path = field(default_factory=lambda: Path(__file__).parent.parent / "prompts")
@@ -136,6 +156,8 @@ class Settings:
             settings.memory = MemoryConfig(**config_data["memory"])
         if "compliance" in config_data:
             settings.compliance = ComplianceConfig(**config_data["compliance"])
+        if "market_data" in config_data:
+            settings.market_data = MarketDataConfig(**config_data["market_data"])
         
         return settings
     

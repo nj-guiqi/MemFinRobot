@@ -18,8 +18,8 @@ class TestMarketQuoteTool:
         return MarketQuoteTool()
     
     def test_query_existing_stock(self, tool):
-        """测试查询存在的股票"""
-        result = tool.call({"symbol": "000001"})
+        """测试查询存在的股票（使用mock数据保证稳定性）"""
+        result = tool.call({"symbol": "000001", "provider": "mock"})
         data = json.loads(result)
         
         assert data["success"] is True
@@ -28,7 +28,7 @@ class TestMarketQuoteTool:
     
     def test_query_nonexistent_stock(self, tool):
         """测试查询不存在的股票"""
-        result = tool.call({"symbol": "999999"})
+        result = tool.call({"symbol": "999999", "provider": "mock"})
         data = json.loads(result)
         
         assert data["success"] is False
@@ -38,7 +38,8 @@ class TestMarketQuoteTool:
         """测试指定字段查询"""
         result = tool.call({
             "symbol": "000001",
-            "fields": ["price", "change"]
+            "fields": ["price", "change"],
+            "provider": "mock"
         })
         data = json.loads(result)
         
