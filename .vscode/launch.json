@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug MemFinRobot (module)",
+            "type": "debugpy",
+            "request": "launch",
+
+            // 等价于：python -m apps.cli.main
+            "module": "apps.cli.main",
+
+            // 项目根目录
+            "cwd": "D:\\project\\MemFinRobot",
+
+            // Conda 环境里的 python
+            "python": "D:\\AnacondaInstall\\envs\\py3.9-torch\\python.exe",
+
+            // 使用 Windows CMD
+            "console": "integratedTerminal",
+
+            // 环境变量
+            "env": {
+                "PYTHONPATH": "D:\\project\\MemFinRobot",
+                "DASHSCOPE_API_KEY": "sk-ced3f855f17240dc9c9c199e6b39c53b"
+            },
+
+            // 允许调试第三方库
+            "justMyCode": false
+        }
+    ]
+}

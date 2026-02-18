@@ -149,6 +149,8 @@ class RecallResult:
     sources: List[str] = field(default_factory=list)  # 召回来源 (semantic/keyword/profile)
     
     # 打包后的上下文
+    short_term_context: str = ""
+    profile_context: str = ""
     packed_context: str = ""
     token_count: int = 0
     

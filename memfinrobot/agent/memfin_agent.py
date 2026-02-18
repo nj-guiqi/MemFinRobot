@@ -2,6 +2,7 @@
 
 import copy
 import logging
+import time
 from typing import Any, Dict, Iterator, List, Literal, Optional, Union
 
 from qwen_agent import Agent
@@ -69,6 +70,7 @@ class MemFinFnCallAgent(FnCallAgent):
         settings: Optional[Settings] = None,
         memory_manager: Optional[MemoryManager] = None,
         compliance_guard: Optional[ComplianceGuard] = None,
+        observer: Optional[Any] = None,
         **kwargs,
     ):
         """
@@ -83,6 +85,7 @@ class MemFinFnCallAgent(FnCallAgent):
             settings: 配置对象
             memory_manager: 记忆管理器
             compliance_guard: 合规审校器
+            observer: 评测观测器（可选）
         """
         # 使用默认系统提示词
         if system_message is None:
@@ -120,6 +123,9 @@ class MemFinFnCallAgent(FnCallAgent):
         
         # 会话状态缓存
         self._sessions: Dict[str, SessionState] = {}
+        
+        # 可选观测器（用于评测trace）
+        self.observer = observer
     
     def _run(
         self,
@@ -149,15 +155,27 @@ class MemFinFnCallAgent(FnCallAgent):
             响应消息列表
         """
         messages = copy.deepcopy(messages)
+        turn_start_ts = time.perf_counter()
         
         # 1. 获取/创建会话状态
         session_state = self._get_or_create_session(
             session_id=session_id,
             user_id=user_id,
         )
+        turn_pair_id = (session_state.turn_count // 2) + 1
         
         # 2. 提取当前查询
         current_query = self._extract_current_query(messages)
+        if current_query:
+            self._emit_observer(
+                event="turn_start",
+                payload={
+                    "session_id": session_state.session_id,
+                    "user_id": session_state.user_id,
+                    "turn_pair_id": turn_pair_id,
+                    "query": current_query,
+                },
+            )
         
         # 3. 记忆召回
         memory_context = ""
@@ -168,12 +186,41 @@ class MemFinFnCallAgent(FnCallAgent):
                     session_state=session_state,
                 )
                 memory_context = recall_result.packed_context
+                self._emit_observer(
+                    event="recall_done",
+                    payload={
+                        "session_id": session_state.session_id,
+                        "user_id": session_state.user_id,
+                        "turn_pair_id": turn_pair_id,
+                        "query": current_query,
+                        "short_term_context": recall_result.short_term_context,
+                        "short_term_turns": session_state.get_recent_history(n=3),
+                        "profile_context": recall_result.profile_context,
+                        "packed_context": recall_result.packed_context,
+                        "token_count": recall_result.token_count,
+                        "recalled_items": [
+                            {
+                                "id": item.id,
+                                "content": item.hierarchical_content or item.content,
+                                "score": score,
+                                "source": source,
+                                "turn_index": item.turn_index,
+                                "session_id": item.session_id,
+                            }
+                            for item, score, source in zip(
+                                recall_result.items,
+                                recall_result.scores,
+                                recall_result.sources,
+                            )
+                        ],
+                    },
+                )
             except Exception as e:
                 logger.warning(f"Memory recall failed: {e}")
         
         # 4. 注入记忆上下文到系统消息
         if memory_context:
-            messages = self._inject_memory_context(messages, memory_context)
+            messages = self._inject_memory_context(messages, memory_context) # 把最近对话 + 召回记忆
         
         # 5. 工具调用循环（继承自FnCallAgent）
         num_llm_calls_available = MAX_LLM_CALL_PER_RUN
@@ -209,11 +256,25 @@ class MemFinFnCallAgent(FnCallAgent):
                         final_content = text
                     
                     if use_tool:
+                        tool_start = time.perf_counter()
                         tool_result = self._call_tool(tool_name, tool_args, messages=messages, **kwargs)
+                        tool_latency_ms = (time.perf_counter() - tool_start) * 1000
                         fn_msg = Message(
                             role=FUNCTION,
                             name=tool_name,
                             content=tool_result,
+                        )
+                        self._emit_observer(
+                            event="tool_called",
+                            payload={
+                                "session_id": session_state.session_id,
+                                "user_id": session_state.user_id,
+                                "turn_pair_id": turn_pair_id,
+                                "tool_name": tool_name,
+                                "tool_args": tool_args,
+                                "tool_result": str(tool_result)[:1000],
+                                "latency_ms": tool_latency_ms,
+                            },
                         )
                         messages.append(fn_msg)
                         response.append(fn_msg)
@@ -243,6 +304,19 @@ class MemFinFnCallAgent(FnCallAgent):
                     )
                 final_content = modified_content
                 yield response
+            self._emit_observer(
+                event="compliance_done",
+                payload={
+                    "session_id": session_state.session_id,
+                    "user_id": session_state.user_id,
+                    "turn_pair_id": turn_pair_id,
+                    "needs_modification": compliance_result.needs_modification,
+                    "is_compliant": compliance_result.is_compliant,
+                    "violations": compliance_result.violations,
+                    "risk_disclaimer_added": compliance_result.risk_disclaimer_added,
+                    "suitability_warning": compliance_result.suitability_warning,
+                },
+            )
         
         # 7. 更新记忆
         if current_query and final_content:
@@ -257,8 +331,31 @@ class MemFinFnCallAgent(FnCallAgent):
                     user_message=current_query,
                     assistant_message=final_content,
                 )
+                profile_snapshot = self.memory_manager.get_profile(session_state.user_id).to_dict()
+                self._emit_observer(
+                    event="profile_snapshot",
+                    payload={
+                        "session_id": session_state.session_id,
+                        "user_id": session_state.user_id,
+                        "turn_pair_id": turn_pair_id,
+                        "profile": profile_snapshot,
+                    },
+                )
             except Exception as e:
                 logger.warning(f"Memory update failed: {e}")
+        
+        turn_latency_ms = (time.perf_counter() - turn_start_ts) * 1000
+        self._emit_observer(
+            event="turn_end",
+            payload={
+                "session_id": session_state.session_id,
+                "user_id": session_state.user_id,
+                "turn_pair_id": turn_pair_id,
+                "query": current_query,
+                "final_content": final_content,
+                "latency_ms": turn_latency_ms,
+            },
+        )
         
         yield response
     
@@ -370,3 +467,15 @@ class MemFinFnCallAgent(FnCallAgent):
     def update_user_profile(self, user_id: str, updates: Dict[str, Any]) -> UserProfile:
         """更新用户画像"""
         return self.memory_manager.update_profile(user_id, updates)
+
+    def _emit_observer(self, event: str, payload: Dict[str, Any]) -> None:
+        """触发观测器事件（失败不影响主流程）"""
+        if self.observer is None:
+            return
+        try:
+            if hasattr(self.observer, "on_event"):
+                self.observer.on_event(event, payload)
+            elif callable(self.observer):
+                self.observer(event, payload)
+        except Exception as e:
+            logger.debug(f"Observer emit failed: {e}")
