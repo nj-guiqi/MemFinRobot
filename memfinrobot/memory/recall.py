@@ -340,6 +340,8 @@ class ContextPacker:
             lines.append(f"- 风险承受能力: {profile.risk_level.value}")
         if profile.investment_horizon.value != "unknown":
             lines.append(f"- 投资期限: {profile.investment_horizon.value}")
+        if hasattr(profile, "liquidity_need") and profile.liquidity_need.value != "unknown":
+            lines.append(f"- 流动性需求: {profile.liquidity_need.value}")
         if profile.investment_goal.value != "unknown":
             lines.append(f"- 投资目标: {profile.investment_goal.value}")
         if profile.preferred_topics:

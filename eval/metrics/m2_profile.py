@@ -1,4 +1,4 @@
-"""指标2：画像提取准确率（以 dialog 级为主）。"""
+﻿"""指标2：画像提取准确率（以 dialog 级为主）。"""
 
 from __future__ import annotations
 
@@ -7,9 +7,35 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from eval.metrics.contracts import DialogTrace, MetricResult
 
 
-RISK_MAP = {"保守": "low", "稳健": "medium", "进取": "high", "low": "low", "medium": "medium", "high": "high"}
-HORIZON_MAP = {"<=6月": "short", "6-24月": "medium", "2年以上": "long", "short": "short", "medium": "medium", "long": "long"}
-LIQUIDITY_MAP = {"高": "high", "中": "medium", "低": "low", "high": "high", "medium": "medium", "low": "low"}
+RISK_MAP = {
+    "保守": "low",
+    "稳健": "medium",
+    "进取": "high",
+    "low": "low",
+    "medium": "medium",
+    "high": "high",
+}
+
+HORIZON_MAP = {
+    "<=6月": "short",
+    "6-24月": "medium",
+    "2年以上": "long",
+    "短期": "short",
+    "中期": "medium",
+    "长期": "long",
+    "short": "short",
+    "medium": "medium",
+    "long": "long",
+}
+
+LIQUIDITY_MAP = {
+    "高": "high",
+    "中": "medium",
+    "低": "low",
+    "high": "high",
+    "medium": "medium",
+    "low": "low",
+}
 
 
 def _normalize_value(v: Any, mapping: Dict[str, str]) -> str:
@@ -31,8 +57,8 @@ def _set_f1(pred: Set[str], gt: Set[str]) -> float:
 
 def _find_last_profile_snapshot(dialog: DialogTrace) -> Optional[Dict[str, Any]]:
     snapshot = None
-    for t in dialog.get("turns") or []:
-        s = t.get("profile_snapshot")
+    for turn in dialog.get("turns") or []:
+        s = turn.get("profile_snapshot")
         if isinstance(s, dict):
             snapshot = s
     return snapshot
@@ -81,10 +107,10 @@ def compute_m2_profile_accuracy(
     constraints_f1_total = 0.0
     preferences_f1_total = 0.0
 
-    for d in dialog_traces:
-        if not d.get("valid_dialog"):
+    for dialog in dialog_traces:
+        if not dialog.get("valid_dialog"):
             continue
-        profile_gt = d.get("profile_gt") or {}
+        profile_gt = dialog.get("profile_gt") or {}
         if not profile_gt:
             continue
         eligible_dialogs += 1
@@ -95,7 +121,7 @@ def compute_m2_profile_accuracy(
         gt_constraints = set(profile_gt.get("constraints_gt") or [])
         gt_preferences = set(profile_gt.get("preferences_gt") or [])
 
-        snapshot = _find_last_profile_snapshot(d)
+        snapshot = _find_last_profile_snapshot(dialog)
         pred_risk = "unknown"
         pred_horizon = "unknown"
         pred_liquidity = "unknown"
@@ -105,11 +131,11 @@ def compute_m2_profile_accuracy(
         if snapshot:
             pred_risk = _normalize_value(snapshot.get("risk_level"), RISK_MAP)
             pred_horizon = _normalize_value(snapshot.get("investment_horizon"), HORIZON_MAP)
-            # 当前画像结构没有 liquidity 字段，保留 unknown
+            pred_liquidity = _normalize_value(snapshot.get("liquidity_need"), LIQUIDITY_MAP)
             pred_preferences |= set(snapshot.get("preferred_topics") or [])
             pred_constraints |= set(snapshot.get("forbidden_assets") or [])
 
-        all_pred_text = "\n".join(str(t.get("pred_assistant_text") or "") for t in (d.get("turns") or []))
+        all_pred_text = "\n".join(str(t.get("pred_assistant_text") or "") for t in (dialog.get("turns") or []))
         if pred_risk == "unknown" or pred_horizon == "unknown" or pred_liquidity == "unknown":
             txt_risk, txt_horizon, txt_liquidity = _infer_profile_from_text(all_pred_text)
             if pred_risk == "unknown":
@@ -135,7 +161,7 @@ def compute_m2_profile_accuracy(
         constraints_f1_total += c_f1
         preferences_f1_total += p_f1
 
-        by_dialog[str(d.get("dialog_id"))] = {
+        by_dialog[str(dialog.get("dialog_id"))] = {
             "risk_level_acc": risk_acc,
             "horizon_acc": horizon_acc,
             "liquidity_acc": liquidity_acc,
@@ -184,4 +210,3 @@ def compute_m2_profile_accuracy(
         },
         "by_dialog": by_dialog,
     }
-

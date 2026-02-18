@@ -186,6 +186,7 @@
   "profile_snapshot": {
     "risk_level": "medium",
     "investment_horizon": "long",
+    "liquidity_need": "medium",
     "investment_goal": "stable_growth",
     "preferred_topics": ["基金", "债券"],
     "forbidden_assets": [],
