@@ -79,6 +79,11 @@ class TestMarketQuoteTool:
         assert data["data"].get("price") is not None
 
     def test_query_history_real(self, tool, real_history_provider, real_stock_symbol):
+        if real_history_provider != "akshare":
+            pytest.skip(
+                f"REAL_HISTORY_PROVIDER={real_history_provider} ?????????????????? akshare"
+            )
+
         """????????? akshare?"""
         result = tool.call(
             {

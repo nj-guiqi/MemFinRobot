@@ -6,26 +6,9 @@ import logging
 from typing import Any, List, Optional
 
 from memfinrobot.memory.schemas import RefinedMemory
+from memfinrobot.prompts.templates import REFINE_PROMPT
 
 logger = logging.getLogger(__name__)
-
-
-REFINE_PROMPT = """你是一个对话记忆精炼助手。给定一段与当前查询相关的历史对话，你需要提取出关键信息要点。
-
-任务：将历史对话精炼为简洁的要点列表，保留对理解当前查询最重要的信息。
-
-规则：
-1. 提取关键事实、偏好、约束等信息
-2. 保持简洁，每个要点一句话
-3. 返回 JSON 列表格式，如 ["要点1", "要点2"]
-4. 如果没有重要信息需要提取，返回 []
-
-历史对话:
-{selected_content}
-
-当前查询: {current_query}
-
-请返回精炼后的要点列表:"""
 
 
 class WindowRefiner:
@@ -70,7 +53,6 @@ class WindowRefiner:
         prompt = REFINE_PROMPT.format(selected_content=selected_content, current_query=current_query)
         messages = [{"role": "user", "content": prompt}]
 
-        # 使用流式，兼容 use_raw_api 场景
         response = self.llm_client.chat(
             messages=messages,
             stream=True,
@@ -92,7 +74,6 @@ class WindowRefiner:
         if not text:
             return []
 
-        # 优先 JSON
         try:
             obj = json.loads(text)
             if isinstance(obj, list):
@@ -100,7 +81,6 @@ class WindowRefiner:
         except Exception:
             pass
 
-        # 再尝试 Python list
         try:
             obj = ast.literal_eval(text)
             if isinstance(obj, list):
@@ -108,7 +88,6 @@ class WindowRefiner:
         except Exception:
             pass
 
-        # 代码块包裹
         if "```" in text:
             inner = text.replace("```json", "").replace("```", "").strip()
             try:

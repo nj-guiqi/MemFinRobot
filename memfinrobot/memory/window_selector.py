@@ -6,29 +6,9 @@ from collections import Counter
 from typing import Any, Dict, List, Optional
 
 from memfinrobot.memory.schemas import WindowSelectionResult
+from memfinrobot.prompts.templates import WINDOW_SELECTION_PROMPT
 
 logger = logging.getLogger(__name__)
-
-
-WINDOW_SELECTION_PROMPT = """你是一个对话历史分析助手。给定一段对话历史和当前查询，你需要识别出与当前查询最相关的历史对话轮次索引。
-
-任务：分析对话历史，找出对理解当前查询最重要的历史轮次。
-
-规则：
-1. 返回最相关的历史轮次索引列表（从 0 开始）
-2. 如果当前查询是独立的，不依赖历史，返回空列表 []
-3. 只返回 Python 列表格式，如 [0, 2, 5] 或 []
-
-示例：
-- 如果历史[0]和[3]与当前查询相关，返回: [0, 3]
-- 如果查询独立，返回: []
-
-对话历史:
-{dialogue_history}
-
-当前查询: {current_query}
-
-请直接返回相关历史轮次的索引列表:"""
 
 
 class WindowSelector:
@@ -104,7 +84,6 @@ class WindowSelector:
         prompt = WINDOW_SELECTION_PROMPT.format(dialogue_history=formatted_history, current_query=current_query)
 
         messages = [{"role": "user", "content": prompt}]
-        # 使用流式，兼容 use_raw_api 场景
         response = self.llm_client.chat(
             messages=messages,
             stream=True,

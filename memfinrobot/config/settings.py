@@ -11,8 +11,10 @@ import json
 class LLMConfig:
     """LLM配置"""
     model: str = "qwen-plus"
+    model_type: str = ""
     model_server: str = "dashscope"
     api_key: str = ""
+    use_raw_api: bool = False
     temperature: float = 0.7
     max_tokens: int = 2048
     top_p: float = 0.9

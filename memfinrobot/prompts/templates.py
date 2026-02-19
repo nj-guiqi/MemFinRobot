@@ -1,3 +1,6 @@
+from memfinrobot.prompts.window_selection_prompt import WINDOW_SELECTION_PROMPT as _WINDOW_SELECTION_PROMPT
+from memfinrobot.prompts.window_refine_prompt import REFINE_PROMPT as _REFINE_PROMPT
+
 """提示词模板定义"""
 
 # 主系统提示词
@@ -92,3 +95,7 @@ PROFILE_EXTRACTION_PROMPT = """你是一个用户画像分析助手。根据用�
 {dialogue}
 
 请返回JSON格式的画像信息:"""
+
+# ???????????????????????
+WINDOW_SELECTION_PROMPT = _WINDOW_SELECTION_PROMPT
+REFINE_PROMPT = _REFINE_PROMPT
