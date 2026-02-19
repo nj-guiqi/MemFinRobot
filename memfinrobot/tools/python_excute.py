@@ -105,10 +105,17 @@ class PythonInterpreter(BaseTool):
                 temp_file_path = temp_file.name
 
             completed = subprocess.run(
-                [self.python_executable, temp_file_path],
+                [self.python_executable, "-X", "utf8", temp_file_path],
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 timeout=timeout_seconds,
+                env={
+                    **os.environ,
+                    "PYTHONIOENCODING": "utf-8",
+                    "PYTHONUTF8": "1",
+                },
             )
 
             output_parts = []
