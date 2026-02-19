@@ -12,19 +12,18 @@ from memfinrobot.tools.python_excute import PythonInterpreter
 __all__ = [
     "MarketQuoteTool",
     "ProductLookupTool", 
-    "KnowledgeRetrievalTool",
     "RiskTemplateTool",
     "PortfolioCalcTool",
     "Search",
     "Visit",
     "PythonInterpreter",
 ]
+# 未加入knowledge_retri 后续开发
 
 # 工具注册表（便于按名称获取）
 TOOL_REGISTRY = {
     "market_quote": MarketQuoteTool,
     "product_lookup": ProductLookupTool,
-    "knowledge_retrieval": KnowledgeRetrievalTool,
     "risk_template": RiskTemplateTool,
     "portfolio_calc": PortfolioCalcTool,
     "search": Search,

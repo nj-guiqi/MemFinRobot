@@ -31,15 +31,15 @@ PROFILE_PATCH_PROMPT = """你是用户画像信息抽取器。请根据最新用
 输出要求：
 1) 只输出 JSON，不要输出任何解释。
 2) JSON 必须包含以下所有字段，字段名不可缺失：
-{
-  "risk_level": {"value": "low|medium|high|null", "confidence": 0.0, "evidence": ""},
-  "investment_horizon": {"value": "short|medium|long|null", "confidence": 0.0, "evidence": ""},
-  "liquidity_need": {"value": "low|medium|high|null", "confidence": 0.0, "evidence": ""},
-  "investment_goal": {"value": "stable_growth|cash_flow|theme_investment|learning|null", "confidence": 0.0, "evidence": ""},
-  "max_acceptable_loss": {"value": null, "confidence": 0.0, "evidence": ""},
-  "preferred_topics_add": [{"value": "", "confidence": 0.0, "evidence": ""}],
-  "forbidden_assets_add": [{"value": "", "confidence": 0.0, "evidence": ""}]
-}
+{{
+  "risk_level": {{"value": "low|medium|high|null", "confidence": 0.0, "evidence": ""}},
+  "investment_horizon": {{"value": "short|medium|long|null", "confidence": 0.0, "evidence": ""}},
+  "liquidity_need": {{"value": "low|medium|high|null", "confidence": 0.0, "evidence": ""}},
+  "investment_goal": {{"value": "stable_growth|cash_flow|theme_investment|learning|null", "confidence": 0.0, "evidence": ""}},
+  "max_acceptable_loss": {{"value": null, "confidence": 0.0, "evidence": ""}},
+  "preferred_topics_add": [{{"value": "", "confidence": 0.0, "evidence": ""}}],
+  "forbidden_assets_add": [{{"value": "", "confidence": 0.0, "evidence": ""}}]
+}}
 
 抽取原则：
 - 只在用户表达明确时更新，避免过度猜测。
@@ -310,7 +310,7 @@ class MemoryManager:
         messages = [{"role": "user", "content": prompt}]
         response = self.llm_client.chat(
             messages=messages,
-            stream=False,
+            stream=True,
             extra_generate_cfg={"temperature": 0.1},
         )
         text = self._extract_llm_response_text(response)
@@ -332,14 +332,17 @@ class MemoryManager:
                     return str(r["content"])
             return str(response)
         if hasattr(response, "__iter__"):
+            last_text = ""
             for r in response:
                 if r:
                     last = r[-1] if isinstance(r, list) else r
                     if hasattr(last, "content") and last.content:
-                        return str(last.content)
-                    if isinstance(last, dict) and last.get("content"):
-                        return str(last["content"])
-            return ""
+                        last_text = str(last.content)
+                    elif isinstance(last, dict) and last.get("content"):
+                        last_text = str(last["content"])
+                    else:
+                        last_text = str(last)
+            return last_text
         return str(response)
 
     def _parse_json_object(self, raw_text: str) -> Dict[str, Any]:
