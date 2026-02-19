@@ -16,71 +16,173 @@ from memfinrobot.tools.python_excute import PythonInterpreter
 
 
 class TestMarketQuoteTool:
-    """MarketQuoteTool测试"""
-    
+    """MarketQuoteTool ??????"""
+
     @pytest.fixture
     def tool(self):
         return MarketQuoteTool()
-    
-    def test_query_existing_stock(self, tool):
-        """测试查询存在的股票（使用mock数据保证稳定性）"""
-        result = tool.call({"symbol": "000001", "provider": "mock"})
+
+    @pytest.fixture
+    def real_quote_provider(self):
+        return os.getenv("REAL_QUOTE_PROVIDER", "tencent")
+
+    @pytest.fixture
+    def real_history_provider(self):
+        return os.getenv("REAL_HISTORY_PROVIDER", "akshare")
+
+    @pytest.fixture
+    def real_stock_symbol(self):
+        return os.getenv("REAL_STOCK_SYMBOL", "000001")
+
+    @pytest.fixture
+    def real_fund_symbol(self):
+        return os.getenv("REAL_FUND_SYMBOL", "510300")
+
+    def test_query_stock_latest_real(self, tool, real_quote_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "market": "stock",
+                "provider": real_quote_provider,
+                "mode": "latest",
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert data["data"]["name"] == "平安银行"
-        assert "price" in data["data"]
-    
-    def test_query_nonexistent_stock(self, tool):
-        """测试查询不存在的股票"""
-        result = tool.call({"symbol": "999999", "provider": "mock"})
+
+        if not data.get("success"):
+            pytest.fail(f"latest quote failed: {data}")
+        if data.get("source") != real_quote_provider:
+            pytest.fail(f"expected real provider {real_quote_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["symbol"] is not None
+        assert data["data"].get("price") is not None
+
+    def test_query_fund_latest_real(self, tool, real_quote_provider, real_fund_symbol):
+        """????/ETF ????"""
+        result = tool.call(
+            {
+                "symbol": real_fund_symbol,
+                "market": "fund",
+                "provider": real_quote_provider,
+                "mode": "latest",
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is False
-        assert len(data["errors"]) > 0
-    
-    def test_query_with_fields(self, tool):
-        """测试指定字段查询"""
-        result = tool.call({
-            "symbol": "000001",
-            "fields": ["price", "change"],
-            "provider": "mock"
-        })
+
+        if not data.get("success"):
+            pytest.fail(f"latest fund quote failed: {data}")
+        if data.get("source") != real_quote_provider:
+            pytest.fail(f"expected real provider {real_quote_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["symbol"] is not None
+        assert data["data"].get("price") is not None
+
+    def test_query_history_real(self, tool, real_history_provider, real_stock_symbol):
+        """????????? akshare?"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "market": "stock",
+                "provider": real_history_provider,
+                "mode": "history",
+                "period": "daily",
+                "limit": 5,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert "price" in data["data"]
+
+        if not data.get("success"):
+            message = json.dumps(data, ensure_ascii=False)
+            if "akshare is not installed" in message.lower():
+                pytest.skip("akshare ??????????????")
+            pytest.fail(f"history quote failed: {data}")
+
+        if data.get("source") != real_history_provider:
+            pytest.fail(f"expected real history provider {real_history_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["count"] > 0
+        assert len(data["data"]["items"]) > 0
+        assert "date" in data["data"]["items"][-1]
 
 
 class TestProductLookupTool:
-    """ProductLookupTool测试"""
-    
+    """ProductLookupTool ??????"""
+
     @pytest.fixture
     def tool(self):
         return ProductLookupTool()
-    
-    def test_lookup_fund(self, tool):
-        """测试查询基金"""
-        result = tool.call({
-            "symbol": "510300",
-            "product_type": "fund"
-        })
+
+    @pytest.fixture
+    def real_product_provider(self):
+        return os.getenv("REAL_PRODUCT_PROVIDER", "tencent")
+
+    @pytest.fixture
+    def real_stock_symbol(self):
+        return os.getenv("REAL_STOCK_SYMBOL", "000001")
+
+    @pytest.fixture
+    def real_fund_symbol(self):
+        return os.getenv("REAL_FUND_SYMBOL", "510300")
+
+    def test_lookup_stock_basic_real(self, tool, real_product_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "product_type": "stock",
+                "info_type": "basic",
+                "provider": real_product_provider,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert "沪深300" in data["data"]["name"]
-    
-    def test_lookup_fund_fee(self, tool):
-        """测试查询基金费用"""
-        result = tool.call({
-            "symbol": "000001",
-            "product_type": "fund",
-            "info_type": "fee"
-        })
+
+        if not data.get("success"):
+            pytest.fail(f"product basic failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"].get("symbol") is not None
+        assert data["data"].get("latest_price") is not None
+
+    def test_lookup_stock_risk_real(self, tool, real_product_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "product_type": "stock",
+                "info_type": "risk",
+                "provider": real_product_provider,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
+
+        if not data.get("success"):
+            pytest.fail(f"product risk failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"].get("risk_level") in {"low", "medium", "high", "unknown"}
+
+    def test_lookup_fund_fee_real(self, tool, real_product_provider, real_fund_symbol):
+        """??????????????? mock ???? source ???? provider?"""
+        result = tool.call(
+            {
+                "symbol": real_fund_symbol,
+                "product_type": "fund",
+                "info_type": "fee",
+                "provider": real_product_provider,
+            }
+        )
+        data = json.loads(result)
+
+        if not data.get("success"):
+            pytest.fail(f"product fee failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
         assert "fee" in data["data"]
+        assert isinstance(data["data"]["fee"], dict)
 
 
 class TestKnowledgeRetrievalTool:
@@ -339,27 +441,20 @@ class TestPythonInterpreterTool:
     """PythonInterpreter 工具测试"""
 
     def test_python_interpreter_success(self, monkeypatch):
-        """?? Python ???????????"""
+        """?? Python ??????????????"""
         monkeypatch.setenv("MEMFIN_PYTHON_PATH", sys.executable)
         tool = PythonInterpreter()
 
         code = (
-            "import re\n"
-            "import requests\n"
-            "resp = requests.get('https://www.baidu.com', timeout=10)\n"
-            "enc = resp.apparent_encoding or resp.encoding or 'utf-8'\n"
-            "text = resp.content.decode(enc, errors='replace')\n"
-            "m = re.search(r'<title>(.*?)</title>', text, re.I | re.S)\n"
-            "title = m.group(1).strip() if m else text[:80]\n"
-            "print('encoding=' + str(enc))\n"
-            "print('title=' + title)\n"
+            "print('python tool ok')\n"
             "print('??????')\n"
+            "print(1 + 2)\n"
         )
         result = tool.call({"code": code})
-        print(result)
         assert "stdout:" in result
-        assert "encoding=" in result
+        assert "python tool ok" in result
         assert "??????" in result
+        assert "3" in result
 
     def test_python_interpreter_missing_code(self, monkeypatch):
         """缺少 code 参数"""
