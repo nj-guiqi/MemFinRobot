@@ -5,6 +5,9 @@ from memfinrobot.tools.product_lookup import ProductLookupTool
 from memfinrobot.tools.knowledge_retrieval import KnowledgeRetrievalTool
 from memfinrobot.tools.risk_template import RiskTemplateTool
 from memfinrobot.tools.portfolio_calc import PortfolioCalcTool
+from memfinrobot.tools.web_search import Search
+from memfinrobot.tools.web_visit import Visit
+from memfinrobot.tools.python_excute import PythonInterpreter
 
 __all__ = [
     "MarketQuoteTool",
@@ -12,6 +15,9 @@ __all__ = [
     "KnowledgeRetrievalTool",
     "RiskTemplateTool",
     "PortfolioCalcTool",
+    "Search",
+    "Visit",
+    "PythonInterpreter",
 ]
 
 # 工具注册表（便于按名称获取）
@@ -21,6 +27,9 @@ TOOL_REGISTRY = {
     "knowledge_retrieval": KnowledgeRetrievalTool,
     "risk_template": RiskTemplateTool,
     "portfolio_calc": PortfolioCalcTool,
+    "search": Search,
+    "visit": Visit,
+    "PythonInterpreter": PythonInterpreter,
 }
 
 
@@ -32,4 +41,7 @@ def get_default_tools():
         KnowledgeRetrievalTool(),
         RiskTemplateTool(),
         PortfolioCalcTool(),
+        Search(),
+        Visit(),
+        PythonInterpreter(),
     ]

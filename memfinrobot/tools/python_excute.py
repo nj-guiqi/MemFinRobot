@@ -1,0 +1,133 @@
+﻿import json
+import os
+import re
+import subprocess
+import tempfile
+from pathlib import Path
+from typing import Dict, Optional, Union
+
+from qwen_agent.tools.base import BaseTool, register_tool
+
+DEFAULT_PYTHON_HOME = r"D:\AnacondaInstall\envs\py3.9-torch"
+DEFAULT_TIMEOUT_SECONDS = int(os.getenv("PYTHON_TOOL_TIMEOUT", "30"))
+
+
+def _resolve_python_executable(path_or_home: str) -> str:
+    path = Path(path_or_home)
+    name = path.name.lower()
+    if name in {"python", "python.exe"}:
+        return str(path)
+    return str(path / "python.exe")
+
+
+@register_tool("PythonInterpreter", allow_overwrite=True)
+class PythonInterpreter(BaseTool):
+    name = "PythonInterpreter"
+    description = (
+        "Execute Python code with a local interpreter. "
+        "Use print() to output results."
+    )
+    parameters = {
+        "type": "object",
+        "properties": {
+            "code": {
+                "type": "string",
+                "description": "Python code to execute.",
+            },
+            "timeout": {
+                "type": "integer",
+                "description": "Execution timeout in seconds. Default 30.",
+            },
+        },
+        "required": ["code"],
+    }
+
+    def __init__(self, cfg: Optional[Dict] = None):
+        super().__init__(cfg)
+        cfg = cfg or {}
+        configured_path = (
+            cfg.get("python_path")
+            or os.getenv("MEMFIN_PYTHON_PATH")
+            or DEFAULT_PYTHON_HOME
+        )
+        self.python_executable = _resolve_python_executable(configured_path)
+
+    def _parse_params(self, params: Union[str, dict]) -> Dict:
+        if isinstance(params, dict):
+            return params
+        if isinstance(params, str):
+            raw = params.strip()
+            if not raw:
+                return {}
+            try:
+                parsed = json.loads(raw)
+                if isinstance(parsed, dict):
+                    return parsed
+            except json.JSONDecodeError:
+                pass
+            return {"code": raw}
+        return {}
+
+    def _extract_code(self, code_text: str) -> str:
+        text = code_text.strip()
+        match = re.search(r"```(?:python)?\s*(.*?)```", text, flags=re.IGNORECASE | re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        return text
+
+    def call(self, params: Union[str, dict], **kwargs) -> str:
+        parsed = self._parse_params(params)
+        raw_code = str(parsed.get("code", "")).strip()
+        if not raw_code:
+            return "[PythonInterpreter] invalid params: missing 'code'."
+
+        code = self._extract_code(raw_code)
+        if not code:
+            return "[PythonInterpreter] empty code after parsing."
+
+        if not os.path.exists(self.python_executable):
+            return (
+                f"[PythonInterpreter] python executable not found: "
+                f"{self.python_executable}"
+            )
+
+        timeout_seconds = int(parsed.get("timeout", DEFAULT_TIMEOUT_SECONDS))
+
+        temp_file_path = ""
+        try:
+            with tempfile.NamedTemporaryFile(
+                mode="w",
+                suffix=".py",
+                delete=False,
+                encoding="utf-8",
+            ) as temp_file:
+                temp_file.write(code)
+                temp_file_path = temp_file.name
+
+            completed = subprocess.run(
+                [self.python_executable, temp_file_path],
+                capture_output=True,
+                text=True,
+                timeout=timeout_seconds,
+            )
+
+            output_parts = []
+            if completed.stdout:
+                output_parts.append(f"stdout:\n{completed.stdout.strip()}")
+            if completed.stderr:
+                output_parts.append(f"stderr:\n{completed.stderr.strip()}")
+            if completed.returncode != 0:
+                output_parts.append(f"exit_code: {completed.returncode}")
+
+            return "\n\n".join(output_parts) if output_parts else "Finished execution."
+
+        except subprocess.TimeoutExpired:
+            return f"[PythonInterpreter] TimeoutError: exceeded {timeout_seconds} seconds."
+        except Exception as exc:
+            return f"[PythonInterpreter] execution failed: {exc}"
+        finally:
+            if temp_file_path and os.path.exists(temp_file_path):
+                try:
+                    os.remove(temp_file_path)
+                except OSError:
+                    pass
