@@ -68,9 +68,38 @@ def build_agent_factory(base_settings: Settings, run_dir: Path):
     return _factory
 
 
+def _load_existing_dialog_traces(dialog_trace_path: Path) -> Dict[str, Dict[str, Any]]:
+    """从已有 dialog_trace.jsonl 加载已完成对话，按 dialog_id 去重。"""
+    traces_by_dialog: Dict[str, Dict[str, Any]] = {}
+    if not dialog_trace_path.exists():
+        return traces_by_dialog
+
+    with open(dialog_trace_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                row = json.loads(line)
+            except Exception:
+                continue
+            dialog_id = str(row.get("dialog_id") or "")
+            if dialog_id:
+                traces_by_dialog[dialog_id] = row
+    return traces_by_dialog
+
+
+def _append_dialog_trace(dialog_trace_path: Path, trace: Dict[str, Any]) -> None:
+    """增量追加单条 dialog trace。"""
+    dialog_trace_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(dialog_trace_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(trace, ensure_ascii=False) + "\n")
+
+
 def run_eval_parallel(
     dataset_path: str,
     run_id: str,
+    run_dir: Path,
     max_workers_dialog: int,
     max_workers_judge: int,
     agent_factory: Any,
@@ -82,14 +111,30 @@ def run_eval_parallel(
 
     progress_path = PROJECT_ROOT / "eval" / "logs" / f"progress_{run_id}.jsonl"
     progress = ProgressLogger(progress_path)
-    progress.log("run_started", {"run_id": run_id, "dataset_path": dataset_path, "dialogs": len(dialogs)})
+    dialog_trace_path = run_dir / "dialog_trace.jsonl"
+    dialog_traces_by_id = _load_existing_dialog_traces(dialog_trace_path)
+    completed_dialog_ids = set(dialog_traces_by_id.keys())
+    progress.log(
+        "run_started",
+        {
+            "run_id": run_id,
+            "dataset_path": dataset_path,
+            "dialogs": len(dialogs),
+            "resumed_completed_dialogs": len(completed_dialog_ids),
+        },
+    )
 
-    dialog_traces: List[Dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=max_workers_dialog) as executor:
         futures = []
         for obj in dialogs:
             idx = int(obj.get("_dataset_index", 0))
             dialog_id = str(obj.get("dialog_id") or f"dialog_{idx}")
+            if dialog_id in completed_dialog_ids:
+                progress.log(
+                    "dialog_skipped_resume",
+                    {"dialog_id": dialog_id, "dataset_index": idx},
+                )
+                continue
             progress.log("dialog_started", {"dialog_id": dialog_id, "dataset_index": idx})
             futures.append(
                 executor.submit(
@@ -104,7 +149,9 @@ def run_eval_parallel(
 
         for fut in as_completed(futures):
             trace = fut.result()
-            dialog_traces.append(trace)
+            dialog_id = str(trace.get("dialog_id") or f"dialog_{trace.get('dataset_index', 'unknown')}")
+            dialog_traces_by_id[dialog_id] = trace
+            _append_dialog_trace(dialog_trace_path, trace)
             progress.log(
                 "dialog_done",
                 {
@@ -113,6 +160,7 @@ def run_eval_parallel(
                     "turns": len(trace.get("turns") or []),
                 },
             )
+    dialog_traces: List[Dict[str, Any]] = list(dialog_traces_by_id.values())
     dialog_traces.sort(key=lambda x: int(x.get("dataset_index") or 0))
 
     # 指标计算
@@ -153,11 +201,12 @@ def main() -> None:
     parser.add_argument("--dataset", type=str, default=str(PROJECT_ROOT / "eval" / "datasets" / "MemFinConv.jsonl"))
     parser.add_argument("--config", type=str, default=None, help="config.json path")
     parser.add_argument("--output-root", type=str, default=str(PROJECT_ROOT / "eval" / "runs"))
+    parser.add_argument("--run-id", type=str, default=None, help="resume with existing run_id")
     parser.add_argument("--workers-dialog", type=int, default=max(1, min(4, os.cpu_count() or 1)))
     parser.add_argument("--workers-judge", type=int, default=1)
     args = parser.parse_args()
 
-    run_id = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+    run_id = args.run_id or datetime.utcnow().strftime("%Y%m%d_%H%M%S")
     run_dir = Path(args.output_root) / run_id
     run_dir.mkdir(parents=True, exist_ok=True)
 
@@ -168,6 +217,7 @@ def main() -> None:
     result = run_eval_parallel(
         dataset_path=args.dataset,
         run_id=run_id,
+        run_dir=run_dir,
         max_workers_dialog=args.workers_dialog,
         max_workers_judge=args.workers_judge,
         agent_factory=agent_factory,
