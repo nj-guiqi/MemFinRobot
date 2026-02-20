@@ -1,4 +1,6 @@
-"""工具模块 - qwen-agent Tool实现"""
+﻿"""Tool module exports and default registry."""
+
+from typing import Any, Dict, Optional
 
 from memfinrobot.tools.market_quote import MarketQuoteTool
 from memfinrobot.tools.product_lookup import ProductLookupTool
@@ -11,16 +13,14 @@ from memfinrobot.tools.python_excute import PythonInterpreter
 
 __all__ = [
     "MarketQuoteTool",
-    "ProductLookupTool", 
+    "ProductLookupTool",
     "RiskTemplateTool",
     "PortfolioCalcTool",
     "Search",
     "Visit",
     "PythonInterpreter",
 ]
-# 未加入knowledge_retri 后续开发
 
-# 工具注册表（便于按名称获取）
 TOOL_REGISTRY = {
     "market_quote": MarketQuoteTool,
     "product_lookup": ProductLookupTool,
@@ -32,15 +32,19 @@ TOOL_REGISTRY = {
 }
 
 
-def get_default_tools():
-    """获取默认工具列表"""
+def get_default_tools(settings: Optional[Any] = None):
+    """Build default tool instances, optionally using tool configs from Settings."""
+    tools_cfg: Dict[str, Any] = {}
+    if settings is not None and hasattr(settings, "tools") and isinstance(settings.tools, dict):
+        tools_cfg = settings.tools
+
+    # 未接入knowledge_retri
     return [
         MarketQuoteTool(),
         ProductLookupTool(),
-        KnowledgeRetrievalTool(),
         RiskTemplateTool(),
         PortfolioCalcTool(),
-        Search(),
-        Visit(),
-        PythonInterpreter(),
+        Search(cfg=tools_cfg.get("web_search") or {}),
+        Visit(cfg=tools_cfg.get("web_visit") or {}),
+        PythonInterpreter(cfg=tools_cfg.get("python_interpreter") or {}),
     ]

@@ -1,4 +1,4 @@
-import json
+﻿import json
 import os
 import re
 import time
@@ -9,10 +9,11 @@ from typing import Any, Dict, List, Optional, Union
 import requests
 from qwen_agent.tools.base import BaseTool, register_tool
 
-VISIT_SERVER_TIMEOUT = int(os.getenv("VISIT_SERVER_TIMEOUT", "50"))
-WEBCONTENT_MAXLENGTH = int(os.getenv("WEBCONTENT_MAXLENGTH", "150000"))
-VISIT_SERVER_MAX_RETRIES = int(os.getenv("VISIT_SERVER_MAX_RETRIES", "2"))
-JINA_API_KEYS = os.getenv("JINA_API_KEYS", "")
+DEFAULT_VISIT_SERVER_TIMEOUT = int(os.getenv("VISIT_SERVER_TIMEOUT", "50"))
+DEFAULT_WEBCONTENT_MAXLENGTH = int(os.getenv("WEBCONTENT_MAXLENGTH", "150000"))
+DEFAULT_VISIT_SERVER_MAX_RETRIES = int(os.getenv("VISIT_SERVER_MAX_RETRIES", "2"))
+DEFAULT_VISIT_TOTAL_TIMEOUT = int(os.getenv("VISIT_TOTAL_TIMEOUT", "900"))
+_ENV_NAME_RE = re.compile(r"^[A-Z_][A-Z0-9_]*$")
 
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"\s+")
@@ -31,6 +32,10 @@ Webpage content:
 """
 
 
+def _looks_like_env_name(text: str) -> bool:
+    return bool(_ENV_NAME_RE.match(text or ""))
+
+
 def truncate_to_tokens(text: str, max_tokens: int = 95000) -> str:
     """Best-effort token truncation. Falls back to char truncation if tiktoken is unavailable."""
     try:
@@ -42,7 +47,6 @@ def truncate_to_tokens(text: str, max_tokens: int = 95000) -> str:
             return text
         return encoding.decode(tokens[:max_tokens])
     except Exception:
-        # Rough fallback: one token is usually around 3-4 chars for mixed content.
         approx_chars = max_tokens * 4
         return text[:approx_chars]
 
@@ -73,6 +77,94 @@ class Visit(BaseTool):
         },
         "required": ["url", "goal"],
     }
+
+    def __init__(self, cfg: Optional[Dict[str, Any]] = None):
+        super().__init__(cfg)
+        self.cfg = cfg or {}
+
+        self.jina_api_keys = self._resolve_value(
+            key="jina_api_keys_env",
+            default_envs=["JINA_API_KEYS"],
+            hard_default="",
+        )
+        self.visit_server_timeout = self._resolve_int(
+            env_or_value_key="visit_server_timeout_env",
+            default_key="visit_server_timeout_default",
+            hard_default=DEFAULT_VISIT_SERVER_TIMEOUT,
+        )
+        self.visit_server_max_retries = self._resolve_int(
+            env_or_value_key="visit_server_max_retries_env",
+            default_key="visit_server_max_retries_default",
+            hard_default=DEFAULT_VISIT_SERVER_MAX_RETRIES,
+        )
+        self.visit_total_timeout = self._resolve_int(
+            env_or_value_key="visit_total_timeout_env",
+            default_key="visit_total_timeout_default",
+            hard_default=DEFAULT_VISIT_TOTAL_TIMEOUT,
+        )
+        self.webcontent_maxlength = self._resolve_int(
+            env_or_value_key="webcontent_maxlength_env",
+            default_key="webcontent_maxlength_default",
+            hard_default=DEFAULT_WEBCONTENT_MAXLENGTH,
+        )
+
+        self.summary_api_key = self._resolve_value(
+            key="summary_api_key_env",
+            default_envs=["API_KEY", "OPENAI_API_KEY"],
+            hard_default="",
+        )
+        self.summary_base_url = self._resolve_value(
+            key="summary_base_url_env",
+            default_envs=["API_BASE"],
+            hard_default="",
+        )
+        self.summary_model_name = self._resolve_value(
+            key="summary_model_name_env",
+            default_envs=["SUMMARY_MODEL_NAME"],
+            hard_default="",
+        )
+
+    def _resolve_from_cfg_env_or_value(self, key: str) -> str:
+        raw = str(self.cfg.get(key, "")).strip()
+        if not raw:
+            return ""
+
+        env_val = os.getenv(raw, "")
+        if env_val:
+            return env_val
+
+        if _looks_like_env_name(raw):
+            return ""
+
+        return raw
+
+    def _resolve_value(self, key: str, default_envs: List[str], hard_default: str = "") -> str:
+        value = self._resolve_from_cfg_env_or_value(key)
+        if value:
+            return value
+
+        for env_name in default_envs:
+            env_val = os.getenv(env_name, "")
+            if env_val:
+                return env_val
+
+        return hard_default
+
+    def _resolve_int(self, env_or_value_key: str, default_key: str, hard_default: int) -> int:
+        raw = str(self.cfg.get(env_or_value_key, "")).strip()
+        if raw:
+            env_val = os.getenv(raw, "")
+            candidate = env_val or raw
+            try:
+                if not _looks_like_env_name(candidate):
+                    return int(candidate)
+            except ValueError:
+                pass
+
+        try:
+            return int(self.cfg.get(default_key, hard_default))
+        except (TypeError, ValueError):
+            return hard_default
 
     def _parse_params(self, params: Union[str, dict]) -> Dict[str, Any]:
         if isinstance(params, dict):
@@ -118,9 +210,7 @@ class Visit(BaseTool):
             return "[Visit] Empty url list"
 
         start_time = time.time()
-        timeout_total = int(os.getenv("VISIT_TOTAL_TIMEOUT", "900"))
 
-        # Keep simple concurrency for multiple urls.
         results: List[str] = [""] * len(urls)
         max_workers = min(4, len(urls))
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -130,7 +220,7 @@ class Visit(BaseTool):
             }
             for future in as_completed(future_map):
                 idx = future_map[future]
-                if time.time() - start_time > timeout_total:
+                if time.time() - start_time > self.visit_total_timeout:
                     results[idx] = self._build_failure_output(urls[idx], goal)
                     continue
                 try:
@@ -149,7 +239,6 @@ class Visit(BaseTool):
         parsed = self._extract_by_llm(content, goal)
 
         if parsed is None:
-            # Fallback: return truncated evidence + heuristic summary.
             evidence = content[:4000]
             summary = content[:600]
         else:
@@ -183,15 +272,15 @@ class Visit(BaseTool):
             return "[visit] Failed to read page."
 
         headers = {}
-        if JINA_API_KEYS:
-            headers["Authorization"] = f"Bearer {JINA_API_KEYS}"
+        if self.jina_api_keys:
+            headers["Authorization"] = f"Bearer {self.jina_api_keys}"
 
         for attempt in range(3):
             try:
                 response = requests.get(
                     f"https://r.jina.ai/{normalized}",
                     headers=headers,
-                    timeout=VISIT_SERVER_TIMEOUT,
+                    timeout=self.visit_server_timeout,
                 )
                 if response.status_code == 200 and response.text.strip():
                     return response.text
@@ -214,7 +303,7 @@ class Visit(BaseTool):
             )
         }
         try:
-            response = requests.get(normalized, headers=headers, timeout=VISIT_SERVER_TIMEOUT)
+            response = requests.get(normalized, headers=headers, timeout=self.visit_server_timeout)
             response.raise_for_status()
             cleaned = _clean_html(response.text)
             return cleaned if cleaned else "[visit] Failed to read page."
@@ -222,22 +311,20 @@ class Visit(BaseTool):
             return "[visit] Failed to read page."
 
     def _html_readpage(self, url: str) -> str:
-        # Prefer Jina extraction first.
         content = self._jina_readpage(url)
         if content and not content.startswith("[visit] Failed to read page"):
-            return content[:WEBCONTENT_MAXLENGTH]
+            return content[: self.webcontent_maxlength]
 
-        # Fallback to direct web fetch.
         content = self._direct_readpage(url)
         if content and not content.startswith("[visit] Failed to read page"):
-            return content[:WEBCONTENT_MAXLENGTH]
+            return content[: self.webcontent_maxlength]
 
         return "[visit] Failed to read page."
 
     def _extract_by_llm(self, content: str, goal: str) -> Optional[Dict[str, Any]]:
-        api_key = os.getenv("API_KEY") or os.getenv("OPENAI_API_KEY")
-        base_url = os.getenv("API_BASE")
-        model_name = os.getenv("SUMMARY_MODEL_NAME", "")
+        api_key = self.summary_api_key
+        base_url = self.summary_base_url
+        model_name = self.summary_model_name
 
         if not api_key or not model_name:
             return None
@@ -245,7 +332,7 @@ class Visit(BaseTool):
         try:
             from openai import OpenAI  # type: ignore
 
-            client = OpenAI(api_key=api_key, base_url=base_url)
+            client = OpenAI(api_key=api_key, base_url=base_url or None)
         except Exception:
             return None
 
@@ -253,7 +340,7 @@ class Visit(BaseTool):
         messages = [{"role": "user", "content": prompt}]
 
         raw = ""
-        for _ in range(max(1, VISIT_SERVER_MAX_RETRIES)):
+        for _ in range(max(1, self.visit_server_max_retries)):
             try:
                 response = client.chat.completions.create(
                     model=model_name,

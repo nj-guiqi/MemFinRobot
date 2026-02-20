@@ -122,6 +122,7 @@ class Settings:
     memory: MemoryConfig = field(default_factory=MemoryConfig)
     compliance: ComplianceConfig = field(default_factory=ComplianceConfig)
     market_data: MarketDataConfig = field(default_factory=MarketDataConfig)
+    tools: Dict[str, Any] = field(default_factory=dict)
     
     # Prompt模板路径
     prompt_dir: Path = field(default_factory=lambda: Path(__file__).parent.parent / "prompts")
@@ -160,6 +161,8 @@ class Settings:
             settings.compliance = ComplianceConfig(**config_data["compliance"])
         if "market_data" in config_data:
             settings.market_data = MarketDataConfig(**config_data["market_data"])
+        if "tools" in config_data and isinstance(config_data["tools"], dict):
+            settings.tools = config_data["tools"]
         
         return settings
     

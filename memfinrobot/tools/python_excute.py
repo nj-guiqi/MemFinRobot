@@ -10,6 +10,11 @@ from qwen_agent.tools.base import BaseTool, register_tool
 
 DEFAULT_PYTHON_HOME = r"D:\AnacondaInstall\envs\py3.9-torch"
 DEFAULT_TIMEOUT_SECONDS = int(os.getenv("PYTHON_TOOL_TIMEOUT", "30"))
+_ENV_NAME_RE = re.compile(r"^[A-Z_][A-Z0-9_]*$")
+
+
+def _looks_like_env_name(text: str) -> bool:
+    return bool(_ENV_NAME_RE.match(text or ""))
 
 
 def _resolve_python_executable(path_or_home: str) -> str:
@@ -44,13 +49,47 @@ class PythonInterpreter(BaseTool):
 
     def __init__(self, cfg: Optional[Dict] = None):
         super().__init__(cfg)
-        cfg = cfg or {}
+        self.cfg = cfg or {}
+
         configured_path = (
-            cfg.get("python_path")
+            self.cfg.get("python_path")
+            or self._resolve_cfg_env_or_value("python_path_env")
             or os.getenv("MEMFIN_PYTHON_PATH")
+            or self.cfg.get("python_path_default")
             or DEFAULT_PYTHON_HOME
         )
-        self.python_executable = _resolve_python_executable(configured_path)
+        self.python_executable = _resolve_python_executable(str(configured_path))
+        self.default_timeout_seconds = self._resolve_timeout()
+
+    def _resolve_cfg_env_or_value(self, key: str) -> str:
+        raw = str(self.cfg.get(key, "")).strip()
+        if not raw:
+            return ""
+
+        env_val = os.getenv(raw, "")
+        if env_val:
+            return env_val
+
+        if _looks_like_env_name(raw):
+            return ""
+
+        return raw
+
+    def _resolve_timeout(self) -> int:
+        raw = str(self.cfg.get("timeout_seconds_env", "")).strip()
+        if raw:
+            env_val = os.getenv(raw, "")
+            candidate = env_val or raw
+            try:
+                if not _looks_like_env_name(candidate):
+                    return int(candidate)
+            except ValueError:
+                pass
+
+        try:
+            return int(self.cfg.get("timeout_seconds_default", DEFAULT_TIMEOUT_SECONDS))
+        except (TypeError, ValueError):
+            return DEFAULT_TIMEOUT_SECONDS
 
     def _parse_params(self, params: Union[str, dict]) -> Dict:
         if isinstance(params, dict):
@@ -91,7 +130,7 @@ class PythonInterpreter(BaseTool):
                 f"{self.python_executable}"
             )
 
-        timeout_seconds = int(parsed.get("timeout", DEFAULT_TIMEOUT_SECONDS))
+        timeout_seconds = int(parsed.get("timeout", self.default_timeout_seconds))
 
         temp_file_path = ""
         try:

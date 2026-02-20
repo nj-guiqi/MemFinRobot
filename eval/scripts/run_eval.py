@@ -1,4 +1,4 @@
-"""评测主入口：并发回放 + 指标计算 + 报告落盘。"""
+﻿"""评测主入口：并发回放 + 指标计算 + 报告落盘。"""
 
 from __future__ import annotations
 
@@ -57,7 +57,7 @@ def build_agent_factory(base_settings: Settings, run_dir: Path):
     def _factory(dialog_id: str, observer: Any) -> MemFinFnCallAgent:
         settings = copy.deepcopy(base_settings)
         settings.memory.storage_path = str(run_dir / "memstore" / dialog_id)
-        tools = get_default_tools()
+        tools = get_default_tools(settings=settings)
         return MemFinFnCallAgent(
             function_list=tools,
             llm=settings.llm.to_dict(),
@@ -213,3 +213,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
