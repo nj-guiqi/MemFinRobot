@@ -10,3 +10,5 @@ eval/datasets
 eval/schema.md
 eval/eval_solution.md
 eval/eval_solution.md
+eval/mem0
+*.cmd
