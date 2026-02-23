@@ -1,0 +1,17 @@
+{
+  "trace_version": "v1",
+  "run_id": "20260219_144052",
+  "dataset_path": "D:\\project\\MemFinRobot\\eval\\datasets\\MemFinConv.jsonl",
+  "started_at": "2026-02-19T14:40:52.881882Z",
+  "ended_at": "2026-02-19T17:39:48.090348Z",
+  "model_name": "qwen3.5-plus",
+  "workers_dialog": 1,
+  "workers_judge": 1,
+  "counters": {
+    "total_dialogs": 2,
+    "valid_dialogs": 2,
+    "skipped_dialogs": 0,
+    "failed_dialogs": 0,
+    "total_turn_pairs": 37
+  }
+}

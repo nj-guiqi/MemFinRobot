@@ -1,0 +1,156 @@
+{
+  "run_id": "debug_finrobot_pair_fix",
+  "trace_version": "v1",
+  "dataset_path": "eval/datasets/_debug_one_pair.jsonl",
+  "metrics": {
+    "m1_context_continuity": {
+      "metric_name": "m1_context_continuity",
+      "micro": {
+        "key_coverage": 0.0,
+        "strict_key_hit_rate": 0.0,
+        "contradiction_rate": 1.0,
+        "short_term_hit_rate": 0.0,
+        "long_term_hit_rate": 0.0,
+        "profile_hit_rate": 0.0
+      },
+      "macro": {
+        "key_coverage": 0.0,
+        "strict_key_hit_rate": 0.0,
+        "contradiction_rate": 1.0
+      },
+      "counts": {
+        "eligible_count": 1,
+        "skipped_count": 0,
+        "failed_count": 0,
+        "required_key_total": 4,
+        "required_key_hit_total": 0,
+        "short_term_hit_total": 0,
+        "long_term_hit_total": 0,
+        "profile_hit_total": 0
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "key_coverage": 0.0,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 1.0
+        }
+      }
+    },
+    "m2_profile_accuracy": {
+      "metric_name": "m2_profile_accuracy",
+      "micro": {
+        "risk_level_acc": 1.0,
+        "horizon_acc": 0.0,
+        "liquidity_acc": 0.0,
+        "constraints_f1": 0.0,
+        "preferences_f1": 0.0,
+        "profile_score": 0.2
+      },
+      "macro": {
+        "risk_level_acc": 1.0,
+        "horizon_acc": 0.0,
+        "liquidity_acc": 0.0,
+        "constraints_f1": 0.0,
+        "preferences_f1": 0.0,
+        "profile_score": 0.2
+      },
+      "counts": {
+        "eligible_count": 1,
+        "skipped_count": 0,
+        "failed_count": 0
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.0,
+          "profile_score": 0.2
+        }
+      }
+    },
+    "m3_risk_coverage": {
+      "metric_name": "m3_risk_coverage",
+      "micro": {
+        "risk_coverage": 0.6666666666666666,
+        "strict_risk_coverage_rate": 0.0
+      },
+      "macro": {
+        "risk_coverage": 0.6666666666666666,
+        "strict_risk_coverage_rate": 0.0
+      },
+      "counts": {
+        "eligible_count": 1,
+        "skipped_count": 0,
+        "failed_count": 0,
+        "risk_required_total": 3,
+        "risk_hit_total": 2
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "risk_coverage": 0.6666666666666666,
+          "strict_risk_coverage_rate": 0.0
+        }
+      }
+    },
+    "m4_compliance": {
+      "metric_name": "m4_compliance",
+      "micro": {
+        "compliance_label_acc": 1.0,
+        "severe_violation_rate": 0.0,
+        "forbidden_hit_rate": 0.0
+      },
+      "macro": {
+        "compliance_label_acc": 1.0,
+        "severe_violation_rate": 0.0,
+        "forbidden_hit_rate": 0.0
+      },
+      "counts": {
+        "eligible_count": 1,
+        "skipped_count": 0,
+        "failed_count": 0,
+        "severe_count": 0
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "compliance_label_acc": 1.0,
+          "severe_violation_rate": 0.0,
+          "forbidden_hit_rate": 0.0
+        }
+      }
+    },
+    "m5_explainability": {
+      "metric_name": "m5_explainability",
+      "micro": {
+        "rubric_hit_rate": 1.0,
+        "judge_score_mean": 5.0
+      },
+      "macro": {
+        "rubric_hit_rate": 1.0,
+        "judge_score_mean": 5.0
+      },
+      "counts": {
+        "eligible_count": 1,
+        "skipped_count": 0,
+        "failed_count": 0,
+        "rubric_required_total": 3,
+        "rubric_hit_total": 3,
+        "judge_scored_turns": 1
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        }
+      }
+    }
+  },
+  "counters": {
+    "total_dialogs": 1,
+    "valid_dialogs": 1,
+    "skipped_dialogs": 0,
+    "failed_dialogs": 0,
+    "total_turn_pairs": 1
+  }
+}

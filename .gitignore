@@ -2,3 +2,14 @@
 models
 model
 config.json
+__pycache__
+data
+eval/logs
+eval/datasets
+eval/schema.md
+eval/eval_solution.md
+eval/mem0
+eval/FinRobot
+eval/langmem
+eval/scripts/eval_run_mem0.cmd
+eval/scripts/eval_run_llm.cmd

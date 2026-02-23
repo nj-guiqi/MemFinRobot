@@ -1,0 +1,7 @@
+{"ts": "2026-02-19T10:18:55.656501Z", "event": "run_started", "run_id": "20260219_101855", "dataset_path": "D:\\project\\MemFinRobot\\eval\\datasets\\MemFinConv.jsonl", "dialogs": 2}
+{"ts": "2026-02-19T10:18:55.657500Z", "event": "dialog_started", "dialog_id": "3e53acb5-c444-4640-8ac4-78ce4d26a104", "dataset_index": 1}
+{"ts": "2026-02-19T10:18:55.661500Z", "event": "dialog_started", "dialog_id": "a9adbe17-a4f5-4334-a848-a9c0db7d9f97", "dataset_index": 2}
+{"ts": "2026-02-19T10:47:58.738293Z", "event": "dialog_done", "dialog_id": "3e53acb5-c444-4640-8ac4-78ce4d26a104", "status": "ok", "turns": 19}
+{"ts": "2026-02-19T11:08:53.501859Z", "event": "dialog_done", "dialog_id": "a9adbe17-a4f5-4334-a848-a9c0db7d9f97", "status": "ok", "turns": 18}
+{"ts": "2026-02-19T11:08:53.522584Z", "event": "metrics_done", "run_id": "20260219_101855", "turn_rows": 37}
+{"ts": "2026-02-19T11:08:53.524091Z", "event": "run_finished", "run_id": "20260219_101855", "total_dialogs": 2, "valid_dialogs": 2, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 37}

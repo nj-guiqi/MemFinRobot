@@ -284,6 +284,8 @@ class ContextPacker:
         max_chars = int(self.max_tokens * self.chars_per_token)
         parts = []
         current_chars = 0
+        profile_context = ""
+        short_context = short_term_context or ""
         
         # 1. 画像信息（最高优先级）
         if profile and profile.risk_level.value != "unknown":
@@ -291,6 +293,7 @@ class ContextPacker:
             if current_chars + len(profile_text) < max_chars:
                 parts.append(f"[用户画像]\n{profile_text}")
                 current_chars += len(profile_text)
+                profile_context = profile_text
         
         # 2. 召回的记忆（按分数排序）
         items_included = []
@@ -323,6 +326,8 @@ class ContextPacker:
             items=items_included,
             scores=scores_included,
             sources=sources_included,
+            short_term_context=short_context,
+            profile_context=profile_context,
             packed_context=packed_context,
             token_count=token_count,
         )
@@ -335,6 +340,8 @@ class ContextPacker:
             lines.append(f"- 风险承受能力: {profile.risk_level.value}")
         if profile.investment_horizon.value != "unknown":
             lines.append(f"- 投资期限: {profile.investment_horizon.value}")
+        if hasattr(profile, "liquidity_need") and profile.liquidity_need.value != "unknown":
+            lines.append(f"- 流动性需求: {profile.liquidity_need.value}")
         if profile.investment_goal.value != "unknown":
             lines.append(f"- 投资目标: {profile.investment_goal.value}")
         if profile.preferred_topics:

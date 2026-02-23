@@ -2,79 +2,192 @@
 
 import pytest
 import json
+import sys
+import os
 
 from memfinrobot.tools.market_quote import MarketQuoteTool
 from memfinrobot.tools.product_lookup import ProductLookupTool
 from memfinrobot.tools.knowledge_retrieval import KnowledgeRetrievalTool
 from memfinrobot.tools.risk_template import RiskTemplateTool
 from memfinrobot.tools.portfolio_calc import PortfolioCalcTool
+from memfinrobot.tools.web_search import Search
+from memfinrobot.tools.web_visit import Visit
+from memfinrobot.tools.python_excute import PythonInterpreter
 
 
 class TestMarketQuoteTool:
-    """MarketQuoteTool测试"""
-    
+    """MarketQuoteTool ??????"""
+
     @pytest.fixture
     def tool(self):
         return MarketQuoteTool()
-    
-    def test_query_existing_stock(self, tool):
-        """测试查询存在的股票"""
-        result = tool.call({"symbol": "000001"})
+
+    @pytest.fixture
+    def real_quote_provider(self):
+        return os.getenv("REAL_QUOTE_PROVIDER", "tencent")
+
+    @pytest.fixture
+    def real_history_provider(self):
+        return os.getenv("REAL_HISTORY_PROVIDER", "akshare")
+
+    @pytest.fixture
+    def real_stock_symbol(self):
+        return os.getenv("REAL_STOCK_SYMBOL", "000001")
+
+    @pytest.fixture
+    def real_fund_symbol(self):
+        return os.getenv("REAL_FUND_SYMBOL", "510300")
+
+    def test_query_stock_latest_real(self, tool, real_quote_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "market": "stock",
+                "provider": real_quote_provider,
+                "mode": "latest",
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert data["data"]["name"] == "平安银行"
-        assert "price" in data["data"]
-    
-    def test_query_nonexistent_stock(self, tool):
-        """测试查询不存在的股票"""
-        result = tool.call({"symbol": "999999"})
+
+        if not data.get("success"):
+            pytest.fail(f"latest quote failed: {data}")
+        if data.get("source") != real_quote_provider:
+            pytest.fail(f"expected real provider {real_quote_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["symbol"] is not None
+        assert data["data"].get("price") is not None
+
+    def test_query_fund_latest_real(self, tool, real_quote_provider, real_fund_symbol):
+        """????/ETF ????"""
+        result = tool.call(
+            {
+                "symbol": real_fund_symbol,
+                "market": "fund",
+                "provider": real_quote_provider,
+                "mode": "latest",
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is False
-        assert len(data["errors"]) > 0
-    
-    def test_query_with_fields(self, tool):
-        """测试指定字段查询"""
-        result = tool.call({
-            "symbol": "000001",
-            "fields": ["price", "change"]
-        })
+
+        if not data.get("success"):
+            pytest.fail(f"latest fund quote failed: {data}")
+        if data.get("source") != real_quote_provider:
+            pytest.fail(f"expected real provider {real_quote_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["symbol"] is not None
+        assert data["data"].get("price") is not None
+
+    def test_query_history_real(self, tool, real_history_provider, real_stock_symbol):
+        if real_history_provider != "akshare":
+            pytest.skip(
+                f"REAL_HISTORY_PROVIDER={real_history_provider} ?????????????????? akshare"
+            )
+
+        """????????? akshare?"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "market": "stock",
+                "provider": real_history_provider,
+                "mode": "history",
+                "period": "daily",
+                "limit": 5,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert "price" in data["data"]
+
+        if not data.get("success"):
+            message = json.dumps(data, ensure_ascii=False)
+            if "akshare is not installed" in message.lower():
+                pytest.skip("akshare ??????????????")
+            pytest.fail(f"history quote failed: {data}")
+
+        if data.get("source") != real_history_provider:
+            pytest.fail(f"expected real history provider {real_history_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"]["count"] > 0
+        assert len(data["data"]["items"]) > 0
+        assert "date" in data["data"]["items"][-1]
 
 
 class TestProductLookupTool:
-    """ProductLookupTool测试"""
-    
+    """ProductLookupTool ??????"""
+
     @pytest.fixture
     def tool(self):
         return ProductLookupTool()
-    
-    def test_lookup_fund(self, tool):
-        """测试查询基金"""
-        result = tool.call({
-            "symbol": "510300",
-            "product_type": "fund"
-        })
+
+    @pytest.fixture
+    def real_product_provider(self):
+        return os.getenv("REAL_PRODUCT_PROVIDER", "tencent")
+
+    @pytest.fixture
+    def real_stock_symbol(self):
+        return os.getenv("REAL_STOCK_SYMBOL", "000001")
+
+    @pytest.fixture
+    def real_fund_symbol(self):
+        return os.getenv("REAL_FUND_SYMBOL", "510300")
+
+    def test_lookup_stock_basic_real(self, tool, real_product_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "product_type": "stock",
+                "info_type": "basic",
+                "provider": real_product_provider,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
-        assert "沪深300" in data["data"]["name"]
-    
-    def test_lookup_fund_fee(self, tool):
-        """测试查询基金费用"""
-        result = tool.call({
-            "symbol": "000001",
-            "product_type": "fund",
-            "info_type": "fee"
-        })
+
+        if not data.get("success"):
+            pytest.fail(f"product basic failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"].get("symbol") is not None
+        assert data["data"].get("latest_price") is not None
+
+    def test_lookup_stock_risk_real(self, tool, real_product_provider, real_stock_symbol):
+        """????????"""
+        result = tool.call(
+            {
+                "symbol": real_stock_symbol,
+                "product_type": "stock",
+                "info_type": "risk",
+                "provider": real_product_provider,
+            }
+        )
         data = json.loads(result)
-        
-        assert data["success"] is True
+
+        if not data.get("success"):
+            pytest.fail(f"product risk failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
+        assert data["data"].get("risk_level") in {"low", "medium", "high", "unknown"}
+
+    def test_lookup_fund_fee_real(self, tool, real_product_provider, real_fund_symbol):
+        """??????????????? mock ???? source ???? provider?"""
+        result = tool.call(
+            {
+                "symbol": real_fund_symbol,
+                "product_type": "fund",
+                "info_type": "fee",
+                "provider": real_product_provider,
+            }
+        )
+        data = json.loads(result)
+
+        if not data.get("success"):
+            pytest.fail(f"product fee failed: {data}")
+        if data.get("source") != real_product_provider:
+            pytest.fail(f"expected real provider {real_product_provider}, got: {data.get('source')}, full={data}")
+
         assert "fee" in data["data"]
+        assert isinstance(data["data"]["fee"], dict)
 
 
 class TestKnowledgeRetrievalTool:
@@ -202,3 +315,162 @@ class TestPortfolioCalcTool:
         
         assert data["success"] is True
         assert "sharpe_ratio" in data["data"]
+
+
+class TestWebSearchTool:
+    """WebSearch 工具测试"""
+
+    @pytest.fixture
+    def tool(self):
+        return Search()
+
+    def test_search_missing_key(self, tool, monkeypatch):
+        """未配置 key 时应返回明确报错"""
+        monkeypatch.delenv("SERPER_API_KEY", raising=False)
+        monkeypatch.delenv("SERPER_KEY_ID", raising=False)
+
+        result = tool.call({"query": "OpenAI"})
+        assert "missing Serper key" in result
+
+    def test_search_success_with_mock(self, tool, monkeypatch):
+        """单查询成功路径（mock，不走真实网络）"""
+        class FakeResponse:
+            def raise_for_status(self):
+                return None
+
+            def json(self):
+                return {
+                    "organic": [
+                        {
+                            "title": "Result A",
+                            "link": "https://example.com/a",
+                            "snippet": "snippet a",
+                        },
+                        {
+                            "title": "Result B",
+                            "link": "https://example.com/b",
+                            "snippet": "snippet b",
+                        },
+                    ]
+                }
+
+        def fake_post(*args, **kwargs):
+            return FakeResponse()
+
+        monkeypatch.setenv("SERPER_API_KEY", "test-key")
+        monkeypatch.setattr("memfinrobot.tools.web_search.requests.post", fake_post)
+
+        result = tool.call({"query": "OpenAI", "num": 2})
+        assert "Query: OpenAI" in result
+        assert "Result A" in result
+        assert "https://example.com/a" in result
+
+    def test_search_success_real_api(self, tool, monkeypatch):
+        """单查询成功路径（真实 API，可选）"""
+        api_key = os.getenv("SERPER_API_KEY") or os.getenv("SERPER_KEY_ID")
+        if not api_key:
+            pytest.skip("SERPER_API_KEY / SERPER_KEY_ID 未配置，跳过真实检索测试")
+
+        monkeypatch.delenv("SERPER_KEY_ID", raising=False)
+        monkeypatch.setenv("SERPER_API_KEY", api_key)
+
+        result = tool.call({"query": "OpenAI", "num": 3})
+        assert "missing Serper key" not in result
+        assert "request failed" not in result
+        assert "Query: OpenAI" in result
+        assert "URL:" in result
+
+    def test_search_multi_queries(self, tool, monkeypatch):
+        """多查询应按分隔符拼接"""
+        monkeypatch.setattr(tool, "_search_once", lambda q, n: f"Query: {q}")
+        result = tool.call({"query": ["q1", "q2"]})
+        assert "Query: q1" in result
+        assert "Query: q2" in result
+        assert "=======" in result
+
+
+class TestWebVisitTool:
+    """WebVisit 工具测试"""
+
+    @pytest.fixture
+    def tool(self):
+        return Visit()
+
+    def test_visit_missing_url(self, tool):
+        """缺少 url 参数"""
+        result = tool.call({"goal": "test"})
+        assert "missing 'url'" in result
+
+    def test_visit_real_single_url(self, tool, monkeypatch):
+        """真实网页读取：单 URL"""
+        monkeypatch.setenv("VISIT_SERVER_TIMEOUT", "15")
+        monkeypatch.setenv("VISIT_TOTAL_TIMEOUT", "60")
+
+        result = tool.call({"url": "http://www.phys.ruc.edu.cn/", "goal": "查看学院最近的新闻"})
+        print(result)
+        # assert "The useful information in https://example.com" in result
+        assert "Evidence in page:" in result
+        assert "Summary:" in result
+        assert "could not be accessed" not in result
+
+    def test_visit_real_multi_urls(self, tool, monkeypatch):
+        """真实网页读取：多 URL"""
+        monkeypatch.setenv("VISIT_SERVER_TIMEOUT", "15")
+        monkeypatch.setenv("VISIT_TOTAL_TIMEOUT", "90")
+
+        result = tool.call(
+            {
+                "url": ["https://example.com", "https://www.iana.org/domains/reserved"],
+                "goal": "提取页面主题",
+            }
+        )
+        print(result)
+        assert "https://example.com" in result
+        assert "https://www.iana.org/domains/reserved" in result
+        assert "=======" in result
+        assert "could not be accessed" not in result
+
+    def test_visit_real_url_without_scheme(self, tool, monkeypatch):
+        """真实网页读取：URL 自动补全 https"""
+        monkeypatch.setenv("VISIT_SERVER_TIMEOUT", "15")
+        monkeypatch.setenv("VISIT_TOTAL_TIMEOUT", "60")
+
+        result = tool.call({"url": "example.com", "goal": "提取站点用途"})
+        print(result)
+        assert "The useful information in example.com" in result
+        assert "Evidence in page:" in result
+        assert "Summary:" in result
+
+
+class TestPythonInterpreterTool:
+    """PythonInterpreter 工具测试"""
+
+    def test_python_interpreter_success(self, monkeypatch):
+        """?? Python ??????????????"""
+        monkeypatch.setenv("MEMFIN_PYTHON_PATH", sys.executable)
+        tool = PythonInterpreter()
+
+        code = (
+            "print('python tool ok')\n"
+            "print('??????')\n"
+            "print(1 + 2)\n"
+        )
+        result = tool.call({"code": code})
+        assert "stdout:" in result
+        assert "python tool ok" in result
+        assert "??????" in result
+        assert "3" in result
+
+    def test_python_interpreter_missing_code(self, monkeypatch):
+        """缺少 code 参数"""
+        monkeypatch.setenv("MEMFIN_PYTHON_PATH", sys.executable)
+        tool = PythonInterpreter()
+
+        result = tool.call({})
+        assert "missing 'code'" in result
+
+    def test_python_interpreter_invalid_path(self):
+        """解释器路径不存在"""
+        tool = PythonInterpreter(cfg={"python_path": "D:/not_exists_python_env"})
+        result = tool.call({"code": "print('x')"})
+        assert "python executable not found" in result

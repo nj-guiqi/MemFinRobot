@@ -1,0 +1,23 @@
+{
+  "trace_version": "v1",
+  "run_id": "debug_finrobot_one2",
+  "dataset_path": "eval/datasets/_debug_one_dialog.jsonl",
+  "started_at": "2026-02-22T05:27:03.601498Z",
+  "ended_at": "2026-02-22T05:36:55.479532Z",
+  "model_name": "qwen3.5-plus",
+  "workers_dialog": 1,
+  "workers_judge": 1,
+  "request_timeout_sec": 360,
+  "turn_timeout_sec": 1200,
+  "turn_heartbeat_sec": 30,
+  "counters": {
+    "total_dialogs": 1,
+    "valid_dialogs": 1,
+    "skipped_dialogs": 0,
+    "failed_dialogs": 0,
+    "total_turn_pairs": 13
+  },
+  "runner": "finrobot",
+  "agent_config": "Market_Analyst",
+  "metric_errors": {}
+}

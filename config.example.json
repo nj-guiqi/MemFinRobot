@@ -24,5 +24,33 @@
   },
   "compliance": {
     "enable_suitability_check": true
+  },
+  "tools": {
+    "web_search": {
+      "serper_api_key_env": "SERPER_API_KEY",
+      "serper_api_key_env_fallback": "SERPER_KEY_ID",
+      "timeout_seconds_env": "WEB_SEARCH_TIMEOUT",
+      "timeout_seconds_default": 15
+    },
+    "web_visit": {
+      "jina_api_keys_env": "JINA_API_KEYS",
+      "visit_server_timeout_env": "VISIT_SERVER_TIMEOUT",
+      "visit_server_timeout_default": 50,
+      "visit_server_max_retries_env": "VISIT_SERVER_MAX_RETRIES",
+      "visit_server_max_retries_default": 2,
+      "visit_total_timeout_env": "VISIT_TOTAL_TIMEOUT",
+      "visit_total_timeout_default": 900,
+      "webcontent_maxlength_env": "WEBCONTENT_MAXLENGTH",
+      "webcontent_maxlength_default": 150000,
+      "summary_api_key_env": "API_KEY",
+      "summary_base_url_env": "API_BASE",
+      "summary_model_name_env": "SUMMARY_MODEL_NAME"
+    },
+    "python_interpreter": {
+      "python_path_env": "MEMFIN_PYTHON_PATH",
+      "python_path_default": "D:\\AnacondaInstall\\envs\\py3.9-torch",
+      "timeout_seconds_env": "PYTHON_TOOL_TIMEOUT",
+      "timeout_seconds_default": 30
+    }
   }
 }
