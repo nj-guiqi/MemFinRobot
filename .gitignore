@@ -4,11 +4,12 @@ model
 config.json
 __pycache__
 data
-eval/runs
 eval/logs
 eval/datasets
 eval/schema.md
 eval/eval_solution.md
-eval/eval_solution.md
 eval/mem0
-*.cmd
+eval/FinRobot
+eval/langmem
+eval/scripts/eval_run_mem0.cmd
+eval/scripts/eval_run_llm.cmd
