@@ -2,6 +2,7 @@
 
 import logging
 from typing import List, Optional, Union
+from pathlib import Path
 import numpy as np
 
 logger = logging.getLogger(__name__)
@@ -12,7 +13,7 @@ class EmbeddingModel:
     
     def __init__(
         self,
-        model_path: str = r"D:\project\MemFinRobot\models\bge-m3",
+        model_path: str = "",
         device: str = "cuda",
         batch_size: int = 32,
         max_length: int = 512,
@@ -151,8 +152,8 @@ def get_embedding_model(
     global _embedding_model
     
     if _embedding_model is None:
-        if model_path is None:
-            model_path = r"D:\project\MemFinRobot\models\bge-m3"
+        if model_path is None or not str(model_path).strip():
+            model_path = str(Path(__file__).parent.parent.parent / "models" / "bge-m3")
         _embedding_model = EmbeddingModel(model_path=model_path, device=device)
     
     return _embedding_model

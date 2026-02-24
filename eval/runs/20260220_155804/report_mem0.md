@@ -1,4 +1,4 @@
-# MemFinRobot Eval Report
+# mem0 Eval Report
 
 - run_id: `20260220_155804`
 - dataset: `eval/datasets/MemFinConv_24.jsonl`
