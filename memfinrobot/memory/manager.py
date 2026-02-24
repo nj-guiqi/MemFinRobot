@@ -203,7 +203,7 @@ class MemoryManager:
         recall_result.sources = recall_result.sources[:len(items)]
         short_term_context = None
         if include_short_term:
-            recent_history = session_state.get_recent_history(n=3)
+            recent_history = session_state.get_recent_history(n=6)
             if recent_history:
                 short_term_context = "\n".join([
                     f"{turn['role']}: {turn['content']}"

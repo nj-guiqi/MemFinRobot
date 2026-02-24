@@ -3,5 +3,3 @@ python eval/scripts/run_eval.py \
  --config config.json \
  --output-root eval/runs \
  --workers-dialog 4 --workers-judge 4
-
-
