@@ -49,6 +49,48 @@ MEMFIN_SYSTEM_PROMPT = """你是MemFinRobot，一个专业的智能理财顾问�
 3. 当用户画像不完整时，适时询问以完善画像
 4. 引用历史对话时说明来源"""
 
+RISK_FULL_TRIGGER_KEYWORDS = (
+    "基金", "股票", "债券", "etf", "配置", "收益", "回撤", "波动", "资产",
+    "仓位", "买入", "卖出", "投资", "理财", "组合", "年化", "估值", "行情",
+)
+RISK_FACT_QUERY_HINTS = (
+    "什么是", "定义", "概念", "含义", "区别", "科普", "解释", "术语", "英文", "缩写",
+)
+RISK_INTENT_HINTS = (
+    "建议", "配置", "收益", "回撤", "买", "卖", "产品", "组合", "风险",
+)
+
+RISK_CATEGORY_KEYWORDS: Dict[str, List[str]] = {
+    "no_guaranteed_return": ["不保证收益", "不保证本金", "不保本", "收益不确定"],
+    "not_buy_sell_advice": ["不构成买卖建议", "不构成个股买卖建议"],
+    "market_uncertainty": ["市场存在不确定性", "市场不确定性", "不确定性", "市场有风险"],
+}
+
+RISK_PHRASE_VARIANTS: Dict[str, List[str]] = {
+    "no_guaranteed_return": [
+        "收益不确定，不保证收益",
+        "投资结果受市场影响，不保证本金",
+        "任何配置都可能偏离预期，不保本",
+        "过往表现不代表未来，不保证收益",
+    ],
+    "not_buy_sell_advice": [
+        "以上分析不构成买卖建议",
+        "以上内容不构成个股买卖建议",
+        "上述观点不构成买卖建议",
+    ],
+    "market_uncertainty": [
+        "市场存在不确定性",
+        "市场波动可能导致结果偏离预期，存在不确定性",
+        "市场有风险，短期变化具有不确定性",
+    ],
+}
+
+RISK_MINIMAL_BLOCK_VARIANTS = [
+    "以上仅供信息参考，不构成买卖建议，市场存在不确定性，不保证收益。",
+    "以上内容不构成个股买卖建议，市场有风险且存在不确定性，投资不保本。",
+    "仅作交流参考，不构成买卖建议；市场不确定性较高，且不保证收益。",
+]
+
 
 class MemFinFnCallAgent(FnCallAgent):
     """
@@ -142,8 +184,9 @@ class MemFinFnCallAgent(FnCallAgent):
         2. 调用记忆召回获取上下文
         3. 组装增强后的消息
         4. 进入工具调用循环
-        5. 合规审校
-        6. 更新记忆
+        5. 生成后风险表达补足
+        6. 合规审校
+        7. 更新记忆
         
         Args:
             messages: 输入消息列表
@@ -284,7 +327,24 @@ class MemFinFnCallAgent(FnCallAgent):
                 if not used_any_tool:
                     break
         
-        # 6. 合规审校
+        # 6. 生成阶段风险表达补足（在合规审校前）
+        if final_content:
+            enriched_content = self._ensure_risk_expression_block(
+                content=final_content,
+                query=current_query,
+                turn_pair_id=turn_pair_id,
+            )
+            if enriched_content != final_content:
+                final_content = enriched_content
+                if response:
+                    response[-1] = Message(
+                        role=ASSISTANT,
+                        content=final_content,
+                        name=self.name,
+                    )
+                    yield response
+
+        # 7. 合规审校
         if final_content:
             profile = self.memory_manager.get_profile(session_state.user_id)
             
@@ -318,7 +378,7 @@ class MemFinFnCallAgent(FnCallAgent):
                 },
             )
         
-        # 7. 更新记忆
+        # 8. 更新记忆
         if current_query and final_content:
             try:
                 # 更新会话历史
@@ -421,6 +481,86 @@ class MemFinFnCallAgent(FnCallAgent):
             ))
         
         return messages
+
+    def _contains_any(self, text: str, keywords: Any) -> bool:
+        if not text:
+            return False
+        return any(keyword in text for keyword in keywords)
+
+    def _choose_variant(self, variants: List[str], turn_pair_id: int, salt: int = 0) -> str:
+        if not variants:
+            return ""
+        idx = abs(int(turn_pair_id) + salt) % len(variants)
+        return variants[idx]
+
+    def _is_fact_style_query(self, query: str) -> bool:
+        q = (query or "").lower()
+        if not q:
+            return False
+        has_fact_hint = self._contains_any(q, RISK_FACT_QUERY_HINTS)
+        has_intent_hint = self._contains_any(q, RISK_INTENT_HINTS)
+        return has_fact_hint and not has_intent_hint
+
+    def _should_use_full_risk_block(self, query: str, content: str) -> bool:
+        if self._is_fact_style_query(query):
+            return False
+        combined = f"{query}\n{content}".lower()
+        if self._contains_any(combined, RISK_FULL_TRIGGER_KEYWORDS):
+            return True
+        return True
+
+    def _missing_risk_categories(self, content: str) -> List[str]:
+        missing: List[str] = []
+        for category, keywords in RISK_CATEGORY_KEYWORDS.items():
+            if not self._contains_any(content, keywords):
+                missing.append(category)
+        return missing
+
+    def _build_risk_block(
+        self,
+        missing_categories: List[str],
+        turn_pair_id: int,
+        full_mode: bool,
+    ) -> str:
+        if not missing_categories:
+            return ""
+
+        if not full_mode and len(missing_categories) == 3:
+            minimal = self._choose_variant(RISK_MINIMAL_BLOCK_VARIANTS, turn_pair_id)
+            return f"\n\n补充说明：{minimal}"
+
+        segments: List[str] = []
+        for idx, category in enumerate(missing_categories):
+            variant = self._choose_variant(RISK_PHRASE_VARIANTS.get(category, []), turn_pair_id, idx)
+            if variant:
+                segments.append(variant.rstrip("。；; "))
+        if not segments:
+            return ""
+
+        prefix = "补充风险说明：" if full_mode else "补充说明："
+        return "\n\n" + prefix + "；".join(segments) + "。"
+
+    def _ensure_risk_expression_block(
+        self,
+        content: str,
+        query: str,
+        turn_pair_id: int,
+    ) -> str:
+        if not content:
+            return content
+        missing_categories = self._missing_risk_categories(content)
+        if not missing_categories:
+            return content
+
+        full_mode = self._should_use_full_risk_block(query, content)
+        risk_block = self._build_risk_block(
+            missing_categories=missing_categories,
+            turn_pair_id=turn_pair_id,
+            full_mode=full_mode,
+        )
+        if not risk_block:
+            return content
+        return content.rstrip() + risk_block
     
     def handle_turn(
         self,

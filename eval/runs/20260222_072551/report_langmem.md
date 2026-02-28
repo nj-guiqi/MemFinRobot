@@ -1,4 +1,4 @@
-# MemFinRobot Eval Report
+# langMem Eval Report
 
 - run_id: `20260222_072551`
 - dataset: `eval/datasets/MemFinConv_24.jsonl`

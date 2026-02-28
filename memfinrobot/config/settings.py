@@ -10,14 +10,14 @@ import json
 @dataclass
 class LLMConfig:
     """LLM配置"""
-    model: str = "qwen-plus"
+    model: str = "qwen3.5-plus"
     model_type: str = ""
     model_server: str = "dashscope"
     api_key: str = ""
     use_raw_api: bool = False
     temperature: float = 0.7
     max_tokens: int = 2048
-    top_p: float = 0.9
+    top_p: float = 0.7
     
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -35,7 +35,7 @@ class LLMConfig:
 @dataclass
 class EmbeddingConfig:
     """Embedding模型配置"""
-    model_path: str = r"D:\project\MemFinRobot\models\bge-m3"
+    model_path: str = ""
     device: str = "cuda"  # cuda / cpu
     batch_size: int = 32
     max_length: int = 512
@@ -140,6 +140,10 @@ class Settings:
         # 设置默认存储路径
         if not self.memory.storage_path:
             self.memory.storage_path = str(self.data_dir / "memory_store")
+        
+        # 设置默认模型路径（若未显式配置）
+        if not self.embedding.model_path:
+            self.embedding.model_path = str(self.project_root / "models" / "bge-m3")
     
     @classmethod
     def from_file(cls, config_path: str) -> "Settings":

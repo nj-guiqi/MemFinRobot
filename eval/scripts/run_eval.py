@@ -104,6 +104,9 @@ def run_eval_parallel(
     max_workers_judge: int,
     agent_factory: Any,
     observer_factory: Any,
+    turn_timeout_sec: int,
+    turn_heartbeat_sec: int,
+    turn_retries: int,
 ) -> Dict[str, Any]:
     """对话内串行、对话间并发。"""
     _ = max_workers_judge  # 当前实现采用启发式解释评分，未调用外部 Judge
@@ -121,6 +124,9 @@ def run_eval_parallel(
             "dataset_path": dataset_path,
             "dialogs": len(dialogs),
             "resumed_completed_dialogs": len(completed_dialog_ids),
+            "turn_timeout_sec": turn_timeout_sec,
+            "turn_heartbeat_sec": turn_heartbeat_sec,
+            "turn_retries": turn_retries,
         },
     )
 
@@ -136,6 +142,12 @@ def run_eval_parallel(
                 )
                 continue
             progress.log("dialog_started", {"dialog_id": dialog_id, "dataset_index": idx})
+            progress_callback = (
+                lambda event, payload, _dialog_id=dialog_id, _idx=idx: progress.log(
+                    event,
+                    {"dialog_id": _dialog_id, "dataset_index": _idx, **(payload or {})},
+                )
+            )
             futures.append(
                 executor.submit(
                     evaluate_dialog_task,
@@ -144,6 +156,10 @@ def run_eval_parallel(
                     run_id,
                     agent_factory,
                     observer_factory,
+                    turn_timeout_sec,
+                    turn_heartbeat_sec,
+                    turn_retries,
+                    progress_callback,
                 )
             )
 
@@ -204,6 +220,9 @@ def main() -> None:
     parser.add_argument("--run-id", type=str, default=None, help="resume with existing run_id")
     parser.add_argument("--workers-dialog", type=int, default=max(1, min(4, os.cpu_count() or 1)))
     parser.add_argument("--workers-judge", type=int, default=1)
+    parser.add_argument("--turn-timeout-sec", type=int, default=900)
+    parser.add_argument("--turn-heartbeat-sec", type=int, default=300)
+    parser.add_argument("--turn-retries", type=int, default=2)
     args = parser.parse_args()
 
     run_id = args.run_id or datetime.utcnow().strftime("%Y%m%d_%H%M%S")
@@ -222,6 +241,9 @@ def main() -> None:
         max_workers_judge=args.workers_judge,
         agent_factory=agent_factory,
         observer_factory=EvalTurnObserver,
+        turn_timeout_sec=args.turn_timeout_sec,
+        turn_heartbeat_sec=args.turn_heartbeat_sec,
+        turn_retries=args.turn_retries,
     )
     ended_at = datetime.utcnow().isoformat() + "Z"
 
@@ -240,6 +262,9 @@ def main() -> None:
         "model_name": base_settings.llm.model,
         "workers_dialog": args.workers_dialog,
         "workers_judge": args.workers_judge,
+        "turn_timeout_sec": args.turn_timeout_sec,
+        "turn_heartbeat_sec": args.turn_heartbeat_sec,
+        "turn_retries": args.turn_retries,
         "counters": result["counters"],
     }
 
@@ -263,4 +288,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -2,13 +2,22 @@
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 import copy
 import time
 from threading import Lock
-from typing import Any, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional
 
 from eval.metrics.contracts import DialogTrace, TurnStatus, TurnTrace
 from eval.metrics.preprocess import align_turn_pairs, classify_dialog_validity, normalize_dialog
+
+RETRYABLE_ERROR_KEYWORDS = (
+    "Request timed out.",
+    "Connection error.",
+    "incomplete chunked read",
+)
+RETRY_BACKOFF_SEC = 1.0
+ProgressCallback = Optional[Callable[[str, Dict[str, Any]], None]]
 
 
 class EvalTurnObserver:
@@ -105,6 +114,22 @@ def build_turn_trace(
     }
 
 
+def _emit_progress(callback: ProgressCallback, event: str, payload: Dict[str, Any]) -> None:
+    if not callback:
+        return
+    try:
+        callback(event, payload)
+    except Exception:
+        pass
+
+
+def _is_retryable_error(error: Optional[str]) -> bool:
+    if not error:
+        return False
+    lowered = error.lower()
+    return any(keyword.lower() in lowered for keyword in RETRYABLE_ERROR_KEYWORDS)
+
+
 def run_dialog_replay(
     dialog_obj: Dict[str, Any],
     run_id: str,
@@ -112,9 +137,11 @@ def run_dialog_replay(
     agent_factory: Any,
     observer_factory: Any,
     timeout_sec: int = 120,
+    turn_heartbeat_sec: int = 20,
+    turn_retries: int = 0,
+    progress_callback: ProgressCallback = None,
 ) -> DialogTrace:
     """单对话回放，产出 DialogTrace。"""
-    _ = timeout_sec
     dialog_obj = normalize_dialog(dialog_obj)
     dialog_id = str(dialog_obj.get("dialog_id") or f"dialog_{dataset_index}")
     valid_dialog, skip_reason = classify_dialog_validity(dialog_obj)
@@ -152,20 +179,108 @@ def run_dialog_replay(
 
     for pair in turn_pairs:
         turn_id = int(pair["turn_pair_id"])
-        start_ts = time.perf_counter()
         pred_text = ""
         status: TurnStatus = "ok"
         error: Optional[str] = None
-        try:
-            pred_text = agent.handle_turn(
+
+        attempts_used = 0
+        latency_ms = 0.0
+        max_attempts = max(1, int(turn_retries) + 1)
+
+        for attempt in range(1, max_attempts + 1):
+            attempts_used = attempt
+            start_ts = time.perf_counter()
+
+            _emit_progress(
+                progress_callback,
+                "turn_started",
+                {"dialog_id": dialog_id, "turn_pair_id": turn_id, "attempt": attempt},
+            )
+
+            turn_executor = ThreadPoolExecutor(max_workers=1)
+            future = turn_executor.submit(
+                agent.handle_turn,
                 user_message=pair["user_text"],
                 session_id=trace["session_id"],
                 user_id=trace["user_id"],
             )
-        except Exception as e:
-            status = "error"
-            error = str(e)
-        latency_ms = (time.perf_counter() - start_ts) * 1000
+            next_heartbeat_sec = float(max(1, turn_heartbeat_sec))
+
+            pred_text = ""
+            status = "ok"
+            error = None
+            try:
+                while True:
+                    elapsed_sec = time.perf_counter() - start_ts
+                    if timeout_sec > 0 and elapsed_sec >= float(timeout_sec):
+                        status = "error"
+                        error = f"turn_timeout: exceeded {timeout_sec}s"
+                        future.cancel()
+                        _emit_progress(
+                            progress_callback,
+                            "turn_timeout",
+                            {
+                                "dialog_id": dialog_id,
+                                "turn_pair_id": turn_id,
+                                "attempt": attempt,
+                                "elapsed_sec": round(elapsed_sec, 3),
+                                "timeout_sec": timeout_sec,
+                            },
+                        )
+                        break
+
+                    wait_timeout = 1.0
+                    if timeout_sec > 0:
+                        wait_timeout = min(wait_timeout, float(timeout_sec) - elapsed_sec)
+
+                    try:
+                        pred_text = future.result(timeout=max(wait_timeout, 0.1))
+                        break
+                    except FutureTimeoutError:
+                        elapsed_sec = time.perf_counter() - start_ts
+                        if turn_heartbeat_sec > 0 and elapsed_sec >= next_heartbeat_sec:
+                            _emit_progress(
+                                progress_callback,
+                                "turn_heartbeat",
+                                {
+                                    "dialog_id": dialog_id,
+                                    "turn_pair_id": turn_id,
+                                    "attempt": attempt,
+                                    "elapsed_sec": round(elapsed_sec, 3),
+                                },
+                            )
+                            next_heartbeat_sec += float(max(1, turn_heartbeat_sec))
+                        continue
+                    except Exception as e:
+                        status = "error"
+                        error = str(e)
+                        break
+            finally:
+                turn_executor.shutdown(wait=False, cancel_futures=True)
+
+            latency_ms = (time.perf_counter() - start_ts) * 1000
+            should_retry = (
+                status == "error"
+                and attempt < max_attempts
+                and _is_retryable_error(error)
+            )
+            if not should_retry:
+                break
+
+            _emit_progress(
+                progress_callback,
+                "turn_retry",
+                {
+                    "dialog_id": dialog_id,
+                    "turn_pair_id": turn_id,
+                    "attempt": attempt,
+                    "next_attempt": attempt + 1,
+                    "max_attempts": max_attempts,
+                    "error": error,
+                },
+            )
+            time.sleep(RETRY_BACKOFF_SEC)
+
         observed = observer.get_turn_payload(turn_id)
         if observed.get("turn_end", {}).get("latency_ms"):
             latency_ms = float(observed["turn_end"]["latency_ms"])
@@ -179,6 +294,18 @@ def run_dialog_replay(
                 error=error,
             )
         )
+        _emit_progress(
+            progress_callback,
+            "turn_done",
+            {
+                "dialog_id": dialog_id,
+                "turn_pair_id": turn_id,
+                "attempts_used": attempts_used,
+                "turn_status": status,
+                "latency_ms": round(latency_ms, 3),
+                "error": error,
+            },
+        )
 
     if any(t.get("turn_status") != "ok" for t in trace["turns"]):
         trace["dialog_status"] = "partial"
@@ -191,6 +318,10 @@ def evaluate_dialog_task(
     run_id: str,
     agent_factory: Any,
     observer_factory: Any,
+    timeout_sec: int = 120,
+    turn_heartbeat_sec: int = 20,
+    turn_retries: int = 0,
+    progress_callback: ProgressCallback = None,
 ) -> DialogTrace:
     """线程池任务函数。"""
     return run_dialog_replay(
@@ -199,5 +330,8 @@ def evaluate_dialog_task(
         dataset_index=dataset_index,
         agent_factory=agent_factory,
         observer_factory=observer_factory,
+        timeout_sec=timeout_sec,
+        turn_heartbeat_sec=turn_heartbeat_sec,
+        turn_retries=turn_retries,
+        progress_callback=progress_callback,
     )
-
