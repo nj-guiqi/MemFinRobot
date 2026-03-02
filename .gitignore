@@ -5,7 +5,7 @@ config.json
 __pycache__
 data
 eval/logs
-eval/datasets
+# eval/datasets
 eval/schema.md
 eval/eval_solution.md
 eval/mem0
