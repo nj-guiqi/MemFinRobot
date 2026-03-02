@@ -1,0 +1,20 @@
+{
+  "trace_version": "v1",
+  "run_id": "20260224_085203",
+  "dataset_path": "eval/datasets/MemFinConv_24.jsonl",
+  "started_at": "2026-02-24T08:52:03.960307Z",
+  "ended_at": "2026-02-24T15:17:19.050794Z",
+  "model_name": "qwen3.5-plus",
+  "workers_dialog": 4,
+  "workers_judge": 4,
+  "turn_timeout_sec": 900,
+  "turn_heartbeat_sec": 300,
+  "turn_retries": 2,
+  "counters": {
+    "total_dialogs": 24,
+    "valid_dialogs": 24,
+    "skipped_dialogs": 0,
+    "failed_dialogs": 0,
+    "total_turn_pairs": 316
+  }
+}

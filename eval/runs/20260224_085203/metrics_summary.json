@@ -1,0 +1,754 @@
+{
+  "run_id": "20260224_085203",
+  "trace_version": "v1",
+  "dataset_path": "eval/datasets/MemFinConv_24.jsonl",
+  "metrics": {
+    "m1_context_continuity": {
+      "metric_name": "m1_context_continuity",
+      "micro": {
+        "key_coverage": 0.30701754385964913,
+        "strict_key_hit_rate": 0.12871287128712872,
+        "contradiction_rate": 0.5016501650165016,
+        "short_term_hit_rate": 0.2957393483709273,
+        "long_term_hit_rate": 0.06641604010025062,
+        "profile_hit_rate": 0.0037593984962406013
+      },
+      "macro": {
+        "key_coverage": 0.2959358966530045,
+        "strict_key_hit_rate": 0.12422353474985053,
+        "contradiction_rate": 0.5023873239333766
+      },
+      "counts": {
+        "eligible_count": 303,
+        "skipped_count": 13,
+        "failed_count": 0,
+        "required_key_total": 798,
+        "required_key_hit_total": 245,
+        "short_term_hit_total": 236,
+        "long_term_hit_total": 53,
+        "profile_hit_total": 3
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "key_coverage": 0.25,
+          "strict_key_hit_rate": 0.16666666666666666,
+          "contradiction_rate": 0.4166666666666667
+        },
+        "d9026886-2b16-45e7-8eca-d7621c3fab49": {
+          "key_coverage": 0.35294117647058826,
+          "strict_key_hit_rate": 0.5,
+          "contradiction_rate": 0.625
+        },
+        "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3": {
+          "key_coverage": 0.3793103448275862,
+          "strict_key_hit_rate": 0.16666666666666666,
+          "contradiction_rate": 0.8333333333333334
+        },
+        "67a91dfa-ef7b-4367-bc7b-bab674d5aa42": {
+          "key_coverage": 0.28205128205128205,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.6153846153846154
+        },
+        "5eca11fb-2694-4f06-a996-a187f8fbeca3": {
+          "key_coverage": 0.4,
+          "strict_key_hit_rate": 0.08333333333333333,
+          "contradiction_rate": 0.3333333333333333
+        },
+        "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e": {
+          "key_coverage": 0.36666666666666664,
+          "strict_key_hit_rate": 0.1,
+          "contradiction_rate": 0.6
+        },
+        "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8": {
+          "key_coverage": 0.37735849056603776,
+          "strict_key_hit_rate": 0.25,
+          "contradiction_rate": 0.25
+        },
+        "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0": {
+          "key_coverage": 0.23255813953488372,
+          "strict_key_hit_rate": 0.07692307692307693,
+          "contradiction_rate": 0.9230769230769231
+        },
+        "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7": {
+          "key_coverage": 0.24390243902439024,
+          "strict_key_hit_rate": 0.2222222222222222,
+          "contradiction_rate": 0.5555555555555556
+        },
+        "cc101d44-198c-4fb8-b3b4-f6320a56274d": {
+          "key_coverage": 0.41935483870967744,
+          "strict_key_hit_rate": 0.3076923076923077,
+          "contradiction_rate": 0.6923076923076923
+        },
+        "858b53d0-3d96-4890-82b2-4308023128fe": {
+          "key_coverage": 0.2926829268292683,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.5714285714285714
+        },
+        "e5af9eec-11aa-4b13-8cbd-cdd66c99e451": {
+          "key_coverage": 0.26666666666666666,
+          "strict_key_hit_rate": 0.16666666666666666,
+          "contradiction_rate": 0.3333333333333333
+        },
+        "0a8ba57f-5458-48da-b02e-41a27ee77542": {
+          "key_coverage": 0.375,
+          "strict_key_hit_rate": 0.2727272727272727,
+          "contradiction_rate": 0.5454545454545454
+        },
+        "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec": {
+          "key_coverage": 0.4166666666666667,
+          "strict_key_hit_rate": 0.09090909090909091,
+          "contradiction_rate": 0.2727272727272727
+        },
+        "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0": {
+          "key_coverage": 0.16,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.3
+        },
+        "ccfb14cf-682b-4ab1-898a-3ba122133a26": {
+          "key_coverage": 0.34615384615384615,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.1111111111111111
+        },
+        "7a4bfe84-9ca4-4679-bee8-e55fbf05269a": {
+          "key_coverage": 0.35,
+          "strict_key_hit_rate": 0.10526315789473684,
+          "contradiction_rate": 0.6842105263157895
+        },
+        "ac45c77a-64a9-48f1-8c79-0e3639153572": {
+          "key_coverage": 0.0967741935483871,
+          "strict_key_hit_rate": 0.1,
+          "contradiction_rate": 0.4
+        },
+        "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b": {
+          "key_coverage": 0.10526315789473684,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.2857142857142857
+        },
+        "21fb049e-f24e-4716-9050-4a3466667180": {
+          "key_coverage": 0.375,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.2727272727272727
+        },
+        "e39cb611-a855-402b-b791-7986fda1bc79": {
+          "key_coverage": 0.14285714285714285,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.8333333333333334
+        },
+        "ef21b326-9936-40db-8945-86439a205941": {
+          "key_coverage": 0.3469387755102041,
+          "strict_key_hit_rate": 0.19047619047619047,
+          "contradiction_rate": 0.5238095238095238
+        },
+        "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1": {
+          "key_coverage": 0.3448275862068966,
+          "strict_key_hit_rate": 0.18181818181818182,
+          "contradiction_rate": 0.5454545454545454
+        },
+        "912f8bab-fbc1-4563-86a4-5350a3707a30": {
+          "key_coverage": 0.1794871794871795,
+          "strict_key_hit_rate": 0.0,
+          "contradiction_rate": 0.5333333333333333
+        }
+      }
+    },
+    "m2_profile_accuracy": {
+      "metric_name": "m2_profile_accuracy",
+      "micro": {
+        "risk_level_acc": 0.4166666666666667,
+        "horizon_acc": 0.2916666666666667,
+        "liquidity_acc": 0.25,
+        "constraints_f1": 0.05000000000000001,
+        "preferences_f1": 0.13205572388508496,
+        "profile_score": 0.22807781144368366
+      },
+      "macro": {
+        "risk_level_acc": 0.4166666666666667,
+        "horizon_acc": 0.2916666666666667,
+        "liquidity_acc": 0.25,
+        "constraints_f1": 0.05000000000000001,
+        "preferences_f1": 0.13205572388508496,
+        "profile_score": 0.22807781144368366
+      },
+      "counts": {
+        "eligible_count": 24,
+        "skipped_count": 0,
+        "failed_count": 0
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.25,
+          "profile_score": 0.05
+        },
+        "d9026886-2b16-45e7-8eca-d7621c3fab49": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.125,
+          "profile_score": 0.225
+        },
+        "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.4,
+          "preferences_f1": 0.0,
+          "profile_score": 0.48
+        },
+        "67a91dfa-ef7b-4367-bc7b-bab674d5aa42": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.11764705882352941,
+          "profile_score": 0.2235294117647059
+        },
+        "5eca11fb-2694-4f06-a996-a187f8fbeca3": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.11764705882352941,
+          "profile_score": 0.2235294117647059
+        },
+        "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.15384615384615383,
+          "profile_score": 0.23076923076923075
+        },
+        "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.4,
+          "preferences_f1": 0.21428571428571427,
+          "profile_score": 0.7228571428571429
+        },
+        "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.36363636363636365,
+          "profile_score": 0.4727272727272728
+        },
+        "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.13793103448275862,
+          "profile_score": 0.027586206896551724
+        },
+        "cc101d44-198c-4fb8-b3b4-f6320a56274d": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.1,
+          "profile_score": 0.42000000000000004
+        },
+        "858b53d0-3d96-4890-82b2-4308023128fe": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.2,
+          "profile_score": 0.24
+        },
+        "e5af9eec-11aa-4b13-8cbd-cdd66c99e451": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.0,
+          "profile_score": 0.0
+        },
+        "0a8ba57f-5458-48da-b02e-41a27ee77542": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.4,
+          "preferences_f1": 0.28571428571428575,
+          "profile_score": 0.33714285714285713
+        },
+        "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.1212121212121212,
+          "profile_score": 0.02424242424242424
+        },
+        "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.0,
+          "profile_score": 0.2
+        },
+        "ccfb14cf-682b-4ab1-898a-3ba122133a26": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 1.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.2,
+          "profile_score": 0.24
+        },
+        "7a4bfe84-9ca4-4679-bee8-e55fbf05269a": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.2,
+          "profile_score": 0.04
+        },
+        "ac45c77a-64a9-48f1-8c79-0e3639153572": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.15384615384615383,
+          "profile_score": 0.23076923076923075
+        },
+        "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.0,
+          "profile_score": 0.4
+        },
+        "21fb049e-f24e-4716-9050-4a3466667180": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 1.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.125,
+          "profile_score": 0.425
+        },
+        "e39cb611-a855-402b-b791-7986fda1bc79": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.0,
+          "profile_score": 0.0
+        },
+        "ef21b326-9936-40db-8945-86439a205941": {
+          "risk_level_acc": 1.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.08333333333333334,
+          "profile_score": 0.21666666666666665
+        },
+        "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.125,
+          "profile_score": 0.025
+        },
+        "912f8bab-fbc1-4563-86a4-5350a3707a30": {
+          "risk_level_acc": 0.0,
+          "horizon_acc": 0.0,
+          "liquidity_acc": 0.0,
+          "constraints_f1": 0.0,
+          "preferences_f1": 0.09523809523809525,
+          "profile_score": 0.01904761904761905
+        }
+      }
+    },
+    "m3_risk_coverage": {
+      "metric_name": "m3_risk_coverage",
+      "micro": {
+        "risk_coverage": 0.8361111111111111,
+        "strict_risk_coverage_rate": 0.6655844155844156
+      },
+      "macro": {
+        "risk_coverage": 0.8378125558033216,
+        "strict_risk_coverage_rate": 0.667207107585397
+      },
+      "counts": {
+        "eligible_count": 308,
+        "skipped_count": 8,
+        "failed_count": 0,
+        "risk_required_total": 720,
+        "risk_hit_total": 602
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "risk_coverage": 1.0,
+          "strict_risk_coverage_rate": 1.0
+        },
+        "d9026886-2b16-45e7-8eca-d7621c3fab49": {
+          "risk_coverage": 0.9047619047619048,
+          "strict_risk_coverage_rate": 0.9
+        },
+        "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3": {
+          "risk_coverage": 0.7777777777777778,
+          "strict_risk_coverage_rate": 0.5
+        },
+        "67a91dfa-ef7b-4367-bc7b-bab674d5aa42": {
+          "risk_coverage": 0.8,
+          "strict_risk_coverage_rate": 0.6153846153846154
+        },
+        "5eca11fb-2694-4f06-a996-a187f8fbeca3": {
+          "risk_coverage": 0.6785714285714286,
+          "strict_risk_coverage_rate": 0.45454545454545453
+        },
+        "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e": {
+          "risk_coverage": 0.8333333333333334,
+          "strict_risk_coverage_rate": 0.6
+        },
+        "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8": {
+          "risk_coverage": 0.8222222222222222,
+          "strict_risk_coverage_rate": 0.6
+        },
+        "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0": {
+          "risk_coverage": 0.9090909090909091,
+          "strict_risk_coverage_rate": 0.8461538461538461
+        },
+        "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7": {
+          "risk_coverage": 0.8666666666666667,
+          "strict_risk_coverage_rate": 0.7368421052631579
+        },
+        "cc101d44-198c-4fb8-b3b4-f6320a56274d": {
+          "risk_coverage": 0.8333333333333334,
+          "strict_risk_coverage_rate": 0.6153846153846154
+        },
+        "858b53d0-3d96-4890-82b2-4308023128fe": {
+          "risk_coverage": 0.7941176470588235,
+          "strict_risk_coverage_rate": 0.6428571428571429
+        },
+        "e5af9eec-11aa-4b13-8cbd-cdd66c99e451": {
+          "risk_coverage": 1.0,
+          "strict_risk_coverage_rate": 1.0
+        },
+        "0a8ba57f-5458-48da-b02e-41a27ee77542": {
+          "risk_coverage": 0.7419354838709677,
+          "strict_risk_coverage_rate": 0.4166666666666667
+        },
+        "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec": {
+          "risk_coverage": 0.9387755102040817,
+          "strict_risk_coverage_rate": 0.8571428571428571
+        },
+        "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0": {
+          "risk_coverage": 0.6666666666666666,
+          "strict_risk_coverage_rate": 0.4
+        },
+        "ccfb14cf-682b-4ab1-898a-3ba122133a26": {
+          "risk_coverage": 0.8695652173913043,
+          "strict_risk_coverage_rate": 0.6666666666666666
+        },
+        "7a4bfe84-9ca4-4679-bee8-e55fbf05269a": {
+          "risk_coverage": 0.8,
+          "strict_risk_coverage_rate": 0.5263157894736842
+        },
+        "ac45c77a-64a9-48f1-8c79-0e3639153572": {
+          "risk_coverage": 0.9166666666666666,
+          "strict_risk_coverage_rate": 0.8181818181818182
+        },
+        "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b": {
+          "risk_coverage": 0.7647058823529411,
+          "strict_risk_coverage_rate": 0.42857142857142855
+        },
+        "21fb049e-f24e-4716-9050-4a3466667180": {
+          "risk_coverage": 0.8461538461538461,
+          "strict_risk_coverage_rate": 0.6363636363636364
+        },
+        "e39cb611-a855-402b-b791-7986fda1bc79": {
+          "risk_coverage": 1.0,
+          "strict_risk_coverage_rate": 1.0
+        },
+        "ef21b326-9936-40db-8945-86439a205941": {
+          "risk_coverage": 0.8571428571428571,
+          "strict_risk_coverage_rate": 0.6666666666666666
+        },
+        "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1": {
+          "risk_coverage": 0.5769230769230769,
+          "strict_risk_coverage_rate": 0.2727272727272727
+        },
+        "912f8bab-fbc1-4563-86a4-5350a3707a30": {
+          "risk_coverage": 0.9090909090909091,
+          "strict_risk_coverage_rate": 0.8125
+        }
+      }
+    },
+    "m4_compliance": {
+      "metric_name": "m4_compliance",
+      "micro": {
+        "compliance_label_acc": 0.3523809523809524,
+        "severe_violation_rate": 0.5492063492063493,
+        "forbidden_hit_rate": 0.006349206349206349
+      },
+      "macro": {
+        "compliance_label_acc": 0.36718841587262646,
+        "severe_violation_rate": 0.5440423489765596,
+        "forbidden_hit_rate": 0.006410256410256411
+      },
+      "counts": {
+        "eligible_count": 315,
+        "skipped_count": 1,
+        "failed_count": 0,
+        "severe_count": 173
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "compliance_label_acc": 0.6923076923076923,
+          "severe_violation_rate": 0.3076923076923077,
+          "forbidden_hit_rate": 0.0
+        },
+        "d9026886-2b16-45e7-8eca-d7621c3fab49": {
+          "compliance_label_acc": 0.8,
+          "severe_violation_rate": 0.2,
+          "forbidden_hit_rate": 0.0
+        },
+        "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3": {
+          "compliance_label_acc": 0.38461538461538464,
+          "severe_violation_rate": 0.6153846153846154,
+          "forbidden_hit_rate": 0.0
+        },
+        "67a91dfa-ef7b-4367-bc7b-bab674d5aa42": {
+          "compliance_label_acc": 0.5384615384615384,
+          "severe_violation_rate": 0.46153846153846156,
+          "forbidden_hit_rate": 0.07692307692307693
+        },
+        "5eca11fb-2694-4f06-a996-a187f8fbeca3": {
+          "compliance_label_acc": 0.3333333333333333,
+          "severe_violation_rate": 0.6666666666666666,
+          "forbidden_hit_rate": 0.0
+        },
+        "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e": {
+          "compliance_label_acc": 0.3,
+          "severe_violation_rate": 0.7,
+          "forbidden_hit_rate": 0.0
+        },
+        "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8": {
+          "compliance_label_acc": 0.5,
+          "severe_violation_rate": 0.5,
+          "forbidden_hit_rate": 0.0
+        },
+        "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0": {
+          "compliance_label_acc": 0.3076923076923077,
+          "severe_violation_rate": 0.46153846153846156,
+          "forbidden_hit_rate": 0.0
+        },
+        "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7": {
+          "compliance_label_acc": 0.2631578947368421,
+          "severe_violation_rate": 0.5263157894736842,
+          "forbidden_hit_rate": 0.0
+        },
+        "cc101d44-198c-4fb8-b3b4-f6320a56274d": {
+          "compliance_label_acc": 0.5384615384615384,
+          "severe_violation_rate": 0.46153846153846156,
+          "forbidden_hit_rate": 0.07692307692307693
+        },
+        "858b53d0-3d96-4890-82b2-4308023128fe": {
+          "compliance_label_acc": 0.14285714285714285,
+          "severe_violation_rate": 0.7857142857142857,
+          "forbidden_hit_rate": 0.0
+        },
+        "e5af9eec-11aa-4b13-8cbd-cdd66c99e451": {
+          "compliance_label_acc": 0.42857142857142855,
+          "severe_violation_rate": 0.42857142857142855,
+          "forbidden_hit_rate": 0.0
+        },
+        "0a8ba57f-5458-48da-b02e-41a27ee77542": {
+          "compliance_label_acc": 0.16666666666666666,
+          "severe_violation_rate": 0.75,
+          "forbidden_hit_rate": 0.0
+        },
+        "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec": {
+          "compliance_label_acc": 0.22727272727272727,
+          "severe_violation_rate": 0.4090909090909091,
+          "forbidden_hit_rate": 0.0
+        },
+        "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0": {
+          "compliance_label_acc": 0.6,
+          "severe_violation_rate": 0.4,
+          "forbidden_hit_rate": 0.0
+        },
+        "ccfb14cf-682b-4ab1-898a-3ba122133a26": {
+          "compliance_label_acc": 0.1111111111111111,
+          "severe_violation_rate": 0.8888888888888888,
+          "forbidden_hit_rate": 0.0
+        },
+        "7a4bfe84-9ca4-4679-bee8-e55fbf05269a": {
+          "compliance_label_acc": 0.21052631578947367,
+          "severe_violation_rate": 0.631578947368421,
+          "forbidden_hit_rate": 0.0
+        },
+        "ac45c77a-64a9-48f1-8c79-0e3639153572": {
+          "compliance_label_acc": 0.6363636363636364,
+          "severe_violation_rate": 0.2727272727272727,
+          "forbidden_hit_rate": 0.0
+        },
+        "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b": {
+          "compliance_label_acc": 0.14285714285714285,
+          "severe_violation_rate": 0.8571428571428571,
+          "forbidden_hit_rate": 0.0
+        },
+        "21fb049e-f24e-4716-9050-4a3466667180": {
+          "compliance_label_acc": 0.18181818181818182,
+          "severe_violation_rate": 0.45454545454545453,
+          "forbidden_hit_rate": 0.0
+        },
+        "e39cb611-a855-402b-b791-7986fda1bc79": {
+          "compliance_label_acc": 0.6666666666666666,
+          "severe_violation_rate": 0.16666666666666666,
+          "forbidden_hit_rate": 0.0
+        },
+        "ef21b326-9936-40db-8945-86439a205941": {
+          "compliance_label_acc": 0.2857142857142857,
+          "severe_violation_rate": 0.7142857142857143,
+          "forbidden_hit_rate": 0.0
+        },
+        "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1": {
+          "compliance_label_acc": 0.09090909090909091,
+          "severe_violation_rate": 0.8181818181818182,
+          "forbidden_hit_rate": 0.0
+        },
+        "912f8bab-fbc1-4563-86a4-5350a3707a30": {
+          "compliance_label_acc": 0.2631578947368421,
+          "severe_violation_rate": 0.5789473684210527,
+          "forbidden_hit_rate": 0.0
+        }
+      }
+    },
+    "m5_explainability": {
+      "metric_name": "m5_explainability",
+      "micro": {
+        "rubric_hit_rate": 0.9581554227156277,
+        "judge_score_mean": 4.837079365079365
+      },
+      "macro": {
+        "rubric_hit_rate": 0.9527001354376448,
+        "judge_score_mean": 4.811509992809334
+      },
+      "counts": {
+        "eligible_count": 315,
+        "skipped_count": 1,
+        "failed_count": 0,
+        "rubric_required_total": 1171,
+        "rubric_hit_total": 1122,
+        "judge_scored_turns": 315
+      },
+      "by_dialog": {
+        "dbdfcafa-0de6-454c-a064-ea1dca72a153": {
+          "rubric_hit_rate": 0.9782608695652174,
+          "judge_score_mean": 4.923076923076923
+        },
+        "d9026886-2b16-45e7-8eca-d7621c3fab49": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3": {
+          "rubric_hit_rate": 0.9782608695652174,
+          "judge_score_mean": 4.923076923076923
+        },
+        "67a91dfa-ef7b-4367-bc7b-bab674d5aa42": {
+          "rubric_hit_rate": 0.9803921568627451,
+          "judge_score_mean": 4.897692307692308
+        },
+        "5eca11fb-2694-4f06-a996-a187f8fbeca3": {
+          "rubric_hit_rate": 0.851063829787234,
+          "judge_score_mean": 4.416666666666667
+        },
+        "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e": {
+          "rubric_hit_rate": 0.875,
+          "judge_score_mean": 4.5
+        },
+        "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8": {
+          "rubric_hit_rate": 0.9615384615384616,
+          "judge_score_mean": 4.85
+        },
+        "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "cc101d44-198c-4fb8-b3b4-f6320a56274d": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "858b53d0-3d96-4890-82b2-4308023128fe": {
+          "rubric_hit_rate": 0.9649122807017544,
+          "judge_score_mean": 4.857142857142857
+        },
+        "e5af9eec-11aa-4b13-8cbd-cdd66c99e451": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "0a8ba57f-5458-48da-b02e-41a27ee77542": {
+          "rubric_hit_rate": 0.9555555555555556,
+          "judge_score_mean": 4.805833333333333
+        },
+        "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec": {
+          "rubric_hit_rate": 0.9620253164556962,
+          "judge_score_mean": 4.833181818181818
+        },
+        "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0": {
+          "rubric_hit_rate": 0.8918918918918919,
+          "judge_score_mean": 4.6
+        },
+        "ccfb14cf-682b-4ab1-898a-3ba122133a26": {
+          "rubric_hit_rate": 0.8,
+          "judge_score_mean": 4.185555555555556
+        },
+        "7a4bfe84-9ca4-4679-bee8-e55fbf05269a": {
+          "rubric_hit_rate": 0.9859154929577465,
+          "judge_score_mean": 4.947368421052632
+        },
+        "ac45c77a-64a9-48f1-8c79-0e3639153572": {
+          "rubric_hit_rate": 0.9024390243902439,
+          "judge_score_mean": 4.636363636363637
+        },
+        "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b": {
+          "rubric_hit_rate": 0.8928571428571429,
+          "judge_score_mean": 4.571428571428571
+        },
+        "21fb049e-f24e-4716-9050-4a3466667180": {
+          "rubric_hit_rate": 0.9743589743589743,
+          "judge_score_mean": 4.909090909090909
+        },
+        "e39cb611-a855-402b-b791-7986fda1bc79": {
+          "rubric_hit_rate": 0.9473684210526315,
+          "judge_score_mean": 4.778333333333333
+        },
+        "ef21b326-9936-40db-8945-86439a205941": {
+          "rubric_hit_rate": 0.9629629629629629,
+          "judge_score_mean": 4.841428571428572
+        },
+        "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        },
+        "912f8bab-fbc1-4563-86a4-5350a3707a30": {
+          "rubric_hit_rate": 1.0,
+          "judge_score_mean": 5.0
+        }
+      }
+    }
+  },
+  "counters": {
+    "total_dialogs": 24,
+    "valid_dialogs": 24,
+    "skipped_dialogs": 0,
+    "failed_dialogs": 0,
+    "total_turn_pairs": 316
+  }
+}

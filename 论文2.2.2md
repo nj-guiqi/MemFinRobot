@@ -1,0 +1,72 @@
+## 2.2.2 现有记忆机制的研究（精炼版）
+
+受上下文窗口限制与长期任务需求驱动，现有智能体记忆机制大体从“**模型内部记忆**”走向“**外部可管理记忆**”，并逐步形成“**写入—组织—检索—更新/遗忘**”的系统化设计。综合相关研究，可将现有记忆机制归纳为以下四类：可微外部记忆、长程上下文/工作记忆扩展、检索增强（非参数记忆），以及面向 LLM 智能体的长期记忆管理与评测/安全。
+
+### （1）可微外部记忆：端到端读写的“显式存储”
+
+早期神经记忆研究强调将记忆从参数中剥离，构建可读写的外部存储，并通过注意力/寻址实现端到端训练。典型代表包括 End-To-End Memory Networks（多跳读记忆以完成推理）[1]，以及将记忆槽拆解为 key/value 的 Key-Value Memory Networks（提升寻址与读出解耦能力，适用于文档阅读式 QA）[2]。更进一步，Differentiable Neural Computer（DNC）将外部记忆与可学习读写控制结合，展示了“像计算机 RAM 一样的可操作记忆”能力[3]。该路线的核心优势是机制清晰、读写过程显式；但在大规模复杂交互场景中，端到端稳定训练、容量扩展与工程代价仍是主要挑战。
+
+### （2）长程上下文与工作记忆扩展：把“短期保持”做得更长
+
+第二类研究更接近“工作记忆扩容”：通过结构性机制延长模型可利用的上下文依赖范围。Transformer-XL 通过段级递归与位置编码改造，使模型能够跨段保留历史信息并缓解上下文碎片化[4]。这类方法主要提升“短期/工作记忆”的可用长度，但其记忆通常仍表现为**被动缓存**：缺乏对长期信息的选择性写入、跨会话更新与冲突消解，因此难以独立支撑长期个性化与长期一致性。
+
+### （3）检索增强与非参数记忆：用外部知识库/向量索引扩展容量
+
+随着检索技术成熟，RAG（Retrieval-Augmented Generation）范式成为当前最常见的“外部语义记忆”方案：模型在生成前从外部语料库检索相关片段并作为上下文条件，从而实现可扩展、可更新的知识访问。REALM 将检索器纳入预训练流程，强调“检索—阅读”的一体化学习[5]；RAG 系统化提出“参数记忆 + 非参数记忆”融合的生成框架，在知识密集任务中体现了可追溯证据与可更新性优势[6]；RETRO 进一步在更大规模语料上利用检索片段进行条件生成，展示检索可在一定程度上替代参数扩张[7]。总体而言，检索增强机制的关键瓶颈在于：检索质量与生成一致性强耦合，且外部记忆带来新的可靠性与安全风险（如知识库污染、提示注入等），需要在后续系统设计中配套治理。
+
+### （4）面向 LLM 智能体的长期记忆管理：从“能检索”到“会管理”
+
+LLM 智能体场景下，研究重点从“把信息取回来”进一步转向“如何形成、组织与更新长期记忆”。一类工作强调**经历记录与反思抽象**：Generative Agents 提出以“记忆流”记录完整经历、通过 reflection 形成高层总结，并动态检索支持规划与行为生成[8]；Reflexion 将任务反馈语言化为反思并写入情景记忆缓冲区，以在后续尝试中复用经验而无需更新模型参数[9]。另一类工作关注**长期对话个性化与遗忘/强化**：MemoryBank 通过时间与重要性建模实现记忆强化与遗忘，使模型在长期陪伴场景中逐步形成用户画像并保持一致性[10]。更近期的研究开始系统化提出“类操作系统”的记忆管理：MemoryOS 采用分层存储（短期/中期/长期个人记忆）与存储、更新、检索、生成四模块，实现跨层动态更新，体现了从“记忆组件”走向“记忆管理体系”的趋势[11]。
+
+### （5）评测与安全：长期记忆需要“可度量、可验证、可防护”
+
+随着机制丰富，社区开始建设更贴近真实长程交互的评测基准。LoCoMo 提供超长多会话对话数据并用于评估“非常长程对话记忆”，覆盖问答、事件总结等任务[12]；MemBench 从有效性、效率与容量等维度评测 LLM-based agent 的记忆能力，并区分事实记忆与反思记忆[13]。同时，外部记忆也引入显著攻击面：AgentPoison 指出可通过污染长期记忆或 RAG 知识库植入后门触发，提示记忆机制研究必须与数据治理、检索可信性与安全防护协同推进[14]。
+
+---
+
+## 参考文献（GB/T 7714-2015，顺序编码制，含链接）
+
+[1] SUKHBAATAR S, SZLAM A, WESTON J, et al. End-To-End Memory Networks[C]//*Advances in Neural Information Processing Systems* (NeurIPS). 2015. Available: [https://proceedings.neurips.cc/paper_files/paper/2015/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html](https://proceedings.neurips.cc/paper_files/paper/2015/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html) ([神经信息处理系统会议论文集][1])
+
+[2] MILLER A, FISCH A, DODGE J, et al. Key-Value Memory Networks for Directly Reading Documents[C]//*Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing* (EMNLP). 2016: 1400-1409. Available: [https://aclanthology.org/D16-1147/](https://aclanthology.org/D16-1147/) ([ACL Anthology][2])
+
+[3] GRAVES A, WAYNE G, DANIHELKA I. Hybrid computing using a neural network with dynamic external memory[J]. *Nature*, 2016. Available: [https://ora.ox.ac.uk/objects/uuid:add8473bd-2d70-424d-881b-86d9c9c66b51](https://ora.ox.ac.uk/objects/uuid:add8473bd-2d70-424d-881b-86d9c9c66b51) ([Oxford University Research Archive][3])
+
+[4] DAI Z, YANG Z, YANG Y, et al. Transformer-XL: Attentive Language Models beyond a Fixed-Length Context[C]//*Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics* (ACL). 2019. Available: [https://aclanthology.org/P19-1285/](https://aclanthology.org/P19-1285/) ([ACL Anthology][4])
+
+[5] GUU K, LEE K, TUNG Z, et al. REALM: Retrieval-Augmented Language Model Pre-Training[C]//*Proceedings of the 37th International Conference on Machine Learning* (ICML). PMLR, 2020. Available: [https://proceedings.mlr.press/v119/guu20a/guu20a.pdf](https://proceedings.mlr.press/v119/guu20a/guu20a.pdf) ([Proceedings of Machine Learning Research][5])
+
+[6] LEWIS P, PEREZ E, PIKTUS A, et al. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks[C]//*Advances in Neural Information Processing Systems* (NeurIPS). 2020. Available: [https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html) ([神经信息处理系统会议论文集][6])
+
+[7] BORGEAUD S, MENSCH A, HOFFMANN J, et al. Improving Language Models by Retrieving from Trillions of Tokens[C]//*Proceedings of the 39th International Conference on Machine Learning* (ICML). PMLR, 2022. Available: [https://proceedings.mlr.press/v162/borgeaud22a.html](https://proceedings.mlr.press/v162/borgeaud22a.html) ([Proceedings of Machine Learning Research][7])
+
+[8] PARK J S, O’BRIEN J C, CAI C J, et al. Generative Agents: Interactive Simulacra of Human Behavior[C]//*Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology* (UIST). ACM, 2023. Available: [https://dl.acm.org/doi/fullHtml/10.1145/3586183.3606763](https://dl.acm.org/doi/fullHtml/10.1145/3586183.3606763) ([ACM Digital Library][8])
+
+[9] SHINN N, CASSANO F, GOPINATH A, et al. Reflexion: Language Agents with Verbal Reinforcement Learning[C]//*Advances in Neural Information Processing Systems* (NeurIPS). 2023. Available: [https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html](https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html) ([神经信息处理系统会议论文集][9])
+
+[10] ZHONG W, GUO L, GAO Q, et al. MemoryBank: Enhancing Large Language Models with Long-Term Memory[C]//*Proceedings of the AAAI Conference on Artificial Intelligence* (AAAI). 2024. Available: [https://ojs.aaai.org/index.php/AAAI/article/view/29946](https://ojs.aaai.org/index.php/AAAI/article/view/29946) ([AAAI][10])
+
+[11] KANG J, JI M, ZHAO Z, et al. Memory OS of AI Agent[C]//*Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing* (EMNLP). 2025. Available: [https://aclanthology.org/2025.emnlp-main.1318/](https://aclanthology.org/2025.emnlp-main.1318/) ([ACL Anthology][11])
+
+[12] BERTSCH A, et al. Evaluating Very Long-Term Conversational Memory of LLM Agents[C]//*Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics* (ACL). 2024. Available: [https://aclanthology.org/2024.acl-long.747/](https://aclanthology.org/2024.acl-long.747/) ([ACL Anthology][12])
+
+[13] (Authors) MemBench: Towards More Comprehensive Evaluation on the Memory of LLM-based Agents[C]//*Findings of the Association for Computational Linguistics* (Findings ACL). 2025. Available: [https://aclanthology.org/2025.findings-acl.989/](https://aclanthology.org/2025.findings-acl.989/) ([ACL Anthology][13])
+
+[14] (Authors) AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases[C]//*Advances in Neural Information Processing Systems* (NeurIPS). 2024. Available: [https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html](https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html) ([神经信息处理系统会议论文集][14])
+
+> 说明：为保持“可直接放入毕业设计”的精炼性，我在正文中按机制分类做了概括式综述。若你学校对参考文献作者信息要求非常严格（尤其是[12][13][14]这类我未在此处逐个抄全作者名单的条目），你把学校要求的格式截图/模板发我，我可以把作者、页码、出版地等字段补齐成完全规范的 GB/T 7714 版本。
+
+[1]: https://proceedings.neurips.cc/paper_files/paper/2015/hash/8fb21ee7a2207526da55a679f0332de2-Abstract.html?utm_source=chatgpt.com "End-To-End Memory Networks - NeurIPS"
+[2]: https://aclanthology.org/D16-1147/?utm_source=chatgpt.com "Key-Value Memory Networks for Directly Reading Documents"
+[3]: https://ora.ox.ac.uk/objects/uuid%3Add8473bd-2d70-424d-881b-86d9c9c66b51?utm_source=chatgpt.com "Hybrid computing using a neural network with dynamic external memory ..."
+[4]: https://aclanthology.org/P19-1285/?utm_source=chatgpt.com "Transformer-XL: Attentive Language Models beyond a Fixed-Length Context ..."
+[5]: https://proceedings.mlr.press/v119/guu20a/guu20a.pdf?utm_source=chatgpt.com "REALM: Retrieval-Augmented Language Model Pre-Training"
+[6]: https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html?utm_source=chatgpt.com "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks - NeurIPS"
+[7]: https://proceedings.mlr.press/v162/borgeaud22a.html?_hsenc=p2ANqtz-8TZzur2df1qdnGx09b-Fg94DTsc3-xXao4StKvKNU2HR51el3n8yOm0CPSw6GiAoLQNKua&utm_source=chatgpt.com "Improving Language Models by Retrieving from Trillions of Tokens - PMLR"
+[8]: https://dl.acm.org/doi/fullHtml/10.1145/3586183.3606763?utm_source=chatgpt.com "Generative Agents: Interactive Simulacra of Human Behavior"
+[9]: https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html?utm_source=chatgpt.com "Reflexion: language agents with verbal reinforcement learning - NeurIPS"
+[10]: https://ojs.aaai.org/index.php/AAAI/article/view/29946?utm_source=chatgpt.com "MemoryBank: Enhancing Large Language Models with Long-Term Memory"
+[11]: https://aclanthology.org/2025.emnlp-main.1318/?utm_source=chatgpt.com "Memory OS of AI Agent - ACL Anthology"
+[12]: https://aclanthology.org/2024.acl-long.747/?utm_source=chatgpt.com "Evaluating Very Long-Term Conversational Memory of LLM Agents"
+[13]: https://aclanthology.org/2025.findings-acl.989/?utm_source=chatgpt.com "MemBench: Towards More Comprehensive Evaluation on the Memory of LLM ..."
+[14]: https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html?utm_source=chatgpt.com "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases"
