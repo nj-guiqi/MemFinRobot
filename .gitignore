@@ -13,3 +13,5 @@ eval/FinRobot
 eval/langmem
 eval/scripts/eval_run_mem0.cmd
 eval/scripts/eval_run_llm.cmd
+
+.pytest_cache
