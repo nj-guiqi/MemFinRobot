@@ -8,7 +8,7 @@ from typing import Any, Dict, Optional
 
 from openai import OpenAI
 
-from memfinrobot.agent.memfin_agent import MEMFIN_SYSTEM_PROMPT
+from memfinrobot.prompts.templates import render_system_prompt
 
 
 class LlmAgentAdapter:
@@ -35,7 +35,7 @@ class LlmAgentAdapter:
         self.enable_thinking = enable_thinking
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.system_context = system_context or MEMFIN_SYSTEM_PROMPT
+        self.system_context = system_context or render_system_prompt()
         self.request_timeout_sec = max(1.0, float(request_timeout_sec))
 
         resolved_api_key = api_key or os.getenv(api_key_env) or os.getenv("DASHSCOPE_API_KEY")

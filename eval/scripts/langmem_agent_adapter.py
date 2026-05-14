@@ -6,7 +6,6 @@ Wraps LangGraph + LangMem memory tools into replay-compatible ``handle_turn`` AP
 from __future__ import annotations
 
 import os
-import re
 import sys
 import time
 from dataclasses import dataclass, field
@@ -28,21 +27,11 @@ from langmem import create_manage_memory_tool, create_search_memory_tool
 
 def _load_memfin_system_prompt() -> str:
     try:
-        from memfinrobot.agent.memfin_agent import MEMFIN_SYSTEM_PROMPT as prompt  # type: ignore
+        from memfinrobot.prompts.templates import render_system_prompt  # type: ignore
 
+        prompt = render_system_prompt()
         if isinstance(prompt, str) and prompt.strip():
             return prompt
-    except Exception:
-        pass
-
-    prompt_file = PROJECT_ROOT / "memfinrobot" / "agent" / "memfin_agent.py"
-    try:
-        text = prompt_file.read_text(encoding="utf-8")
-        match = re.search(r'MEMFIN_SYSTEM_PROMPT\s*=\s*"""(.*?)"""', text, re.S)
-        if match:
-            parsed = match.group(1).strip()
-            if parsed:
-                return parsed
     except Exception:
         pass
 

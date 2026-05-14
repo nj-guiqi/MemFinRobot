@@ -15,6 +15,7 @@ from memfinrobot.memory.manager import MemoryManager
 from memfinrobot.memory.schemas import RecallResult, SessionState, UserProfile
 from memfinrobot.compliance.guard import ComplianceGuard
 from memfinrobot.config.settings import Settings, get_settings
+from memfinrobot.prompts.templates import render_system_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -22,32 +23,7 @@ logger = logging.getLogger(__name__)
 MAX_LLM_CALL_PER_RUN = 10
 
 # 系统提示词
-MEMFIN_SYSTEM_PROMPT = """你是MemFinRobot，一个专业的智能理财顾问助手。你的职责是为用户提供证券投资（基金/股票/债券等）的陪伴式咨询服务。
-
-## 核心原则
-1. **决策辅助**：你是决策辅助工具，不是投资决策者。不做具体的买卖指令建议。
-2. **风险提示**：始终提供风险提示，不承诺收益。
-3. **个性化服务**：基于用户画像和历史对话提供个性化建议。
-4. **信息透明**：说明信息来源和时效性，承认不确定性。
-
-## 服务范围
-- 行情信息查询与解读
-- 产品（基金/股票/债券）信息介绍
-- 风险识别与提示
-- 资产配置思路讨论
-- 投资教育与知识普及
-
-## 禁止行为
-- 给出具体买卖点位或指令
-- 承诺投资收益
-- 声称有内幕消息
-- 做出确定性的市场预测
-
-## 回复要求
-1. 回复要专业、客观、有理有据
-2. 涉及产品或建议时，必须附带风险提示
-3. 当用户画像不完整时，适时询问以完善画像
-4. 引用历史对话时说明来源"""
+MEMFIN_SYSTEM_PROMPT = render_system_prompt()
 
 RISK_FULL_TRIGGER_KEYWORDS = (
     "基金", "股票", "债券", "etf", "配置", "收益", "回撤", "波动", "资产",
@@ -131,7 +107,7 @@ class MemFinFnCallAgent(FnCallAgent):
         """
         # 使用默认系统提示词
         if system_message is None:
-            system_message = MEMFIN_SYSTEM_PROMPT
+            system_message = render_system_prompt()
         
         # 初始化父类
         super().__init__(

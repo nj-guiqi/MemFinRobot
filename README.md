@@ -36,7 +36,8 @@ MemFinRobot/
 │   ├── telemetry/       # 可观测日志
 │   └── utils/           # 工具函数
 ├── apps/
-│   └── cli/             # 命令行入口
+│   ├── cli/             # 命令行入口
+│   └── webui/           # Streamlit 可视化演示界面
 ├── tests/               # 单元测试
 ├── data/                # 数据目录
 └── docs/                # 文档
@@ -76,7 +77,30 @@ python -m apps.cli.main
 python -m apps.cli.main -c config.json
 ```
 
-### 4. 运行测试
+### 4. 运行可视化 Demo
+
+```bash
+streamlit run apps/webui/app.py
+```
+
+页面特性：
+
+- 左侧提供用户与 `MemFinRobot` 的对话交互
+- 右侧实时展示本轮行为轨迹，包括：
+  - 短期上下文与长期记忆召回
+  - 用户画像快照与画像记忆
+  - 工具调用参数、耗时与结果摘要
+  - 合规审校结果
+- 侧边栏可重载配置、开启新演示会话，并查看当前会话状态
+
+如果需要显式指定配置文件，可先设置：
+
+```bash
+export MEMFINROBOT_CONFIG=config.json
+streamlit run apps/webui/app.py
+```
+
+### 5. 运行测试
 
 ```bash
 pytest tests/ -v
@@ -101,6 +125,7 @@ pytest tests/ -v
 - 在LLM调用前注入记忆上下文
 - 在输出前执行合规审校
 - 在对话结束后更新长期记忆
+- 通过 observer 事件暴露召回、工具调用、画像快照与最终输出，便于可视化追踪
 
 ### 合规层 (compliance/)
 
