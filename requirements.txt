@@ -24,6 +24,7 @@ json5>=0.13.0
 pydantic>=2.12.5
 tqdm>=4.67.3
 streamlit>=1.45.0
+soundfile
 
 # 可选：API服务
 # fastapi>=0.129.0
