@@ -138,6 +138,12 @@ def main():
         settings = init_settings(args.config)
     else:
         settings = init_settings()
+
+    logger.info(
+        "Using Python executable: %s; config source: %s",
+        sys.executable,
+        settings.source_config_path or "<defaults>",
+    )
     
     # 创建智能体
     try:

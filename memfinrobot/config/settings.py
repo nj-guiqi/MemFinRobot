@@ -1,10 +1,102 @@
 """项目配置定义"""
 
+import json
+import logging
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-import json
+
+logger = logging.getLogger(__name__)
+
+_DASHSCOPE_OAI_URL_MAP = {
+    "https://dashscope.aliyuncs.com/api/v1": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "https://dashscope-intl.aliyuncs.com/api/v1": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+}
+_DASHSCOPE_NATIVE_URL_MAP = {
+    "https://dashscope.aliyuncs.com/compatible-mode/v1": "https://dashscope.aliyuncs.com/api/v1",
+    "https://dashscope-intl.aliyuncs.com/compatible-mode/v1": "https://dashscope-intl.aliyuncs.com/api/v1",
+}
+
+
+def _strip_json_comments(text: str) -> str:
+    """Remove // and /* */ comments while preserving JSON string literals."""
+    result: List[str] = []
+    i = 0
+    in_string = False
+    escaped = False
+    text_len = len(text)
+
+    while i < text_len:
+        ch = text[i]
+
+        if in_string:
+            result.append(ch)
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_string = False
+            i += 1
+            continue
+
+        if ch == '"':
+            in_string = True
+            result.append(ch)
+            i += 1
+            continue
+
+        if ch == "/" and i + 1 < text_len:
+            next_ch = text[i + 1]
+            if next_ch == "/":
+                i += 2
+                while i < text_len and text[i] not in ("\n", "\r"):
+                    i += 1
+                continue
+            if next_ch == "*":
+                i += 2
+                while i + 1 < text_len and not (text[i] == "*" and text[i + 1] == "/"):
+                    i += 1
+                i += 2
+                continue
+
+        result.append(ch)
+        i += 1
+
+    return "".join(result)
+
+
+def _normalize_model_server(model_server: str) -> str:
+    """Normalize provider URLs to match qwen-agent expectations."""
+    normalized = (model_server or "dashscope").strip()
+    if normalized in _DASHSCOPE_OAI_URL_MAP:
+        rewritten = _DASHSCOPE_OAI_URL_MAP[normalized]
+        logger.warning(
+            "Detected DashScope native API URL %s in OpenAI-compatible config; "
+            "rewriting it to %s.",
+            normalized,
+            rewritten,
+        )
+        return rewritten
+    return normalized
+
+
+def _normalize_dashscope_native_url(base_http_api_url: str) -> str:
+    """Normalize native DashScope API URL, guarding against OAI endpoints."""
+    normalized = (base_http_api_url or "").strip()
+    if not normalized:
+        return "https://dashscope.aliyuncs.com/api/v1"
+    if normalized in _DASHSCOPE_NATIVE_URL_MAP:
+        rewritten = _DASHSCOPE_NATIVE_URL_MAP[normalized]
+        logger.warning(
+            "Detected DashScope OpenAI-compatible URL %s in native DashScope config; "
+            "rewriting it to %s.",
+            normalized,
+            rewritten,
+        )
+        return rewritten
+    return normalized
 
 
 @dataclass
@@ -18,18 +110,37 @@ class LLMConfig:
     temperature: float = 0.7
     max_tokens: int = 2048
     top_p: float = 0.7
+    extra_body: Dict[str, Any] = field(default_factory=dict)
     
     def to_dict(self) -> Dict[str, Any]:
-        return {
+        model_type = (self.model_type or "").strip()
+        normalized_server = _normalize_model_server(self.model_server)
+        config = {
             "model": self.model,
-            "model_server": self.model_server,
+            "model_server": normalized_server,
             "api_key": self.api_key or os.getenv("DASHSCOPE_API_KEY", ""),
             "generate_cfg": {
                 "temperature": self.temperature,
                 "max_tokens": self.max_tokens,
                 "top_p": self.top_p,
+                "use_raw_api": self.use_raw_api,
             }
         }
+        if self.extra_body:
+            config["generate_cfg"]["extra_body"] = dict(self.extra_body)
+        if model_type:
+            config["model_type"] = model_type
+
+        use_dashscope_native = (
+            normalized_server == "dashscope"
+            or model_type.endswith("_dashscope")
+            or (not model_type and "qwen" in self.model.lower() and not normalized_server.startswith("http"))
+        )
+        if use_dashscope_native:
+            config["base_http_api_url"] = _normalize_dashscope_native_url(
+                os.getenv("DASHSCOPE_HTTP_URL", "")
+            )
+        return config
 
 
 @dataclass
@@ -126,6 +237,7 @@ class Settings:
     
     # Prompt模板路径
     prompt_dir: Path = field(default_factory=lambda: Path(__file__).parent.parent / "prompts")
+    source_config_path: Optional[str] = None
     
     def __post_init__(self):
         """初始化后处理"""
@@ -149,7 +261,7 @@ class Settings:
     def from_file(cls, config_path: str) -> "Settings":
         """从配置文件加载"""
         with open(config_path, "r", encoding="utf-8") as f:
-            config_data = json.load(f)
+            config_data = json.loads(_strip_json_comments(f.read()))
         
         settings = cls()
         
@@ -167,6 +279,7 @@ class Settings:
             settings.market_data = MarketDataConfig(**config_data["market_data"])
         if "tools" in config_data and isinstance(config_data["tools"], dict):
             settings.tools = config_data["tools"]
+        settings.source_config_path = str(Path(config_path).resolve())
         
         return settings
     
@@ -212,5 +325,12 @@ def init_settings(config_path: Optional[str] = None) -> Settings:
     if config_path:
         _settings = Settings.from_file(config_path)
     else:
-        _settings = Settings()
+        env_config_path = os.getenv("MEMFINROBOT_CONFIG", "").strip()
+        default_config_path = Path(__file__).resolve().parents[2] / "config.json"
+        if env_config_path:
+            _settings = Settings.from_file(env_config_path)
+        elif default_config_path.exists():
+            _settings = Settings.from_file(str(default_config_path))
+        else:
+            _settings = Settings()
     return _settings
