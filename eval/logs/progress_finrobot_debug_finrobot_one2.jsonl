@@ -1,0 +1,44 @@
+{"ts": "2026-02-22T05:27:03.630760Z", "event": "run_started", "run_id": "debug_finrobot_one2", "dataset_path": "eval/datasets/_debug_one_dialog.jsonl", "dialogs": 1, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-22T05:27:03.631763Z", "event": "dialog_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-22T05:27:04.123366Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:27:34.375765Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "elapsed_sec": 30.252}
+{"ts": "2026-02-22T05:27:38.536738Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "turn_status": "error", "latency_ms": 34413.108, "error": "'gbk' codec can't encode character '\\u26a0' in position 1312: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:27:38.536738Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:28:08.788645Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2, "elapsed_sec": 30.252}
+{"ts": "2026-02-22T05:28:15.544330Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2, "turn_status": "error", "latency_ms": 37007.49, "error": "'gbk' codec can't encode character '\\u26a0' in position 1277: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:28:15.544330Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:28:45.769362Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "elapsed_sec": 30.224}
+{"ts": "2026-02-22T05:28:55.374222Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "turn_status": "error", "latency_ms": 39829.445, "error": "'gbk' codec can't encode character '\\u26a0' in position 1025: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:28:55.375144Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:29:21.252847Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4, "turn_status": "error", "latency_ms": 25877.097, "error": "'gbk' codec can't encode character '\\u26a0' in position 1194: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:29:21.253850Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:29:49.183358Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5, "turn_status": "error", "latency_ms": 27929.717, "error": "'gbk' codec can't encode character '\\U0001f4a1' in position 1107: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:29:49.184356Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:30:19.403694Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "elapsed_sec": 30.219}
+{"ts": "2026-02-22T05:30:21.031770Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "turn_status": "error", "latency_ms": 31847.255, "error": "'gbk' codec can't encode character '\\U0001f4a1' in position 1277: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:30:21.031770Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:30:47.782198Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 26748.58, "error": null}
+{"ts": "2026-02-22T05:30:47.782198Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:31:18.020268Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8, "elapsed_sec": 30.238}
+{"ts": "2026-02-22T05:31:29.988742Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8, "turn_status": "error", "latency_ms": 42206.032, "error": "'gbk' codec can't encode character '\\u26a0' in position 712: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:31:29.988742Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:32:00.205030Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "elapsed_sec": 30.216}
+{"ts": "2026-02-22T05:32:30.467110Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "elapsed_sec": 60.478}
+{"ts": "2026-02-22T05:32:48.907897Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 78917.987, "error": null}
+{"ts": "2026-02-22T05:32:48.908892Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:33:19.119189Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "elapsed_sec": 30.21}
+{"ts": "2026-02-22T05:33:49.323371Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "elapsed_sec": 60.414}
+{"ts": "2026-02-22T05:33:49.496821Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "turn_status": "error", "latency_ms": 60587.035, "error": "'gbk' codec can't encode character '\\u26a0' in position 1454: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:33:49.496821Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11}
+{"ts": "2026-02-22T05:34:19.718292Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "elapsed_sec": 30.221}
+{"ts": "2026-02-22T05:34:49.916472Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "elapsed_sec": 60.419}
+{"ts": "2026-02-22T05:34:59.383346Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 69884.77, "error": null}
+{"ts": "2026-02-22T05:34:59.384350Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12}
+{"ts": "2026-02-22T05:35:29.648502Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12, "elapsed_sec": 30.264}
+{"ts": "2026-02-22T05:35:57.184385Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12, "turn_status": "error", "latency_ms": 57800.306, "error": "'gbk' codec can't encode character '\\u26a0' in position 843: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:35:57.185896Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13}
+{"ts": "2026-02-22T05:36:27.420736Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "elapsed_sec": 30.234}
+{"ts": "2026-02-22T05:36:55.471002Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "turn_status": "error", "latency_ms": 58284.62, "error": "'gbk' codec can't encode character '\\u26a0' in position 546: illegal multibyte sequence"}
+{"ts": "2026-02-22T05:36:55.475077Z", "event": "dialog_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "status": "partial", "turns": 13}
+{"ts": "2026-02-22T05:36:55.478533Z", "event": "metrics_done", "run_id": "debug_finrobot_one2", "turn_rows": 13, "metric_errors": {}}
+{"ts": "2026-02-22T05:36:55.479532Z", "event": "run_finished", "run_id": "debug_finrobot_one2", "total_dialogs": 1, "valid_dialogs": 1, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 13}

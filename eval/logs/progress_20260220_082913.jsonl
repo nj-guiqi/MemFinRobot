@@ -1,0 +1,76 @@
+{"ts": "2026-02-20T08:29:13.442187Z", "event": "run_started", "run_id": "20260220_082913", "dataset_path": "D:\\project\\MemFinRobot\\eval\\datasets\\MemFinConv_24.jsonl", "dialogs": 24, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-20T08:29:13.442696Z", "event": "dialog_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-20T08:29:13.445177Z", "event": "dialog_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2}
+{"ts": "2026-02-20T08:29:13.446174Z", "event": "dialog_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3}
+{"ts": "2026-02-20T08:29:13.447659Z", "event": "dialog_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4}
+{"ts": "2026-02-20T08:29:13.448668Z", "event": "dialog_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5}
+{"ts": "2026-02-20T08:29:13.449671Z", "event": "dialog_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6}
+{"ts": "2026-02-20T08:29:13.449671Z", "event": "dialog_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7}
+{"ts": "2026-02-20T08:29:13.450670Z", "event": "dialog_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8}
+{"ts": "2026-02-20T08:29:13.450670Z", "event": "dialog_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9}
+{"ts": "2026-02-20T08:29:13.451672Z", "event": "dialog_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10}
+{"ts": "2026-02-20T08:29:13.451672Z", "event": "dialog_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11}
+{"ts": "2026-02-20T08:29:13.452765Z", "event": "dialog_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12}
+{"ts": "2026-02-20T08:29:13.452765Z", "event": "dialog_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13}
+{"ts": "2026-02-20T08:29:13.452765Z", "event": "dialog_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14}
+{"ts": "2026-02-20T08:29:13.452765Z", "event": "dialog_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15}
+{"ts": "2026-02-20T08:29:13.454276Z", "event": "dialog_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16}
+{"ts": "2026-02-20T08:29:13.454276Z", "event": "dialog_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17}
+{"ts": "2026-02-20T08:29:13.455287Z", "event": "dialog_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18}
+{"ts": "2026-02-20T08:29:13.455287Z", "event": "dialog_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19}
+{"ts": "2026-02-20T08:29:13.456285Z", "event": "dialog_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20}
+{"ts": "2026-02-20T08:29:13.456285Z", "event": "dialog_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21}
+{"ts": "2026-02-20T08:29:13.456285Z", "event": "dialog_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22}
+{"ts": "2026-02-20T08:29:13.457285Z", "event": "dialog_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23}
+{"ts": "2026-02-20T08:29:13.457285Z", "event": "dialog_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24}
+{"ts": "2026-02-20T09:20:23.817363Z", "event": "dialog_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "status": "ok", "turns": 10}
+{"ts": "2026-02-20T09:34:35.687280Z", "event": "dialog_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "status": "ok", "turns": 13}
+{"ts": "2026-02-20T09:36:59.533778Z", "event": "dialog_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "status": "ok", "turns": 13}
+{"ts": "2026-02-20T09:37:37.123865Z", "event": "dialog_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "status": "ok", "turns": 13}
+{"ts": "2026-02-20T10:10:29.953475Z", "event": "dialog_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "status": "ok", "turns": 12}
+{"ts": "2026-02-20T10:15:04.303572Z", "event": "dialog_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "status": "ok", "turns": 10}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "run_started", "run_id": "20260220_082913", "dataset_path": "D:\\project\\MemFinRobot\\eval\\datasets\\MemFinConv_24.jsonl", "dialogs": 24, "resumed_completed_dialogs": 6}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_skipped_resume", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8}
+{"ts": "2026-02-20T10:37:31.037831Z", "event": "dialog_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9}
+{"ts": "2026-02-20T10:37:31.053057Z", "event": "dialog_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10}
+{"ts": "2026-02-20T10:37:31.053057Z", "event": "dialog_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11}
+{"ts": "2026-02-20T10:37:31.053057Z", "event": "dialog_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12}
+{"ts": "2026-02-20T10:37:31.055582Z", "event": "dialog_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13}
+{"ts": "2026-02-20T10:37:31.055582Z", "event": "dialog_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14}
+{"ts": "2026-02-20T10:37:31.056318Z", "event": "dialog_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15}
+{"ts": "2026-02-20T10:37:31.056318Z", "event": "dialog_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16}
+{"ts": "2026-02-20T10:37:31.056318Z", "event": "dialog_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17}
+{"ts": "2026-02-20T10:37:31.057550Z", "event": "dialog_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18}
+{"ts": "2026-02-20T10:37:31.057550Z", "event": "dialog_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19}
+{"ts": "2026-02-20T10:37:31.057550Z", "event": "dialog_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20}
+{"ts": "2026-02-20T10:37:31.058752Z", "event": "dialog_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21}
+{"ts": "2026-02-20T10:37:31.058752Z", "event": "dialog_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22}
+{"ts": "2026-02-20T10:37:31.058752Z", "event": "dialog_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23}
+{"ts": "2026-02-20T10:37:31.058752Z", "event": "dialog_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24}
+{"ts": "2026-02-20T11:38:27.874399Z", "event": "dialog_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "status": "ok", "turns": 13}
+{"ts": "2026-02-20T11:38:46.316346Z", "event": "dialog_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "status": "ok", "turns": 13}
+{"ts": "2026-02-20T12:10:08.507404Z", "event": "dialog_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "status": "ok", "turns": 7}
+{"ts": "2026-02-20T12:16:59.903379Z", "event": "dialog_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "status": "ok", "turns": 20}
+{"ts": "2026-02-20T12:30:38.341295Z", "event": "dialog_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "status": "ok", "turns": 19}
+{"ts": "2026-02-20T12:42:55.355164Z", "event": "dialog_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "status": "ok", "turns": 14}
+{"ts": "2026-02-20T13:11:22.228548Z", "event": "dialog_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "status": "ok", "turns": 12}
+{"ts": "2026-02-20T13:18:11.838438Z", "event": "dialog_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "status": "ok", "turns": 10}
+{"ts": "2026-02-20T13:23:35.261318Z", "event": "dialog_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "status": "ok", "turns": 9}
+{"ts": "2026-02-20T13:41:43.978066Z", "event": "dialog_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "status": "partial", "turns": 7}
+{"ts": "2026-02-20T13:53:11.242194Z", "event": "dialog_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "status": "partial", "turns": 11}
+{"ts": "2026-02-20T14:04:19.572901Z", "event": "dialog_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "status": "partial", "turns": 22}
+{"ts": "2026-02-20T14:05:29.865045Z", "event": "dialog_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "status": "partial", "turns": 7}
+{"ts": "2026-02-20T14:13:49.348196Z", "event": "dialog_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "status": "partial", "turns": 11}
+{"ts": "2026-02-20T14:16:21.607783Z", "event": "dialog_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "status": "partial", "turns": 11}
+{"ts": "2026-02-20T14:16:52.730025Z", "event": "dialog_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "status": "partial", "turns": 19}
+{"ts": "2026-02-20T14:34:36.696086Z", "event": "dialog_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "status": "partial", "turns": 21}
+{"ts": "2026-02-20T14:43:02.965130Z", "event": "dialog_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "status": "partial", "turns": 19}
+{"ts": "2026-02-20T14:43:03.357911Z", "event": "metrics_done", "run_id": "20260220_082913", "turn_rows": 316}
+{"ts": "2026-02-20T14:43:03.357911Z", "event": "run_finished", "run_id": "20260220_082913", "total_dialogs": 24, "valid_dialogs": 24, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 316}

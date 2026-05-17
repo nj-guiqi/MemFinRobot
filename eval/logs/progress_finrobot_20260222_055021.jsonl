@@ -1,0 +1,684 @@
+{"ts": "2026-02-22T05:50:21.954388Z", "event": "run_started", "run_id": "20260222_055021", "dataset_path": "eval/datasets/MemFinConv_24.jsonl", "dialogs": 24, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-22T05:50:21.954388Z", "event": "dialog_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-22T05:50:21.956895Z", "event": "dialog_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2}
+{"ts": "2026-02-22T05:50:21.972759Z", "event": "dialog_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3}
+{"ts": "2026-02-22T05:50:21.973752Z", "event": "dialog_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4}
+{"ts": "2026-02-22T05:50:21.974784Z", "event": "dialog_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5}
+{"ts": "2026-02-22T05:50:21.988008Z", "event": "dialog_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6}
+{"ts": "2026-02-22T05:50:22.014361Z", "event": "dialog_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7}
+{"ts": "2026-02-22T05:50:22.014361Z", "event": "dialog_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8}
+{"ts": "2026-02-22T05:50:22.025832Z", "event": "dialog_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9}
+{"ts": "2026-02-22T05:50:22.027235Z", "event": "dialog_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10}
+{"ts": "2026-02-22T05:50:22.027235Z", "event": "dialog_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11}
+{"ts": "2026-02-22T05:50:22.027235Z", "event": "dialog_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12}
+{"ts": "2026-02-22T05:50:22.027235Z", "event": "dialog_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13}
+{"ts": "2026-02-22T05:50:22.028240Z", "event": "dialog_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14}
+{"ts": "2026-02-22T05:50:22.031239Z", "event": "dialog_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15}
+{"ts": "2026-02-22T05:50:22.031239Z", "event": "dialog_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16}
+{"ts": "2026-02-22T05:50:22.033240Z", "event": "dialog_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22}
+{"ts": "2026-02-22T05:50:22.034239Z", "event": "dialog_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23}
+{"ts": "2026-02-22T05:50:22.035743Z", "event": "dialog_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24}
+{"ts": "2026-02-22T05:50:26.882950Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:50:26.885666Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:50:26.889797Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:50:26.891775Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:50:36.598013Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 9704.219, "error": null}
+{"ts": "2026-02-22T05:50:36.598013Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:50:40.736931Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 13843.734, "error": null}
+{"ts": "2026-02-22T05:50:40.737929Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:50:42.015992Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 15128.797, "error": null}
+{"ts": "2026-02-22T05:50:42.017011Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:50:42.177610Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 15285.888, "error": null}
+{"ts": "2026-02-22T05:50:42.179764Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:50:49.774222Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 13175.773, "error": null}
+{"ts": "2026-02-22T05:50:49.775222Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:51:00.461132Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 10684.066, "error": null}
+{"ts": "2026-02-22T05:51:00.462133Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:51:04.760712Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 24019.894, "error": null}
+{"ts": "2026-02-22T05:51:04.762857Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:51:06.326783Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 24306.121, "error": null}
+{"ts": "2026-02-22T05:51:06.327779Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:51:14.699045Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 14234.365, "error": null}
+{"ts": "2026-02-22T05:51:14.699045Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:51:23.489574Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 41308.112, "error": null}
+{"ts": "2026-02-22T05:51:23.491543Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:51:25.994180Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 19664.532, "error": null}
+{"ts": "2026-02-22T05:51:25.995197Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:51:27.591485Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 22825.133, "error": null}
+{"ts": "2026-02-22T05:51:27.591485Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:51:31.403379Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 16702.225, "error": null}
+{"ts": "2026-02-22T05:51:31.403379Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:51:41.667177Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 18172.101, "error": null}
+{"ts": "2026-02-22T05:51:41.671184Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:51:51.439131Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 20027.813, "error": null}
+{"ts": "2026-02-22T05:51:51.440096Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:51:54.059507Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 28060.881, "error": null}
+{"ts": "2026-02-22T05:51:54.061500Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:51:56.607138Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 29012.432, "error": null}
+{"ts": "2026-02-22T05:51:56.608143Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:52:01.727063Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 20050.963, "error": null}
+{"ts": "2026-02-22T05:52:01.728574Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:52:18.313265Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 16579.561, "error": null}
+{"ts": "2026-02-22T05:52:18.315265Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:52:18.994639Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 27550.619, "error": null}
+{"ts": "2026-02-22T05:52:18.995713Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:52:20.844423Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 26775.659, "error": null}
+{"ts": "2026-02-22T05:52:20.845425Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:52:36.712496Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 18390.071, "error": null}
+{"ts": "2026-02-22T05:52:36.712496Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:52:38.629357Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 19624.732, "error": null}
+{"ts": "2026-02-22T05:52:38.630961Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:52:41.417615Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 20567.892, "error": null}
+{"ts": "2026-02-22T05:52:41.417615Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:52:53.280654Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 16566.093, "error": null}
+{"ts": "2026-02-22T05:52:53.281882Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:53:05.975131Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 27340.402, "error": null}
+{"ts": "2026-02-22T05:53:05.976728Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:53:08.477724Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 27058.736, "error": null}
+{"ts": "2026-02-22T05:53:08.478728Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:53:12.381290Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 19095.737, "error": null}
+{"ts": "2026-02-22T05:53:12.382803Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:53:12.484388Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 75873.433, "error": null}
+{"ts": "2026-02-22T05:53:12.485395Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:53:34.599376Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 28617.195, "error": null}
+{"ts": "2026-02-22T05:53:34.600980Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11}
+{"ts": "2026-02-22T05:53:38.702686Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 26317.027, "error": null}
+{"ts": "2026-02-22T05:53:38.704753Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:53:46.786333Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 34297.58, "error": null}
+{"ts": "2026-02-22T05:53:46.787333Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:53:59.799422Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 25195.712, "error": null}
+{"ts": "2026-02-22T05:53:59.799422Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12}
+{"ts": "2026-02-22T05:54:02.965705Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 54484.046, "error": null}
+{"ts": "2026-02-22T05:54:02.966717Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:54:10.542717Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 31834.274, "error": null}
+{"ts": "2026-02-22T05:54:10.542717Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 11}
+{"ts": "2026-02-22T05:54:22.018030Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 22215.975, "error": null}
+{"ts": "2026-02-22T05:54:22.019738Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13}
+{"ts": "2026-02-22T05:54:24.803949Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 38014.708, "error": null}
+{"ts": "2026-02-22T05:54:24.804948Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:54:30.937042Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 20393.175, "error": null}
+{"ts": "2026-02-22T05:54:30.939039Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 12}
+{"ts": "2026-02-22T05:54:44.199810Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 22173.403, "error": null}
+{"ts": "2026-02-22T05:54:44.216114Z", "event": "dialog_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "status": "ok", "turns": 13}
+{"ts": "2026-02-22T05:54:49.311863Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:54:51.336862Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 48366.805, "error": null}
+{"ts": "2026-02-22T05:54:51.337863Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:54:58.501896Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 27557.744, "error": null}
+{"ts": "2026-02-22T05:54:58.502895Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13}
+{"ts": "2026-02-22T05:55:01.540861Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12227.722, "error": null}
+{"ts": "2026-02-22T05:55:01.541504Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:55:20.724766Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 19182.861, "error": null}
+{"ts": "2026-02-22T05:55:20.726881Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:55:23.616188Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 25111.869, "error": null}
+{"ts": "2026-02-22T05:55:23.621614Z", "event": "dialog_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "status": "ok", "turns": 13}
+{"ts": "2026-02-22T05:55:26.430741Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:55:32.087916Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 11359.997, "error": null}
+{"ts": "2026-02-22T05:55:32.088915Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:55:39.209630Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12776.868, "error": null}
+{"ts": "2026-02-22T05:55:39.209630Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:55:50.343450Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 18254.191, "error": null}
+{"ts": "2026-02-22T05:55:50.344451Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:55:50.384582Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 11173.195, "error": null}
+{"ts": "2026-02-22T05:55:50.384582Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:55:53.213081Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 88406.738, "error": null}
+{"ts": "2026-02-22T05:55:53.214371Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:56:07.832207Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 17446.459, "error": null}
+{"ts": "2026-02-22T05:56:07.833129Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:56:10.238347Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 78898.429, "error": null}
+{"ts": "2026-02-22T05:56:10.251000Z", "event": "dialog_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "status": "ok", "turns": 10}
+{"ts": "2026-02-22T05:56:12.145810Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 21800.51, "error": null}
+{"ts": "2026-02-22T05:56:12.145810Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:56:12.278022Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:56:19.882465Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 26667.544, "error": null}
+{"ts": "2026-02-22T05:56:19.883552Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:56:26.940889Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 19106.007, "error": null}
+{"ts": "2026-02-22T05:56:26.941491Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:56:27.101072Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 14822.229, "error": null}
+{"ts": "2026-02-22T05:56:27.102086Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:56:33.269550Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 21122.608, "error": null}
+{"ts": "2026-02-22T05:56:33.271068Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:56:43.844848Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 16901.47, "error": null}
+{"ts": "2026-02-22T05:56:43.845394Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 6}
+{"ts": "2026-02-22T05:56:45.977901Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 26092.818, "error": null}
+{"ts": "2026-02-22T05:56:45.978903Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11}
+{"ts": "2026-02-22T05:56:50.731664Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 23627.312, "error": null}
+{"ts": "2026-02-22T05:56:50.732645Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:56:59.130652Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 25857.378, "error": null}
+{"ts": "2026-02-22T05:56:59.131171Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:57:02.743906Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 18898.069, "error": null}
+{"ts": "2026-02-22T05:57:02.744454Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7}
+{"ts": "2026-02-22T05:57:10.129017Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 24149.201, "error": null}
+{"ts": "2026-02-22T05:57:10.130017Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12}
+{"ts": "2026-02-22T05:57:18.067453Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 27333.776, "error": null}
+{"ts": "2026-02-22T05:57:18.067453Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:57:25.648175Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 26514.883, "error": null}
+{"ts": "2026-02-22T05:57:25.649171Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:57:28.826759Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 26082.182, "error": null}
+{"ts": "2026-02-22T05:57:28.827878Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8}
+{"ts": "2026-02-22T05:57:38.621905Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 28490.379, "error": null}
+{"ts": "2026-02-22T05:57:38.622904Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13}
+{"ts": "2026-02-22T05:57:50.401060Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 24749.971, "error": null}
+{"ts": "2026-02-22T05:57:50.402070Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:57:52.986170Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 24157.079, "error": null}
+{"ts": "2026-02-22T05:57:52.987086Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9}
+{"ts": "2026-02-22T05:58:04.301046Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 25676.461, "error": null}
+{"ts": "2026-02-22T05:58:04.326268Z", "event": "dialog_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "status": "ok", "turns": 13}
+{"ts": "2026-02-22T05:58:06.367065Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:58:18.466630Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 28063.189, "error": null}
+{"ts": "2026-02-22T05:58:18.466630Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 11}
+{"ts": "2026-02-22T05:58:20.007650Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 13640.188, "error": null}
+{"ts": "2026-02-22T05:58:20.008650Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:58:28.277618Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 70208.388, "error": null}
+{"ts": "2026-02-22T05:58:28.277618Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:58:32.968115Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 39980.136, "error": null}
+{"ts": "2026-02-22T05:58:32.969123Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10}
+{"ts": "2026-02-22T05:58:39.635357Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 19624.435, "error": null}
+{"ts": "2026-02-22T05:58:39.635357Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:58:56.531862Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 16895.13, "error": null}
+{"ts": "2026-02-22T05:58:56.531862Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:59:10.459519Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 37490.281, "error": null}
+{"ts": "2026-02-22T05:59:10.480061Z", "event": "dialog_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "status": "ok", "turns": 10}
+{"ts": "2026-02-22T05:59:12.569367Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:59:16.275984Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 57807.528, "error": null}
+{"ts": "2026-02-22T05:59:16.275984Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 12}
+{"ts": "2026-02-22T05:59:16.494732Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 19961.654, "error": null}
+{"ts": "2026-02-22T05:59:16.495734Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5}
+{"ts": "2026-02-22T05:59:22.163918Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 9593.345, "error": null}
+{"ts": "2026-02-22T05:59:22.164916Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 2}
+{"ts": "2026-02-22T05:59:35.173703Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 13006.954, "error": null}
+{"ts": "2026-02-22T05:59:35.174722Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 3}
+{"ts": "2026-02-22T05:59:50.056771Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 14879.461, "error": null}
+{"ts": "2026-02-22T05:59:50.057690Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 4}
+{"ts": "2026-02-22T05:59:52.349291Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 35853.058, "error": null}
+{"ts": "2026-02-22T05:59:52.349291Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:00:01.241522Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 44964.149, "error": null}
+{"ts": "2026-02-22T06:00:01.262550Z", "event": "dialog_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "status": "ok", "turns": 12}
+{"ts": "2026-02-22T06:00:03.434861Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:00:05.395849Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 15335.857, "error": null}
+{"ts": "2026-02-22T06:00:05.396852Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:00:19.579075Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 16143.643, "error": null}
+{"ts": "2026-02-22T06:00:19.579075Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:00:25.247596Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 32896.391, "error": null}
+{"ts": "2026-02-22T06:00:25.248598Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:00:25.499665Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 20100.896, "error": null}
+{"ts": "2026-02-22T06:00:25.500670Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:00:31.419666Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 123140.204, "error": null}
+{"ts": "2026-02-22T06:00:31.419666Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:00:38.855055Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 19274.653, "error": null}
+{"ts": "2026-02-22T06:00:38.856587Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:00:57.751167Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 18892.89, "error": null}
+{"ts": "2026-02-22T06:00:57.751167Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:00:59.598789Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 34097.053, "error": null}
+{"ts": "2026-02-22T06:00:59.599721Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:01:11.703621Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 13950.868, "error": null}
+{"ts": "2026-02-22T06:01:11.704720Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:01:22.146336Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 22542.493, "error": null}
+{"ts": "2026-02-22T06:01:22.147337Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:01:31.069115Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 19362.836, "error": null}
+{"ts": "2026-02-22T06:01:31.069115Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:01:47.528252Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 25379.319, "error": null}
+{"ts": "2026-02-22T06:01:47.529210Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:01:53.448560Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 22377.029, "error": null}
+{"ts": "2026-02-22T06:01:53.448560Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:01:54.085334Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 88835.812, "error": null}
+{"ts": "2026-02-22T06:01:54.086328Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:02:10.457683Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 99035.693, "error": null}
+{"ts": "2026-02-22T06:02:10.457683Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:02:16.190746Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 28659.435, "error": null}
+{"ts": "2026-02-22T06:02:16.190746Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:02:23.490698Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30041.277, "error": null}
+{"ts": "2026-02-22T06:02:23.491708Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:02:59.739037Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 43546.117, "error": null}
+{"ts": "2026-02-22T06:02:59.739037Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:02:59.796725Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 65709.573, "error": null}
+{"ts": "2026-02-22T06:02:59.797718Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:03:26.612622Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 26872.925, "error": null}
+{"ts": "2026-02-22T06:03:26.613624Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:03:40.408950Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 76915.403, "error": null}
+{"ts": "2026-02-22T06:03:40.409944Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:04:00.005950Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 33390.602, "error": null}
+{"ts": "2026-02-22T06:04:00.006951Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:04:09.328628Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 28918.276, "error": null}
+{"ts": "2026-02-22T06:04:09.329632Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:04:17.695319Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 77897.634, "error": null}
+{"ts": "2026-02-22T06:04:17.696315Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:04:49.113147Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 49103.944, "error": null}
+{"ts": "2026-02-22T06:04:49.113450Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:04:59.485712Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 169026.681, "error": null}
+{"ts": "2026-02-22T06:04:59.486633Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:05:30.507569Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 81176.54, "error": null}
+{"ts": "2026-02-22T06:05:30.508495Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:05:38.605309Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 80907.745, "error": null}
+{"ts": "2026-02-22T06:05:38.605309Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:05:50.747376Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 61632.881, "error": null}
+{"ts": "2026-02-22T06:05:50.748376Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:06:37.189487Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 97702.367, "error": null}
+{"ts": "2026-02-22T06:06:37.189487Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:07:05.523510Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 95013.79, "error": null}
+{"ts": "2026-02-22T06:07:05.524521Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:07:09.724971Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 78975.511, "error": null}
+{"ts": "2026-02-22T06:07:09.725961Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:07:16.263339Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 97657.326, "error": null}
+{"ts": "2026-02-22T06:07:16.264349Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:08:01.160691Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 83970.175, "error": null}
+{"ts": "2026-02-22T06:08:01.160691Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:08:06.776631Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 61252.102, "error": null}
+{"ts": "2026-02-22T06:08:06.777926Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:08:13.543091Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 63815.527, "error": null}
+{"ts": "2026-02-22T06:08:13.543091Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:08:31.322201Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 24543.224, "error": null}
+{"ts": "2026-02-22T06:08:31.344016Z", "event": "dialog_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "status": "ok", "turns": 13}
+{"ts": "2026-02-22T06:08:33.393838Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:08:46.522216Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 13126.699, "error": null}
+{"ts": "2026-02-22T06:08:46.523229Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:08:59.209327Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 12684.559, "error": null}
+{"ts": "2026-02-22T06:08:59.209327Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:09:15.040142Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 15829.414, "error": null}
+{"ts": "2026-02-22T06:09:15.040716Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:09:24.541294Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 128276.136, "error": null}
+{"ts": "2026-02-22T06:09:24.542303Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:09:31.012862Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 15971.206, "error": null}
+{"ts": "2026-02-22T06:09:31.013882Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:09:49.829523Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 18813.632, "error": null}
+{"ts": "2026-02-22T06:09:49.829523Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:09:52.937843Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 99392.891, "error": null}
+{"ts": "2026-02-22T06:09:52.937843Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:09:57.514883Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 116352.456, "error": null}
+{"ts": "2026-02-22T06:09:57.514883Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:10:15.787114Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 25954.488, "error": null}
+{"ts": "2026-02-22T06:10:15.788134Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:10:44.009987Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 28220.766, "error": null}
+{"ts": "2026-02-22T06:10:44.011494Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:10:56.253227Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 63313.827, "error": null}
+{"ts": "2026-02-22T06:10:56.253227Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:11:20.724955Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 36711.763, "error": null}
+{"ts": "2026-02-22T06:11:20.724955Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:11:39.227366Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 42972.865, "error": null}
+{"ts": "2026-02-22T06:11:39.246476Z", "event": "dialog_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "status": "ok", "turns": 19}
+{"ts": "2026-02-22T06:11:41.356771Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:11:45.915140Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 108399.131, "error": null}
+{"ts": "2026-02-22T06:11:45.916142Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:11:47.505203Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 6147.333, "error": null}
+{"ts": "2026-02-22T06:11:47.505203Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:11:55.360809Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 7853.892, "error": null}
+{"ts": "2026-02-22T06:11:55.361824Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:12:06.018237Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 10654.518, "error": null}
+{"ts": "2026-02-22T06:12:06.018237Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:12:11.922878Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 51196.041, "error": null}
+{"ts": "2026-02-22T06:12:11.923783Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:12:17.177465Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 11158.315, "error": null}
+{"ts": "2026-02-22T06:12:17.178463Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:12:27.931403Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 10751.593, "error": null}
+{"ts": "2026-02-22T06:12:27.932425Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:12:39.912262Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 53995.347, "error": null}
+{"ts": "2026-02-22T06:12:39.912262Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:12:42.199648Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 14266.283, "error": null}
+{"ts": "2026-02-22T06:12:42.200665Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:12:50.949428Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 206407.467, "error": null}
+{"ts": "2026-02-22T06:12:50.970646Z", "event": "dialog_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "status": "ok", "turns": 13}
+{"ts": "2026-02-22T06:12:53.071510Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:12:57.325481Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 15122.533, "error": null}
+{"ts": "2026-02-22T06:12:57.328480Z", "event": "dialog_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "status": "ok", "turns": 7}
+{"ts": "2026-02-22T06:12:59.409461Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:13:04.427137Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 11353.903, "error": null}
+{"ts": "2026-02-22T06:13:04.428205Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:13:09.482278Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 10072.195, "error": null}
+{"ts": "2026-02-22T06:13:09.482278Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:13:16.244617Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 64319.689, "error": null}
+{"ts": "2026-02-22T06:13:16.245532Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:13:19.227525Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 14797.864, "error": null}
+{"ts": "2026-02-22T06:13:19.228525Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:13:24.706896Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 15223.371, "error": null}
+{"ts": "2026-02-22T06:13:24.707904Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:13:32.708080Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 7997.456, "error": null}
+{"ts": "2026-02-22T06:13:32.709134Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:13:37.952189Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 18722.168, "error": null}
+{"ts": "2026-02-22T06:13:37.953273Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:13:42.768521Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 10058.015, "error": null}
+{"ts": "2026-02-22T06:13:42.769519Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:13:56.754632Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 18798.833, "error": null}
+{"ts": "2026-02-22T06:13:56.754632Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:14:04.077965Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 21306.816, "error": null}
+{"ts": "2026-02-22T06:14:04.078914Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:14:17.142586Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 97229.699, "error": null}
+{"ts": "2026-02-22T06:14:17.142586Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:14:20.910496Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 24155.543, "error": null}
+{"ts": "2026-02-22T06:14:20.911623Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:14:23.216573Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 66968.791, "error": null}
+{"ts": "2026-02-22T06:14:23.216573Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:14:35.602067Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 31521.206, "error": null}
+{"ts": "2026-02-22T06:14:35.602067Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:14:46.263753Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 25351.106, "error": null}
+{"ts": "2026-02-22T06:14:46.264649Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:14:50.020534Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 14417.011, "error": null}
+{"ts": "2026-02-22T06:14:50.020534Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:15:01.471955Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 15205.499, "error": null}
+{"ts": "2026-02-22T06:15:01.471955Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:15:09.267710Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 19246.332, "error": null}
+{"ts": "2026-02-22T06:15:09.268619Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:15:30.150739Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 28677.164, "error": null}
+{"ts": "2026-02-22T06:15:30.150739Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:15:31.787744Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 22517.822, "error": null}
+{"ts": "2026-02-22T06:15:31.787744Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:15:45.242608Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 82024.512, "error": null}
+{"ts": "2026-02-22T06:15:45.242608Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:15:52.832796Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 21043.941, "error": null}
+{"ts": "2026-02-22T06:15:52.833797Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:16:01.493544Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 31341.824, "error": null}
+{"ts": "2026-02-22T06:16:01.493544Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:16:19.688610Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 26854.459, "error": null}
+{"ts": "2026-02-22T06:16:19.688610Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:16:26.504407Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 25009.625, "error": null}
+{"ts": "2026-02-22T06:16:26.504407Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:16:40.473856Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 13968.507, "error": null}
+{"ts": "2026-02-22T06:16:40.474906Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:16:40.521381Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 143377.338, "error": null}
+{"ts": "2026-02-22T06:16:40.522385Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:16:46.720610Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 27031.081, "error": null}
+{"ts": "2026-02-22T06:16:46.721623Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:17:09.006173Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 28529.804, "error": null}
+{"ts": "2026-02-22T06:17:09.018446Z", "event": "dialog_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "status": "ok", "turns": 12}
+{"ts": "2026-02-22T06:17:11.061799Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:17:21.789351Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 35066.779, "error": null}
+{"ts": "2026-02-22T06:17:21.790868Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:17:25.411722Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 14348.063, "error": null}
+{"ts": "2026-02-22T06:17:25.411722Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:17:39.181214Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 13767.631, "error": null}
+{"ts": "2026-02-22T06:17:39.182211Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:18:01.148194Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 21963.616, "error": null}
+{"ts": "2026-02-22T06:18:01.148194Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:18:08.268834Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 143024.132, "error": null}
+{"ts": "2026-02-22T06:18:08.268834Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:18:23.911834Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 22762.333, "error": null}
+{"ts": "2026-02-22T06:18:23.912831Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:18:48.841030Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 24926.471, "error": null}
+{"ts": "2026-02-22T06:18:48.842048Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:18:54.027386Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 133503.807, "error": null}
+{"ts": "2026-02-22T06:18:54.027386Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:18:56.538107Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 48268.299, "error": null}
+{"ts": "2026-02-22T06:18:56.560899Z", "event": "dialog_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "status": "ok", "turns": 14}
+{"ts": "2026-02-22T06:18:58.542099Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:19:11.158450Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12615.633, "error": null}
+{"ts": "2026-02-22T06:19:11.159444Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:19:16.605760Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 27762.305, "error": null}
+{"ts": "2026-02-22T06:19:16.605760Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:19:22.869107Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 11708.192, "error": null}
+{"ts": "2026-02-22T06:19:22.870643Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:19:32.966160Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 10094.83, "error": null}
+{"ts": "2026-02-22T06:19:32.967242Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:19:44.049243Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 11081.109, "error": null}
+{"ts": "2026-02-22T06:19:44.050321Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:19:57.729080Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 13677.228, "error": null}
+{"ts": "2026-02-22T06:19:57.730099Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:20:12.833269Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 56226.166, "error": null}
+{"ts": "2026-02-22T06:20:12.833269Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:20:13.945244Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 16213.359, "error": null}
+{"ts": "2026-02-22T06:20:13.945244Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:20:36.737645Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 22791.106, "error": null}
+{"ts": "2026-02-22T06:20:36.738714Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:20:45.661269Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 203868.212, "error": null}
+{"ts": "2026-02-22T06:20:45.661269Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:21:00.252598Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 126224.29, "error": null}
+{"ts": "2026-02-22T06:21:00.252598Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:21:08.829224Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 32088.329, "error": null}
+{"ts": "2026-02-22T06:21:08.829224Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:21:30.608980Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 21778.105, "error": null}
+{"ts": "2026-02-22T06:21:30.626074Z", "event": "dialog_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "status": "ok", "turns": 9}
+{"ts": "2026-02-22T06:21:32.646056Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:21:45.696622Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 92861.372, "error": null}
+{"ts": "2026-02-22T06:21:45.697629Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:21:48.783723Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 16136.26, "error": null}
+{"ts": "2026-02-22T06:21:48.783723Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:21:50.792989Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 65130.475, "error": null}
+{"ts": "2026-02-22T06:21:50.793993Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:22:18.296830Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 29511.172, "error": null}
+{"ts": "2026-02-22T06:22:18.297850Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:22:27.644069Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 41945.554, "error": null}
+{"ts": "2026-02-22T06:22:27.644069Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:22:38.886960Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 20587.963, "error": null}
+{"ts": "2026-02-22T06:22:38.887959Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:22:54.288810Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 26643.808, "error": null}
+{"ts": "2026-02-22T06:22:54.308131Z", "event": "dialog_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "status": "ok", "turns": 10}
+{"ts": "2026-02-22T06:22:56.345839Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:22:58.842587Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 68047.867, "error": null}
+{"ts": "2026-02-22T06:22:58.843596Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:23:06.974192Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 10627.17, "error": null}
+{"ts": "2026-02-22T06:23:06.975182Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:23:07.819581Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 127565.465, "error": null}
+{"ts": "2026-02-22T06:23:07.819581Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:23:17.244035Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 10266.775, "error": null}
+{"ts": "2026-02-22T06:23:17.244035Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:23:33.544659Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 16299.236, "error": null}
+{"ts": "2026-02-22T06:23:33.545569Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:23:43.698055Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 64807.869, "error": null}
+{"ts": "2026-02-22T06:23:43.699061Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:23:50.663982Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 17115.918, "error": null}
+{"ts": "2026-02-22T06:23:50.664988Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:24:11.529054Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 20862.707, "error": null}
+{"ts": "2026-02-22T06:24:11.529054Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:24:11.693413Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 27992.336, "error": null}
+{"ts": "2026-02-22T06:24:11.693413Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:24:31.591084Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 92746.502, "error": null}
+{"ts": "2026-02-22T06:24:31.591084Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:24:36.961834Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 25432.134, "error": null}
+{"ts": "2026-02-22T06:24:36.962833Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:24:44.044301Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 32349.465, "error": null}
+{"ts": "2026-02-22T06:24:44.044301Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:25:00.306228Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 23342.117, "error": null}
+{"ts": "2026-02-22T06:25:00.307223Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:25:14.515567Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30470.235, "error": null}
+{"ts": "2026-02-22T06:25:14.516568Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:25:26.131434Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 54539.291, "error": null}
+{"ts": "2026-02-22T06:25:26.131434Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:25:30.647358Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 30337.62, "error": null}
+{"ts": "2026-02-22T06:25:30.647358Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:26:07.854576Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 37204.808, "error": null}
+{"ts": "2026-02-22T06:26:07.854576Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:26:13.684659Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 59165.655, "error": null}
+{"ts": "2026-02-22T06:26:13.685659Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:26:15.324215Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 49191.488, "error": null}
+{"ts": "2026-02-22T06:26:15.324215Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 20}
+{"ts": "2026-02-22T06:26:45.710925Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 30385.574, "error": null}
+{"ts": "2026-02-22T06:26:45.711941Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 21}
+{"ts": "2026-02-22T06:27:13.952286Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 60263.515, "error": null}
+{"ts": "2026-02-22T06:27:13.952286Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:27:18.682633Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 70825.608, "error": null}
+{"ts": "2026-02-22T06:27:18.683057Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:27:34.533367Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 21, "turn_status": "ok", "latency_ms": 48820.637, "error": null}
+{"ts": "2026-02-22T06:27:34.534288Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22}
+{"ts": "2026-02-22T06:28:03.694223Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 45010.831, "error": null}
+{"ts": "2026-02-22T06:28:03.715609Z", "event": "dialog_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "status": "ok", "turns": 11}
+{"ts": "2026-02-22T06:28:05.939200Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:28:08.388502Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18, "elapsed_sec": 300.568}
+{"ts": "2026-02-22T06:28:16.314341Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 10372.689, "error": null}
+{"ts": "2026-02-22T06:28:16.314341Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:28:20.594511Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 312773.708, "error": null}
+{"ts": "2026-02-22T06:28:20.594511Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:28:31.291469Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "turn_status": "ok", "latency_ms": 56756.081, "error": null}
+{"ts": "2026-02-22T06:28:31.321622Z", "event": "dialog_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "status": "ok", "turns": 22}
+{"ts": "2026-02-22T06:28:31.342885Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 15028.274, "error": null}
+{"ts": "2026-02-22T06:28:31.343886Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:28:33.622094Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:28:33.627441Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 79674.143, "error": null}
+{"ts": "2026-02-22T06:28:33.628456Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:28:46.325775Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12702.098, "error": null}
+{"ts": "2026-02-22T06:28:46.325775Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:28:55.754548Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 24409.473, "error": null}
+{"ts": "2026-02-22T06:28:55.754548Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:28:59.775255Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 13448.303, "error": null}
+{"ts": "2026-02-22T06:28:59.775255Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:29:14.659048Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 18904.42, "error": null}
+{"ts": "2026-02-22T06:29:14.660663Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:29:14.804840Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 15028.6, "error": null}
+{"ts": "2026-02-22T06:29:14.805838Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:29:33.069379Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 18262.195, "error": null}
+{"ts": "2026-02-22T06:29:33.070863Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:29:36.412693Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 21749.375, "error": null}
+{"ts": "2026-02-22T06:29:36.412693Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:29:53.450497Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 20378.783, "error": null}
+{"ts": "2026-02-22T06:29:53.451863Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:30:00.045653Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 86416.473, "error": null}
+{"ts": "2026-02-22T06:30:00.045653Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:30:15.863029Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 22410.857, "error": null}
+{"ts": "2026-02-22T06:30:15.864071Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:30:27.646800Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 51232.884, "error": null}
+{"ts": "2026-02-22T06:30:27.646800Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:30:34.073992Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 18209.0, "error": null}
+{"ts": "2026-02-22T06:30:34.073992Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:30:42.724223Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 15075.629, "error": null}
+{"ts": "2026-02-22T06:30:42.742507Z", "event": "dialog_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "status": "ok", "turns": 7}
+{"ts": "2026-02-22T06:30:45.287979Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:30:52.337992Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 18262.26, "error": null}
+{"ts": "2026-02-22T06:30:52.338913Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:31:12.458981Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 20118.321, "error": null}
+{"ts": "2026-02-22T06:31:12.459609Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:31:24.119209Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 38829.494, "error": null}
+{"ts": "2026-02-22T06:31:24.119209Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:31:25.128106Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 85081.38, "error": null}
+{"ts": "2026-02-22T06:31:25.129103Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:31:36.094487Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 23635.486, "error": null}
+{"ts": "2026-02-22T06:31:36.094487Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:32:02.505923Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 26404.015, "error": null}
+{"ts": "2026-02-22T06:32:02.514725Z", "event": "dialog_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "status": "ok", "turns": 11}
+{"ts": "2026-02-22T06:32:02.820481Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 38699.943, "error": null}
+{"ts": "2026-02-22T06:32:02.820481Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:32:08.274156Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:32:21.052834Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12781.307, "error": null}
+{"ts": "2026-02-22T06:32:21.060496Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:32:39.170665Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 18108.556, "error": null}
+{"ts": "2026-02-22T06:32:39.170665Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:32:41.942846Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 261348.451, "error": null}
+{"ts": "2026-02-22T06:32:41.942846Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 20}
+{"ts": "2026-02-22T06:32:43.836589Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 41015.892, "error": null}
+{"ts": "2026-02-22T06:32:43.840635Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:32:50.680783Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 85550.057, "error": null}
+{"ts": "2026-02-22T06:32:50.680783Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:33:13.758431Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 34582.817, "error": null}
+{"ts": "2026-02-22T06:33:13.759599Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:33:22.036786Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 38195.267, "error": null}
+{"ts": "2026-02-22T06:33:22.037801Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:33:34.136046Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 43448.948, "error": null}
+{"ts": "2026-02-22T06:33:34.136046Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:33:38.255939Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 24493.327, "error": null}
+{"ts": "2026-02-22T06:33:38.255939Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:34:09.575244Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 31318.093, "error": null}
+{"ts": "2026-02-22T06:34:09.575244Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:34:14.313451Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 52276.077, "error": null}
+{"ts": "2026-02-22T06:34:14.313451Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:34:23.410933Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 49272.854, "error": null}
+{"ts": "2026-02-22T06:34:23.410933Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:34:42.900543Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 33323.108, "error": null}
+{"ts": "2026-02-22T06:34:42.900543Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:34:55.087571Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 40764.749, "error": null}
+{"ts": "2026-02-22T06:34:55.087571Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:35:01.050493Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 37632.025, "error": null}
+{"ts": "2026-02-22T06:35:01.050493Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:35:02.083657Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 140136.29, "error": null}
+{"ts": "2026-02-22T06:35:02.170789Z", "event": "dialog_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "status": "ok", "turns": 20}
+{"ts": "2026-02-22T06:35:06.980521Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:35:10.445227Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 15357.022, "error": null}
+{"ts": "2026-02-22T06:35:10.460791Z", "event": "dialog_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "status": "ok", "turns": 7}
+{"ts": "2026-02-22T06:35:13.230693Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30324.329, "error": null}
+{"ts": "2026-02-22T06:35:13.230693Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:35:15.330576Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 1}
+{"ts": "2026-02-22T06:35:20.215213Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 13233.708, "error": null}
+{"ts": "2026-02-22T06:35:20.215213Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:35:28.222824Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 12891.537, "error": null}
+{"ts": "2026-02-22T06:35:28.222824Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 2}
+{"ts": "2026-02-22T06:35:36.940796Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 16726.967, "error": null}
+{"ts": "2026-02-22T06:35:36.940796Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:35:44.000740Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 15771.61, "error": null}
+{"ts": "2026-02-22T06:35:44.000740Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 3}
+{"ts": "2026-02-22T06:35:50.010597Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 6007.264, "error": null}
+{"ts": "2026-02-22T06:35:50.010597Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:35:53.462413Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 40227.958, "error": null}
+{"ts": "2026-02-22T06:35:53.462413Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:35:54.715793Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 53662.929, "error": null}
+{"ts": "2026-02-22T06:35:54.715793Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:35:57.783141Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 7763.109, "error": null}
+{"ts": "2026-02-22T06:35:57.784497Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:36:00.944181Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 23994.844, "error": null}
+{"ts": "2026-02-22T06:36:00.944181Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 4}
+{"ts": "2026-02-22T06:36:16.067571Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 18283.104, "error": null}
+{"ts": "2026-02-22T06:36:16.067571Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:36:24.600706Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 31136.192, "error": null}
+{"ts": "2026-02-22T06:36:24.600706Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:36:25.132551Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 24186.966, "error": null}
+{"ts": "2026-02-22T06:36:25.136711Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 5}
+{"ts": "2026-02-22T06:36:31.244117Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 36517.514, "error": null}
+{"ts": "2026-02-22T06:36:31.244117Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:36:31.600905Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 15536.179, "error": null}
+{"ts": "2026-02-22T06:36:31.600905Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:36:47.344646Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 22212.093, "error": null}
+{"ts": "2026-02-22T06:36:47.350612Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 6}
+{"ts": "2026-02-22T06:36:52.042599Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 20428.534, "error": null}
+{"ts": "2026-02-22T06:36:52.043727Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:36:54.410297Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 29802.388, "error": null}
+{"ts": "2026-02-22T06:36:54.410297Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:37:15.652892Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 23609.082, "error": null}
+{"ts": "2026-02-22T06:37:15.660673Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:37:40.890462Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 46472.283, "error": null}
+{"ts": "2026-02-22T06:37:40.890462Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:37:41.700690Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 54356.86, "error": null}
+{"ts": "2026-02-22T06:37:41.710480Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 7}
+{"ts": "2026-02-22T06:37:42.036470Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 70783.864, "error": null}
+{"ts": "2026-02-22T06:37:42.063621Z", "event": "dialog_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "status": "ok", "turns": 19}
+{"ts": "2026-02-22T06:37:54.053280Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 38394.295, "error": null}
+{"ts": "2026-02-22T06:37:54.060714Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:38:19.632474Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 37914.887, "error": null}
+{"ts": "2026-02-22T06:38:19.632474Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 8}
+{"ts": "2026-02-22T06:38:21.550699Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 40662.674, "error": null}
+{"ts": "2026-02-22T06:38:21.550699Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:38:30.840812Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 36777.845, "error": null}
+{"ts": "2026-02-22T06:38:30.843424Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:39:02.490365Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 40928.343, "error": null}
+{"ts": "2026-02-22T06:39:02.490365Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:39:10.698364Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 51059.971, "error": null}
+{"ts": "2026-02-22T06:39:10.700642Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9}
+{"ts": "2026-02-22T06:39:21.810998Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 50961.722, "error": null}
+{"ts": "2026-02-22T06:39:21.810998Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 12}
+{"ts": "2026-02-22T06:39:57.883703Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 47179.471, "error": null}
+{"ts": "2026-02-22T06:39:57.883703Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10}
+{"ts": "2026-02-22T06:40:11.650928Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 69165.251, "error": null}
+{"ts": "2026-02-22T06:40:11.660748Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:40:36.512206Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 74702.719, "error": null}
+{"ts": "2026-02-22T06:40:36.512206Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 13}
+{"ts": "2026-02-22T06:41:00.930624Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 63048.108, "error": null}
+{"ts": "2026-02-22T06:41:00.930624Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 11}
+{"ts": "2026-02-22T06:41:58.431701Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 81916.824, "error": null}
+{"ts": "2026-02-22T06:41:58.431701Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 14}
+{"ts": "2026-02-22T06:42:03.340748Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 62404.88, "error": null}
+{"ts": "2026-02-22T06:42:03.345635Z", "event": "dialog_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "status": "ok", "turns": 11}
+{"ts": "2026-02-22T06:42:09.450444Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 117789.032, "error": null}
+{"ts": "2026-02-22T06:42:09.450444Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:43:06.312612Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 56861.231, "error": null}
+{"ts": "2026-02-22T06:43:06.312612Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:43:33.193592Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 94750.737, "error": null}
+{"ts": "2026-02-22T06:43:33.195146Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15}
+{"ts": "2026-02-22T06:43:56.350675Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 23157.183, "error": null}
+{"ts": "2026-02-22T06:43:56.350675Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 16}
+{"ts": "2026-02-22T06:44:05.100616Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 58776.696, "error": null}
+{"ts": "2026-02-22T06:44:05.100616Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:44:48.756825Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 43652.147, "error": null}
+{"ts": "2026-02-22T06:44:48.756825Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:45:16.887731Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 80528.202, "error": null}
+{"ts": "2026-02-22T06:45:16.888731Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 17}
+{"ts": "2026-02-22T06:45:41.529792Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 52770.911, "error": null}
+{"ts": "2026-02-22T06:45:41.530381Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 20}
+{"ts": "2026-02-22T06:46:01.063845Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 44170.726, "error": null}
+{"ts": "2026-02-22T06:46:01.064853Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 18}
+{"ts": "2026-02-22T06:47:04.921679Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 83390.154, "error": null}
+{"ts": "2026-02-22T06:47:04.923676Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 21}
+{"ts": "2026-02-22T06:47:22.657180Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 81588.335, "error": null}
+{"ts": "2026-02-22T06:47:22.659169Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 19}
+{"ts": "2026-02-22T06:47:39.420499Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 16758.455, "error": null}
+{"ts": "2026-02-22T06:47:39.440564Z", "event": "dialog_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "status": "ok", "turns": 19}
+{"ts": "2026-02-22T06:47:54.962146Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 21, "turn_status": "ok", "latency_ms": 50035.695, "error": null}
+{"ts": "2026-02-22T06:47:54.982955Z", "event": "dialog_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "status": "ok", "turns": 21}
+{"ts": "2026-02-22T06:47:55.159320Z", "event": "metrics_done", "run_id": "20260222_055021", "turn_rows": 316, "metric_errors": {}}
+{"ts": "2026-02-22T06:47:55.160835Z", "event": "run_finished", "run_id": "20260222_055021", "total_dialogs": 24, "valid_dialogs": 24, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 316}

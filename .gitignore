@@ -4,7 +4,7 @@ model
 config.json
 __pycache__
 data
-eval/logs
+# eval/logs
 # eval/datasets
 eval/schema.md
 eval/eval_solution.md

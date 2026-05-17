@@ -1,0 +1,1065 @@
+{"ts": "2026-02-21T08:57:07.690411Z", "event": "run_started", "run_id": "20260221_085707", "dataset_path": "eval/datasets/MemFinConv_24.jsonl", "dialogs": 24, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-21T08:57:07.690411Z", "event": "dialog_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-21T08:57:07.690411Z", "event": "dialog_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2}
+{"ts": "2026-02-21T08:57:07.690411Z", "event": "dialog_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18}
+{"ts": "2026-02-21T08:57:07.695660Z", "event": "dialog_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19}
+{"ts": "2026-02-21T08:57:07.701016Z", "event": "dialog_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20}
+{"ts": "2026-02-21T08:57:07.701016Z", "event": "dialog_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21}
+{"ts": "2026-02-21T08:57:07.701016Z", "event": "dialog_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22}
+{"ts": "2026-02-21T08:57:07.701016Z", "event": "dialog_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23}
+{"ts": "2026-02-21T08:57:07.701016Z", "event": "dialog_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24}
+{"ts": "2026-02-21T08:57:08.741646Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 1}
+{"ts": "2026-02-21T08:57:08.762384Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1}
+{"ts": "2026-02-21T08:57:08.765322Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1}
+{"ts": "2026-02-21T08:57:08.765322Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 1}
+{"ts": "2026-02-21T08:57:28.854214Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 1, "elapsed_sec": 20.111}
+{"ts": "2026-02-21T08:57:28.885756Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 1, "elapsed_sec": 20.117}
+{"ts": "2026-02-21T08:57:28.885756Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "elapsed_sec": 20.121}
+{"ts": "2026-02-21T08:57:28.885756Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1, "elapsed_sec": 20.118}
+{"ts": "2026-02-21T08:57:43.925137Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 35152.918, "error": null}
+{"ts": "2026-02-21T08:57:43.925137Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 2}
+{"ts": "2026-02-21T08:57:45.901154Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 37136.978, "error": null}
+{"ts": "2026-02-21T08:57:45.904910Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2}
+{"ts": "2026-02-21T08:57:48.324516Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 39582.3, "error": null}
+{"ts": "2026-02-21T08:57:48.324516Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 2}
+{"ts": "2026-02-21T08:57:48.976337Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1, "elapsed_sec": 40.208}
+{"ts": "2026-02-21T08:57:49.550916Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 40784.543, "error": null}
+{"ts": "2026-02-21T08:57:49.554157Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2}
+{"ts": "2026-02-21T08:58:04.087957Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 2, "elapsed_sec": 20.161}
+{"ts": "2026-02-21T08:58:06.099492Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2, "elapsed_sec": 20.195}
+{"ts": "2026-02-21T08:58:08.537923Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 2, "elapsed_sec": 20.21}
+{"ts": "2026-02-21T08:58:09.753698Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T08:58:14.611556Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 30684.459, "error": null}
+{"ts": "2026-02-21T08:58:14.613572Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 3}
+{"ts": "2026-02-21T08:58:23.683284Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 37775.383, "error": null}
+{"ts": "2026-02-21T08:58:23.683284Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3}
+{"ts": "2026-02-21T08:58:24.453154Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 36121.855, "error": null}
+{"ts": "2026-02-21T08:58:24.453571Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 3}
+{"ts": "2026-02-21T08:58:29.874685Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2, "elapsed_sec": 40.32}
+{"ts": "2026-02-21T08:58:34.779734Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 3, "elapsed_sec": 20.166}
+{"ts": "2026-02-21T08:58:36.624420Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 47067.643, "error": null}
+{"ts": "2026-02-21T08:58:36.624420Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3}
+{"ts": "2026-02-21T08:58:43.821993Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "elapsed_sec": 20.138}
+{"ts": "2026-02-21T08:58:44.562590Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 3, "elapsed_sec": 20.109}
+{"ts": "2026-02-21T08:58:54.247048Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 39631.646, "error": null}
+{"ts": "2026-02-21T08:58:54.248053Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 4}
+{"ts": "2026-02-21T08:58:56.748688Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3, "elapsed_sec": 20.124}
+{"ts": "2026-02-21T08:59:02.198751Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 37746.412, "error": null}
+{"ts": "2026-02-21T08:59:02.198751Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 4}
+{"ts": "2026-02-21T08:59:03.939395Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "elapsed_sec": 40.256}
+{"ts": "2026-02-21T08:59:08.257061Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 44574.474, "error": null}
+{"ts": "2026-02-21T08:59:08.260306Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4}
+{"ts": "2026-02-21T08:59:14.386847Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 4, "elapsed_sec": 20.139}
+{"ts": "2026-02-21T08:59:16.851755Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3, "elapsed_sec": 40.227}
+{"ts": "2026-02-21T08:59:18.049200Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 41424.154, "error": null}
+{"ts": "2026-02-21T08:59:18.049200Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 4}
+{"ts": "2026-02-21T08:59:22.355011Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 4, "elapsed_sec": 20.153}
+{"ts": "2026-02-21T08:59:27.399321Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 33152.904, "error": null}
+{"ts": "2026-02-21T08:59:27.399321Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 5}
+{"ts": "2026-02-21T08:59:28.375129Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4, "elapsed_sec": 20.115}
+{"ts": "2026-02-21T08:59:34.837085Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 32635.754, "error": null}
+{"ts": "2026-02-21T08:59:34.837085Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 5}
+{"ts": "2026-02-21T08:59:37.627447Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 29366.594, "error": null}
+{"ts": "2026-02-21T08:59:37.627447Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5}
+{"ts": "2026-02-21T08:59:38.165149Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 4, "elapsed_sec": 20.114}
+{"ts": "2026-02-21T08:59:47.494652Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 5, "elapsed_sec": 20.092}
+{"ts": "2026-02-21T08:59:52.739718Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 34687.662, "error": null}
+{"ts": "2026-02-21T08:59:52.739718Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 5}
+{"ts": "2026-02-21T08:59:54.936990Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 5, "elapsed_sec": 20.096}
+{"ts": "2026-02-21T08:59:57.752213Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5, "elapsed_sec": 20.123}
+{"ts": "2026-02-21T08:59:58.707561Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 31307.787, "error": null}
+{"ts": "2026-02-21T08:59:58.707561Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:00:11.025542Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 33396.824, "error": null}
+{"ts": "2026-02-21T09:00:11.025542Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:00:12.846264Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 5, "elapsed_sec": 20.106}
+{"ts": "2026-02-21T09:00:14.695163Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 39854.969, "error": null}
+{"ts": "2026-02-21T09:00:14.695163Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:00:18.808135Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 6, "elapsed_sec": 20.095}
+{"ts": "2026-02-21T09:00:26.948538Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 34207.922, "error": null}
+{"ts": "2026-02-21T09:00:26.948538Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:00:31.190517Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "elapsed_sec": 20.162}
+{"ts": "2026-02-21T09:00:34.883402Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 6, "elapsed_sec": 20.185}
+{"ts": "2026-02-21T09:00:38.587879Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 39876.436, "error": null}
+{"ts": "2026-02-21T09:00:38.587879Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:00:47.093230Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 6, "elapsed_sec": 20.142}
+{"ts": "2026-02-21T09:00:50.599384Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 35899.481, "error": null}
+{"ts": "2026-02-21T09:00:50.599384Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:00:51.309541Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "elapsed_sec": 40.281}
+{"ts": "2026-02-21T09:00:56.505447Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 45477.48, "error": null}
+{"ts": "2026-02-21T09:00:56.505447Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:00:58.682348Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 7, "elapsed_sec": 20.09}
+{"ts": "2026-02-21T09:00:59.456609Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 32506.617, "error": null}
+{"ts": "2026-02-21T09:00:59.460671Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:01:09.506850Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30913.459, "error": null}
+{"ts": "2026-02-21T09:01:09.506850Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:01:10.706679Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7, "elapsed_sec": 20.107}
+{"ts": "2026-02-21T09:01:16.627294Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7, "elapsed_sec": 20.118}
+{"ts": "2026-02-21T09:01:19.594647Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7, "elapsed_sec": 20.134}
+{"ts": "2026-02-21T09:01:29.615506Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 8, "elapsed_sec": 20.108}
+{"ts": "2026-02-21T09:01:30.809469Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7, "elapsed_sec": 40.21}
+{"ts": "2026-02-21T09:01:30.943508Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 40344.011, "error": null}
+{"ts": "2026-02-21T09:01:30.944560Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:01:33.087271Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 36578.407, "error": null}
+{"ts": "2026-02-21T09:01:33.087271Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:01:39.698923Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7, "elapsed_sec": 40.238}
+{"ts": "2026-02-21T09:01:41.436055Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 41975.804, "error": null}
+{"ts": "2026-02-21T09:01:41.436055Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:01:48.437098Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 38931.319, "error": null}
+{"ts": "2026-02-21T09:01:48.437098Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:01:51.055678Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 8, "elapsed_sec": 20.111}
+{"ts": "2026-02-21T09:01:53.188295Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8, "elapsed_sec": 20.097}
+{"ts": "2026-02-21T09:02:01.557134Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8, "elapsed_sec": 20.117}
+{"ts": "2026-02-21T09:02:07.784580Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 36841.49, "error": null}
+{"ts": "2026-02-21T09:02:07.787613Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:02:08.551933Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 9, "elapsed_sec": 20.111}
+{"ts": "2026-02-21T09:02:13.123909Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 40030.904, "error": null}
+{"ts": "2026-02-21T09:02:13.123909Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:02:21.735684Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8, "elapsed_sec": 40.296}
+{"ts": "2026-02-21T09:02:21.962047Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 40523.612, "error": null}
+{"ts": "2026-02-21T09:02:21.962047Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:02:26.204360Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 37763.993, "error": null}
+{"ts": "2026-02-21T09:02:26.204360Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:02:27.906204Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 9, "elapsed_sec": 20.118}
+{"ts": "2026-02-21T09:02:33.258572Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "elapsed_sec": 20.134}
+{"ts": "2026-02-21T09:02:42.073965Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 9, "elapsed_sec": 20.107}
+{"ts": "2026-02-21T09:02:46.309455Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10, "elapsed_sec": 20.102}
+{"ts": "2026-02-21T09:02:46.676941Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 38887.777, "error": null}
+{"ts": "2026-02-21T09:02:46.677947Z", "event": "turn_started", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:02:50.294553Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 37168.517, "error": null}
+{"ts": "2026-02-21T09:02:50.294553Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:02:59.573457Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 37606.777, "error": null}
+{"ts": "2026-02-21T09:02:59.573457Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:03:06.434113Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10, "elapsed_sec": 40.226}
+{"ts": "2026-02-21T09:03:06.800552Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10, "elapsed_sec": 20.123}
+{"ts": "2026-02-21T09:03:10.399465Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "elapsed_sec": 20.103}
+{"ts": "2026-02-21T09:03:16.293460Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 50086.604, "error": null}
+{"ts": "2026-02-21T09:03:16.293460Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:03:19.704914Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 10, "elapsed_sec": 20.128}
+{"ts": "2026-02-21T09:03:22.012957Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 31716.984, "error": null}
+{"ts": "2026-02-21T09:03:22.012957Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:03:26.928701Z", "event": "turn_heartbeat", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10, "elapsed_sec": 40.251}
+{"ts": "2026-02-21T09:03:31.341457Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 31764.03, "error": null}
+{"ts": "2026-02-21T09:03:31.344745Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:03:36.448876Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11, "elapsed_sec": 20.151}
+{"ts": "2026-02-21T09:03:42.128745Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "elapsed_sec": 20.112}
+{"ts": "2026-02-21T09:03:46.082714Z", "event": "turn_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "dataset_index": 2, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 59407.125, "error": null}
+{"ts": "2026-02-21T09:03:46.089874Z", "event": "dialog_done", "dialog_id": "d9026886-2b16-45e7-8eca-d7621c3fab49", "status": "ok", "turns": 10}
+{"ts": "2026-02-21T09:03:46.455923Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:03:51.492763Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 11, "elapsed_sec": 20.148}
+{"ts": "2026-02-21T09:03:56.568021Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11, "elapsed_sec": 40.27}
+{"ts": "2026-02-21T09:03:57.572747Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 41275.013, "error": null}
+{"ts": "2026-02-21T09:03:57.572747Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:03:57.671038Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 26325.414, "error": null}
+{"ts": "2026-02-21T09:03:57.671038Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:03:58.551762Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 36534.92, "error": null}
+{"ts": "2026-02-21T09:03:58.551762Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:04:06.596335Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 1, "elapsed_sec": 20.14}
+{"ts": "2026-02-21T09:04:17.733000Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12, "elapsed_sec": 20.159}
+{"ts": "2026-02-21T09:04:17.810066Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 12, "elapsed_sec": 20.138}
+{"ts": "2026-02-21T09:04:18.705072Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12, "elapsed_sec": 20.151}
+{"ts": "2026-02-21T09:04:24.503953Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 38046.778, "error": null}
+{"ts": "2026-02-21T09:04:24.505150Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:04:33.731494Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 36058.75, "error": null}
+{"ts": "2026-02-21T09:04:33.732485Z", "event": "turn_started", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:04:36.329971Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 37775.717, "error": null}
+{"ts": "2026-02-21T09:04:36.330980Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:04:37.914676Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12, "elapsed_sec": 40.34}
+{"ts": "2026-02-21T09:04:44.656610Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 2, "elapsed_sec": 20.152}
+{"ts": "2026-02-21T09:04:49.220942Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 51646.206, "error": null}
+{"ts": "2026-02-21T09:04:49.222226Z", "event": "turn_started", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:04:53.901189Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13, "elapsed_sec": 20.169}
+{"ts": "2026-02-21T09:04:56.497157Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "elapsed_sec": 20.165}
+{"ts": "2026-02-21T09:05:04.529190Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 40022.676, "error": null}
+{"ts": "2026-02-21T09:05:04.529190Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:05:09.404435Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13, "elapsed_sec": 20.182}
+{"ts": "2026-02-21T09:05:14.080231Z", "event": "turn_heartbeat", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13, "elapsed_sec": 40.348}
+{"ts": "2026-02-21T09:05:16.657691Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "elapsed_sec": 40.326}
+{"ts": "2026-02-21T09:05:17.931969Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 41598.747, "error": null}
+{"ts": "2026-02-21T09:05:17.934175Z", "event": "dialog_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "status": "ok", "turns": 13}
+{"ts": "2026-02-21T09:05:18.298202Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:05:24.729840Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3, "elapsed_sec": 20.201}
+{"ts": "2026-02-21T09:05:25.106913Z", "event": "turn_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "dataset_index": 4, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 51373.363, "error": null}
+{"ts": "2026-02-21T09:05:25.109003Z", "event": "dialog_done", "dialog_id": "67a91dfa-ef7b-4367-bc7b-bab674d5aa42", "status": "ok", "turns": 13}
+{"ts": "2026-02-21T09:05:25.495407Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:05:29.612476Z", "event": "turn_heartbeat", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13, "elapsed_sec": 40.39}
+{"ts": "2026-02-21T09:05:38.497725Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:05:44.893861Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3, "elapsed_sec": 40.364}
+{"ts": "2026-02-21T09:05:45.684401Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:05:47.348032Z", "event": "turn_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "dataset_index": 3, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 58123.054, "error": null}
+{"ts": "2026-02-21T09:05:47.350514Z", "event": "dialog_done", "dialog_id": "2ab794f7-4d65-4479-8d4c-c4f6219f9ba3", "status": "ok", "turns": 13}
+{"ts": "2026-02-21T09:05:47.718551Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:05:51.267183Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 46736.936, "error": null}
+{"ts": "2026-02-21T09:05:51.267183Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:05:58.683307Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1, "elapsed_sec": 40.385}
+{"ts": "2026-02-21T09:06:01.049173Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 42750.419, "error": null}
+{"ts": "2026-02-21T09:06:01.049173Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:06:05.867904Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1, "elapsed_sec": 40.372}
+{"ts": "2026-02-21T09:06:07.901102Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:06:11.424419Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 4, "elapsed_sec": 20.157}
+{"ts": "2026-02-21T09:06:21.228725Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2, "elapsed_sec": 20.179}
+{"ts": "2026-02-21T09:06:21.789676Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 56293.01, "error": null}
+{"ts": "2026-02-21T09:06:21.789676Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:06:28.061818Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1, "elapsed_sec": 40.343}
+{"ts": "2026-02-21T09:06:29.387824Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 41668.209, "error": null}
+{"ts": "2026-02-21T09:06:29.387824Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:06:30.019041Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 38750.893, "error": null}
+{"ts": "2026-02-21T09:06:30.020035Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:06:41.400062Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2, "elapsed_sec": 40.35}
+{"ts": "2026-02-21T09:06:41.649341Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 40599.061, "error": null}
+{"ts": "2026-02-21T09:06:41.650359Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:06:41.974267Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 2, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:06:49.532806Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 2, "elapsed_sec": 20.145}
+{"ts": "2026-02-21T09:06:50.179657Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 5, "elapsed_sec": 20.16}
+{"ts": "2026-02-21T09:07:00.934297Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 39142.146, "error": null}
+{"ts": "2026-02-21T09:07:00.935302Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:07:01.805091Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 3, "elapsed_sec": 20.155}
+{"ts": "2026-02-21T09:07:03.777423Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 34388.534, "error": null}
+{"ts": "2026-02-21T09:07:03.778346Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:07:09.935996Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 39914.448, "error": null}
+{"ts": "2026-02-21T09:07:09.936994Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:07:16.296229Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 34643.792, "error": null}
+{"ts": "2026-02-21T09:07:16.297145Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:07:21.036158Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 3, "elapsed_sec": 20.101}
+{"ts": "2026-02-21T09:07:23.898023Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 3, "elapsed_sec": 20.12}
+{"ts": "2026-02-21T09:07:30.041629Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 6, "elapsed_sec": 20.105}
+{"ts": "2026-02-21T09:07:33.104245Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 29324.821, "error": null}
+{"ts": "2026-02-21T09:07:33.105252Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:07:35.346214Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 34409.751, "error": null}
+{"ts": "2026-02-21T09:07:35.347439Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:07:36.434645Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 4, "elapsed_sec": 20.137}
+{"ts": "2026-02-21T09:07:38.658216Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 28720.233, "error": null}
+{"ts": "2026-02-21T09:07:38.658216Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:07:50.665500Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 34366.923, "error": null}
+{"ts": "2026-02-21T09:07:50.666656Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:07:53.282544Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:07:55.500467Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4, "elapsed_sec": 20.153}
+{"ts": "2026-02-21T09:07:58.791900Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7, "elapsed_sec": 20.133}
+{"ts": "2026-02-21T09:08:10.808164Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 5, "elapsed_sec": 20.141}
+{"ts": "2026-02-21T09:08:13.409964Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4, "elapsed_sec": 40.304}
+{"ts": "2026-02-21T09:08:15.625617Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4, "elapsed_sec": 40.278}
+{"ts": "2026-02-21T09:08:17.024082Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 43916.975, "error": null}
+{"ts": "2026-02-21T09:08:17.025135Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:08:18.934340Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7, "elapsed_sec": 40.276}
+{"ts": "2026-02-21T09:08:20.327751Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 41668.922, "error": null}
+{"ts": "2026-02-21T09:08:20.328757Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:08:23.164241Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 47815.591, "error": null}
+{"ts": "2026-02-21T09:08:23.165171Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:08:23.673154Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 33004.932, "error": null}
+{"ts": "2026-02-21T09:08:23.673154Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:08:37.197116Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5, "elapsed_sec": 20.172}
+{"ts": "2026-02-21T09:08:40.523903Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 8, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:08:43.340150Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 5, "elapsed_sec": 20.175}
+{"ts": "2026-02-21T09:08:43.867716Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 6, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:08:54.605756Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 34274.539, "error": null}
+{"ts": "2026-02-21T09:08:54.605756Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:08:57.365696Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5, "elapsed_sec": 40.341}
+{"ts": "2026-02-21T09:08:59.108788Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 42082.929, "error": null}
+{"ts": "2026-02-21T09:08:59.108788Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:08:59.935138Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 36768.998, "error": null}
+{"ts": "2026-02-21T09:08:59.935138Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:09:01.021978Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 37347.759, "error": null}
+{"ts": "2026-02-21T09:09:01.021978Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:09:14.802390Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:09:19.267260Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 6, "elapsed_sec": 20.158}
+{"ts": "2026-02-21T09:09:20.097674Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 6, "elapsed_sec": 20.162}
+{"ts": "2026-02-21T09:09:21.181574Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7, "elapsed_sec": 20.159}
+{"ts": "2026-02-21T09:09:34.963827Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9, "elapsed_sec": 40.358}
+{"ts": "2026-02-21T09:09:35.076124Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 35139.802, "error": null}
+{"ts": "2026-02-21T09:09:35.076124Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:09:36.461807Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 41854.448, "error": null}
+{"ts": "2026-02-21T09:09:36.461807Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:09:36.835689Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 37725.437, "error": null}
+{"ts": "2026-02-21T09:09:36.835689Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:09:41.331349Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7, "elapsed_sec": 40.309}
+{"ts": "2026-02-21T09:09:51.605575Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 50581.644, "error": null}
+{"ts": "2026-02-21T09:09:51.605897Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:09:55.261847Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 7, "elapsed_sec": 20.185}
+{"ts": "2026-02-21T09:09:56.660900Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 10, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:09:57.023323Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 7, "elapsed_sec": 20.187}
+{"ts": "2026-02-21T09:10:08.956185Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 33878.29, "error": null}
+{"ts": "2026-02-21T09:10:08.957170Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:10:11.764143Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 35301.111, "error": null}
+{"ts": "2026-02-21T09:10:11.765205Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:10:11.826952Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8, "elapsed_sec": 20.221}
+{"ts": "2026-02-21T09:10:15.171044Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 38333.558, "error": null}
+{"ts": "2026-02-21T09:10:15.172056Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:10:29.153175Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 8, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:10:31.950668Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 11, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:10:32.028266Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8, "elapsed_sec": 40.422}
+{"ts": "2026-02-21T09:10:35.376021Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 8, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:10:38.552944Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 29593.932, "error": null}
+{"ts": "2026-02-21T09:10:38.552944Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:10:42.924693Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 51317.707, "error": null}
+{"ts": "2026-02-21T09:10:42.925696Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:10:48.916839Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 37150.163, "error": null}
+{"ts": "2026-02-21T09:10:48.917832Z", "event": "turn_started", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:10:48.924431Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 33752.019, "error": null}
+{"ts": "2026-02-21T09:10:48.925439Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:10:58.726137Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 9, "elapsed_sec": 20.172}
+{"ts": "2026-02-21T09:11:03.126842Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9, "elapsed_sec": 20.201}
+{"ts": "2026-02-21T09:11:09.128123Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9, "elapsed_sec": 20.203}
+{"ts": "2026-02-21T09:11:09.129144Z", "event": "turn_heartbeat", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 12, "elapsed_sec": 20.212}
+{"ts": "2026-02-21T09:11:10.822521Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 32268.36, "error": null}
+{"ts": "2026-02-21T09:11:10.823520Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:11:23.301236Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9, "elapsed_sec": 40.375}
+{"ts": "2026-02-21T09:11:27.452926Z", "event": "turn_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "dataset_index": 5, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 38533.866, "error": null}
+{"ts": "2026-02-21T09:11:27.469096Z", "event": "dialog_done", "dialog_id": "5eca11fb-2694-4f06-a996-a187f8fbeca3", "status": "ok", "turns": 12}
+{"ts": "2026-02-21T09:11:27.862805Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:11:28.853235Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 45926.075, "error": null}
+{"ts": "2026-02-21T09:11:28.855187Z", "event": "turn_started", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:11:29.284538Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9, "elapsed_sec": 40.359}
+{"ts": "2026-02-21T09:11:29.801604Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 40875.448, "error": null}
+{"ts": "2026-02-21T09:11:29.801604Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:11:31.014470Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10, "elapsed_sec": 20.19}
+{"ts": "2026-02-21T09:11:48.018387Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 1, "elapsed_sec": 20.156}
+{"ts": "2026-02-21T09:11:49.030717Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10, "elapsed_sec": 20.176}
+{"ts": "2026-02-21T09:11:49.989576Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 10, "elapsed_sec": 20.188}
+{"ts": "2026-02-21T09:11:51.202212Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10, "elapsed_sec": 40.378}
+{"ts": "2026-02-21T09:11:53.564476Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 42738.579, "error": null}
+{"ts": "2026-02-21T09:11:53.565495Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:12:00.403063Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 32540.077, "error": null}
+{"ts": "2026-02-21T09:12:00.405063Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:12:01.633456Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 31831.182, "error": null}
+{"ts": "2026-02-21T09:12:01.634382Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:12:09.197648Z", "event": "turn_heartbeat", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10, "elapsed_sec": 40.343}
+{"ts": "2026-02-21T09:12:13.755728Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 11, "elapsed_sec": 20.19}
+{"ts": "2026-02-21T09:12:20.584452Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 2, "elapsed_sec": 20.179}
+{"ts": "2026-02-21T09:12:20.792977Z", "event": "turn_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "dataset_index": 6, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 51936.454, "error": null}
+{"ts": "2026-02-21T09:12:20.800215Z", "event": "dialog_done", "dialog_id": "a9d7ed2c-7f62-4a14-a333-5a6f95fe9a2e", "status": "ok", "turns": 10}
+{"ts": "2026-02-21T09:12:21.175747Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:12:21.823666Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 11, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:12:30.582058Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 37015.115, "error": null}
+{"ts": "2026-02-21T09:12:30.584067Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:12:33.390408Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 31754.004, "error": null}
+{"ts": "2026-02-21T09:12:33.390408Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:12:38.528210Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 38121.132, "error": null}
+{"ts": "2026-02-21T09:12:38.528210Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:12:41.345423Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 1, "elapsed_sec": 20.169}
+{"ts": "2026-02-21T09:12:50.783133Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:12:52.611237Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 31434.432, "error": null}
+{"ts": "2026-02-21T09:12:52.611237Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:12:53.597603Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 12, "elapsed_sec": 20.207}
+{"ts": "2026-02-21T09:12:58.713848Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 3, "elapsed_sec": 20.185}
+{"ts": "2026-02-21T09:13:07.839942Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 34447.907, "error": null}
+{"ts": "2026-02-21T09:13:07.840942Z", "event": "turn_started", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:13:10.966566Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12, "elapsed_sec": 40.383}
+{"ts": "2026-02-21T09:13:11.624914Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 41038.742, "error": null}
+{"ts": "2026-02-21T09:13:11.624914Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:13:12.791773Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 2, "elapsed_sec": 20.18}
+{"ts": "2026-02-21T09:13:13.819395Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 35290.55, "error": null}
+{"ts": "2026-02-21T09:13:13.820321Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:13:24.979771Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 32367.242, "error": null}
+{"ts": "2026-02-21T09:13:24.980691Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:13:28.038156Z", "event": "turn_heartbeat", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 13, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:13:31.840153Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 13, "elapsed_sec": 20.214}
+{"ts": "2026-02-21T09:13:34.012765Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 4, "elapsed_sec": 20.192}
+{"ts": "2026-02-21T09:13:37.118508Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 23296.413, "error": null}
+{"ts": "2026-02-21T09:13:37.119872Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:13:41.700151Z", "event": "turn_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "dataset_index": 8, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 33857.887, "error": null}
+{"ts": "2026-02-21T09:13:41.702282Z", "event": "dialog_done", "dialog_id": "18cb7ec3-fb8b-481f-9a1f-f90001b9fcb0", "status": "ok", "turns": 13}
+{"ts": "2026-02-21T09:13:42.087621Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:13:44.598402Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 32971.053, "error": null}
+{"ts": "2026-02-21T09:13:44.598402Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:13:45.155877Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 3, "elapsed_sec": 20.175}
+{"ts": "2026-02-21T09:13:54.428407Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 29446.157, "error": null}
+{"ts": "2026-02-21T09:13:54.429501Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:13:57.281117Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 5, "elapsed_sec": 20.161}
+{"ts": "2026-02-21T09:14:02.289202Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 1, "elapsed_sec": 20.201}
+{"ts": "2026-02-21T09:14:04.762925Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 14, "elapsed_sec": 20.164}
+{"ts": "2026-02-21T09:14:08.958194Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 31837.978, "error": null}
+{"ts": "2026-02-21T09:14:08.959158Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:14:11.428927Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 26829.99, "error": null}
+{"ts": "2026-02-21T09:14:11.430255Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:14:14.358074Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 32269.405, "error": null}
+{"ts": "2026-02-21T09:14:14.359310Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:14:14.601235Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 4, "elapsed_sec": 20.172}
+{"ts": "2026-02-21T09:14:27.399117Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 32968.101, "error": null}
+{"ts": "2026-02-21T09:14:27.399117Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:14:29.170210Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 6, "elapsed_sec": 20.211}
+{"ts": "2026-02-21T09:14:31.653645Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 15, "elapsed_sec": 20.223}
+{"ts": "2026-02-21T09:14:34.565103Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 2, "elapsed_sec": 20.205}
+{"ts": "2026-02-21T09:14:43.168519Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 31736.06, "error": null}
+{"ts": "2026-02-21T09:14:43.169607Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:14:44.834751Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 30474.172, "error": null}
+{"ts": "2026-02-21T09:14:44.834751Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:14:45.147275Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 36187.572, "error": null}
+{"ts": "2026-02-21T09:14:45.151731Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:14:47.588332Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 5, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:14:55.048921Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 27647.929, "error": null}
+{"ts": "2026-02-21T09:14:55.050285Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:15:03.346790Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 16, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:15:05.031028Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 3, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:15:05.311845Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 7, "elapsed_sec": 20.16}
+{"ts": "2026-02-21T09:15:15.239130Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 6, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:15:16.565406Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 31413.465, "error": null}
+{"ts": "2026-02-21T09:15:16.566410Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:15:17.347970Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 32511.983, "error": null}
+{"ts": "2026-02-21T09:15:17.350064Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:15:19.547354Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 36376.551, "error": null}
+{"ts": "2026-02-21T09:15:19.548502Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:15:32.268333Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 37216.689, "error": null}
+{"ts": "2026-02-21T09:15:32.269255Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:15:36.747259Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8, "elapsed_sec": 20.181}
+{"ts": "2026-02-21T09:15:37.536532Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4, "elapsed_sec": 20.187}
+{"ts": "2026-02-21T09:15:39.759501Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 17, "elapsed_sec": 20.211}
+{"ts": "2026-02-21T09:15:52.466519Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:15:55.294244Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 35744.15, "error": null}
+{"ts": "2026-02-21T09:15:55.295254Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:15:56.926260Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8, "elapsed_sec": 40.36}
+{"ts": "2026-02-21T09:15:57.719994Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4, "elapsed_sec": 40.37}
+{"ts": "2026-02-21T09:15:59.054175Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 42486.993, "error": null}
+{"ts": "2026-02-21T09:15:59.054175Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:16:00.346127Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 42994.403, "error": null}
+{"ts": "2026-02-21T09:16:00.347021Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:16:12.631117Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7, "elapsed_sec": 40.361}
+{"ts": "2026-02-21T09:16:15.453920Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18, "elapsed_sec": 20.159}
+{"ts": "2026-02-21T09:16:16.444122Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 44172.928, "error": null}
+{"ts": "2026-02-21T09:16:16.445127Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:16:19.256380Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 9, "elapsed_sec": 20.201}
+{"ts": "2026-02-21T09:16:20.529053Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 5, "elapsed_sec": 20.182}
+{"ts": "2026-02-21T09:16:23.295568Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 27998.922, "error": null}
+{"ts": "2026-02-21T09:16:23.296482Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:16:32.686310Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 33629.447, "error": null}
+{"ts": "2026-02-21T09:16:32.686310Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:16:36.633503Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:16:37.206609Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 36857.301, "error": null}
+{"ts": "2026-02-21T09:16:37.206609Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:16:43.489813Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 19, "elapsed_sec": 20.193}
+{"ts": "2026-02-21T09:16:49.774530Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 26476.622, "error": null}
+{"ts": "2026-02-21T09:16:49.775540Z", "event": "turn_started", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 20}
+{"ts": "2026-02-21T09:16:52.874857Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 10, "elapsed_sec": 20.188}
+{"ts": "2026-02-21T09:16:56.827347Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8, "elapsed_sec": 40.382}
+{"ts": "2026-02-21T09:16:57.390480Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 6, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:16:58.634250Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 25946.743, "error": null}
+{"ts": "2026-02-21T09:16:58.635251Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:16:59.802118Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 43356.57, "error": null}
+{"ts": "2026-02-21T09:16:59.802118Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:17:08.250947Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 31043.524, "error": null}
+{"ts": "2026-02-21T09:17:08.252167Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:17:09.941970Z", "event": "turn_heartbeat", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 20, "elapsed_sec": 20.166}
+{"ts": "2026-02-21T09:17:18.833615Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 11, "elapsed_sec": 20.198}
+{"ts": "2026-02-21T09:17:19.999806Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 9, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:17:24.895769Z", "event": "turn_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "dataset_index": 7, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 35118.634, "error": null}
+{"ts": "2026-02-21T09:17:24.899475Z", "event": "dialog_done", "dialog_id": "65c2e98a-c5bb-482c-9b8e-20afd8f0c5a8", "status": "ok", "turns": 20}
+{"ts": "2026-02-21T09:17:25.333325Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:17:28.451442Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 7, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:17:30.782617Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 30979.302, "error": null}
+{"ts": "2026-02-21T09:17:30.783908Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:17:31.815323Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 33178.617, "error": null}
+{"ts": "2026-02-21T09:17:31.816410Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:17:40.133721Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 31880.66, "error": null}
+{"ts": "2026-02-21T09:17:40.134955Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:17:45.494544Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 1, "elapsed_sec": 20.161}
+{"ts": "2026-02-21T09:17:50.974919Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 10, "elapsed_sec": 20.191}
+{"ts": "2026-02-21T09:17:51.975519Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 12, "elapsed_sec": 20.159}
+{"ts": "2026-02-21T09:17:52.431480Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 27097.583, "error": null}
+{"ts": "2026-02-21T09:17:52.431480Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:18:00.336832Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 8, "elapsed_sec": 20.203}
+{"ts": "2026-02-21T09:18:05.682083Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 33863.77, "error": null}
+{"ts": "2026-02-21T09:18:05.682083Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:18:05.904104Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 35118.728, "error": null}
+{"ts": "2026-02-21T09:18:05.905312Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:18:12.645733Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 2, "elapsed_sec": 20.214}
+{"ts": "2026-02-21T09:18:13.964220Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 33827.739, "error": null}
+{"ts": "2026-02-21T09:18:13.964629Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:18:25.142501Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 32710.539, "error": null}
+{"ts": "2026-02-21T09:18:25.143415Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:18:25.896949Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 13, "elapsed_sec": 20.214}
+{"ts": "2026-02-21T09:18:26.099818Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:18:34.186854Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 9, "elapsed_sec": 20.221}
+{"ts": "2026-02-21T09:18:45.061231Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 39377.8, "error": null}
+{"ts": "2026-02-21T09:18:45.062240Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:18:45.382032Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 3, "elapsed_sec": 20.238}
+{"ts": "2026-02-21T09:18:46.334224Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11, "elapsed_sec": 40.429}
+{"ts": "2026-02-21T09:18:47.180005Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 33213.524, "error": null}
+{"ts": "2026-02-21T09:18:47.181005Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:18:51.851191Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 45944.351, "error": null}
+{"ts": "2026-02-21T09:18:51.851800Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:18:52.621348Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 27476.246, "error": null}
+{"ts": "2026-02-21T09:18:52.622365Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:19:05.226793Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 14, "elapsed_sec": 20.164}
+{"ts": "2026-02-21T09:19:07.303439Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 10, "elapsed_sec": 20.122}
+{"ts": "2026-02-21T09:19:12.011023Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 12, "elapsed_sec": 20.159}
+{"ts": "2026-02-21T09:19:12.790099Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 4, "elapsed_sec": 20.168}
+{"ts": "2026-02-21T09:19:23.058576Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 37994.587, "error": null}
+{"ts": "2026-02-21T09:19:23.059502Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:19:23.641022Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 36458.213, "error": null}
+{"ts": "2026-02-21T09:19:23.641022Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:19:27.961593Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 36108.849, "error": null}
+{"ts": "2026-02-21T09:19:27.961593Z", "event": "turn_started", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:19:28.762195Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 36138.799, "error": null}
+{"ts": "2026-02-21T09:19:28.762195Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:19:43.254983Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 15, "elapsed_sec": 20.195}
+{"ts": "2026-02-21T09:19:43.829455Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 11, "elapsed_sec": 20.188}
+{"ts": "2026-02-21T09:19:48.136463Z", "event": "turn_heartbeat", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 13, "elapsed_sec": 20.175}
+{"ts": "2026-02-21T09:19:48.945894Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 5, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:19:50.212152Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 27151.021, "error": null}
+{"ts": "2026-02-21T09:19:50.213052Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:19:56.370729Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 32727.689, "error": null}
+{"ts": "2026-02-21T09:19:56.370729Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:20:06.301346Z", "event": "turn_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "dataset_index": 10, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 38338.09, "error": null}
+{"ts": "2026-02-21T09:20:06.306468Z", "event": "dialog_done", "dialog_id": "cc101d44-198c-4fb8-b3b4-f6320a56274d", "status": "ok", "turns": 13}
+{"ts": "2026-02-21T09:20:06.675262Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:20:06.908332Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 38144.666, "error": null}
+{"ts": "2026-02-21T09:20:06.909259Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:20:10.435640Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 16, "elapsed_sec": 20.223}
+{"ts": "2026-02-21T09:20:16.554031Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 12, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:20:23.070836Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 32856.637, "error": null}
+{"ts": "2026-02-21T09:20:23.070836Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:20:26.859432Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 1, "elapsed_sec": 20.184}
+{"ts": "2026-02-21T09:20:27.082330Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 6, "elapsed_sec": 20.173}
+{"ts": "2026-02-21T09:20:30.027088Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 33655.304, "error": null}
+{"ts": "2026-02-21T09:20:30.028086Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:20:35.068929Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 28157.636, "error": null}
+{"ts": "2026-02-21T09:20:35.068929Z", "event": "turn_started", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:20:43.260290Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 17, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:20:45.448494Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 38772.412, "error": null}
+{"ts": "2026-02-21T09:20:45.448494Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:20:50.241617Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 13, "elapsed_sec": 20.213}
+{"ts": "2026-02-21T09:20:53.600646Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 30528.49, "error": null}
+{"ts": "2026-02-21T09:20:53.601850Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:20:55.285038Z", "event": "turn_heartbeat", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 7, "elapsed_sec": 20.216}
+{"ts": "2026-02-21T09:21:01.789503Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 31760.09, "error": null}
+{"ts": "2026-02-21T09:21:01.790512Z", "event": "turn_started", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:21:05.645012Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 2, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:21:12.206090Z", "event": "turn_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "dataset_index": 12, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 37136.252, "error": null}
+{"ts": "2026-02-21T09:21:12.208101Z", "event": "dialog_done", "dialog_id": "e5af9eec-11aa-4b13-8cbd-cdd66c99e451", "status": "ok", "turns": 7}
+{"ts": "2026-02-21T09:21:12.575040Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:21:13.810473Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 18, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:21:19.496925Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 34047.453, "error": null}
+{"ts": "2026-02-21T09:21:19.497924Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:21:22.010407Z", "event": "turn_heartbeat", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 14, "elapsed_sec": 20.219}
+{"ts": "2026-02-21T09:21:24.738793Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 31136.049, "error": null}
+{"ts": "2026-02-21T09:21:24.739794Z", "event": "turn_started", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:21:32.781738Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 1, "elapsed_sec": 20.207}
+{"ts": "2026-02-21T09:21:38.058211Z", "event": "turn_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "dataset_index": 11, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 36266.6, "error": null}
+{"ts": "2026-02-21T09:21:38.064453Z", "event": "dialog_done", "dialog_id": "858b53d0-3d96-4890-82b2-4308023128fe", "status": "ok", "turns": 14}
+{"ts": "2026-02-21T09:21:38.433759Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:21:39.715322Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3, "elapsed_sec": 20.217}
+{"ts": "2026-02-21T09:21:42.108545Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 29533.147, "error": null}
+{"ts": "2026-02-21T09:21:42.109553Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:21:44.926187Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:21:58.615266Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 1, "elapsed_sec": 20.181}
+{"ts": "2026-02-21T09:21:59.878876Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3, "elapsed_sec": 40.381}
+{"ts": "2026-02-21T09:22:00.258311Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 40759.394, "error": null}
+{"ts": "2026-02-21T09:22:00.259319Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:22:02.296880Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 2, "elapsed_sec": 20.187}
+{"ts": "2026-02-21T09:22:05.123010Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19, "elapsed_sec": 40.383}
+{"ts": "2026-02-21T09:22:13.774498Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 35339.713, "error": null}
+{"ts": "2026-02-21T09:22:13.775056Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:22:13.846802Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 31736.568, "error": null}
+{"ts": "2026-02-21T09:22:13.847800Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:22:20.464353Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 4, "elapsed_sec": 20.205}
+{"ts": "2026-02-21T09:22:25.324704Z", "event": "turn_heartbeat", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19, "elapsed_sec": 60.585}
+{"ts": "2026-02-21T09:22:32.524617Z", "event": "turn_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "dataset_index": 9, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 67783.139, "error": null}
+{"ts": "2026-02-21T09:22:32.531312Z", "event": "dialog_done", "dialog_id": "58aa7c3d-be98-44fc-9aec-aa0b47c21dc7", "status": "ok", "turns": 19}
+{"ts": "2026-02-21T09:22:32.894048Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:22:33.986509Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 2, "elapsed_sec": 20.211}
+{"ts": "2026-02-21T09:22:34.034369Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 3, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:22:40.385401Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 40125.586, "error": null}
+{"ts": "2026-02-21T09:22:40.386406Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:22:41.654714Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 27805.764, "error": null}
+{"ts": "2026-02-21T09:22:41.654714Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:22:46.245232Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 32469.885, "error": null}
+{"ts": "2026-02-21T09:22:46.246516Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:22:53.102358Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 1, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:23:00.558899Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 5, "elapsed_sec": 20.172}
+{"ts": "2026-02-21T09:23:01.851585Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 4, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:23:06.462676Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 3, "elapsed_sec": 20.216}
+{"ts": "2026-02-21T09:23:07.445354Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 25789.45, "error": null}
+{"ts": "2026-02-21T09:23:07.446366Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:23:09.093482Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 36198.296, "error": null}
+{"ts": "2026-02-21T09:23:09.093482Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:23:11.974316Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 31587.713, "error": null}
+{"ts": "2026-02-21T09:23:11.974316Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:23:22.155730Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 35908.115, "error": null}
+{"ts": "2026-02-21T09:23:22.156732Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:23:27.641473Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 5, "elapsed_sec": 20.195}
+{"ts": "2026-02-21T09:23:29.288348Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 2, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:23:32.183661Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6, "elapsed_sec": 20.209}
+{"ts": "2026-02-21T09:23:35.275818Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 27828.425, "error": null}
+{"ts": "2026-02-21T09:23:35.276815Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:23:42.375045Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 4, "elapsed_sec": 20.218}
+{"ts": "2026-02-21T09:23:45.375916Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 36281.465, "error": null}
+{"ts": "2026-02-21T09:23:45.376933Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:23:51.522872Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 29363.777, "error": null}
+{"ts": "2026-02-21T09:23:51.522872Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:23:52.373528Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6, "elapsed_sec": 40.399}
+{"ts": "2026-02-21T09:23:52.512885Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 40537.833, "error": null}
+{"ts": "2026-02-21T09:23:52.514045Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:23:55.496808Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 6, "elapsed_sec": 20.22}
+{"ts": "2026-02-21T09:24:05.204245Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 29925.965, "error": null}
+{"ts": "2026-02-21T09:24:05.205246Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:24:05.596816Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 3, "elapsed_sec": 20.22}
+{"ts": "2026-02-21T09:24:11.728157Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 5, "elapsed_sec": 20.205}
+{"ts": "2026-02-21T09:24:12.720563Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 7, "elapsed_sec": 20.206}
+{"ts": "2026-02-21T09:24:19.631780Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 27116.349, "error": null}
+{"ts": "2026-02-21T09:24:19.631780Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:24:20.021957Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 34644.608, "error": null}
+{"ts": "2026-02-21T09:24:20.022959Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:24:20.092307Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 28568.501, "error": null}
+{"ts": "2026-02-21T09:24:20.092307Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:24:25.382320Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 7, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:24:30.322996Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 25116.058, "error": null}
+{"ts": "2026-02-21T09:24:30.322996Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:24:39.817477Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 8, "elapsed_sec": 20.185}
+{"ts": "2026-02-21T09:24:40.234278Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 4, "elapsed_sec": 20.211}
+{"ts": "2026-02-21T09:24:40.298689Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 6, "elapsed_sec": 20.206}
+{"ts": "2026-02-21T09:24:48.203451Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 28179.581, "error": null}
+{"ts": "2026-02-21T09:24:48.204457Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:24:50.511697Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 8, "elapsed_sec": 20.188}
+{"ts": "2026-02-21T09:24:54.343366Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 34710.75, "error": null}
+{"ts": "2026-02-21T09:24:54.344291Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:24:59.384334Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 29059.471, "error": null}
+{"ts": "2026-02-21T09:24:59.385333Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:24:59.403739Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 39310.433, "error": null}
+{"ts": "2026-02-21T09:24:59.404888Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:25:08.401211Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 5, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:25:14.475935Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 9, "elapsed_sec": 20.132}
+{"ts": "2026-02-21T09:25:16.262800Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 28057.936, "error": null}
+{"ts": "2026-02-21T09:25:16.263722Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:25:19.531108Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 9, "elapsed_sec": 20.147}
+{"ts": "2026-02-21T09:25:19.591733Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 7, "elapsed_sec": 20.187}
+{"ts": "2026-02-21T09:25:26.993425Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 27607.286, "error": null}
+{"ts": "2026-02-21T09:25:26.994346Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:25:32.912427Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 38567.1, "error": null}
+{"ts": "2026-02-21T09:25:32.913427Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:25:36.512646Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 6, "elapsed_sec": 20.249}
+{"ts": "2026-02-21T09:25:37.901146Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 38495.213, "error": null}
+{"ts": "2026-02-21T09:25:37.902155Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:25:47.154844Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 10, "elapsed_sec": 20.161}
+{"ts": "2026-02-21T09:25:51.951705Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 35686.792, "error": null}
+{"ts": "2026-02-21T09:25:51.952708Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:25:53.079162Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 10, "elapsed_sec": 20.165}
+{"ts": "2026-02-21T09:25:58.057279Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 8, "elapsed_sec": 20.155}
+{"ts": "2026-02-21T09:26:02.039971Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 35043.895, "error": null}
+{"ts": "2026-02-21T09:26:02.039971Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:26:02.533736Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 29618.563, "error": null}
+{"ts": "2026-02-21T09:26:02.533736Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:26:11.699423Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 33796.559, "error": null}
+{"ts": "2026-02-21T09:26:11.700436Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:26:12.129476Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 7, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:26:22.232532Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 11, "elapsed_sec": 20.192}
+{"ts": "2026-02-21T09:26:22.743280Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 11, "elapsed_sec": 20.21}
+{"ts": "2026-02-21T09:26:22.840262Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30885.424, "error": null}
+{"ts": "2026-02-21T09:26:22.840262Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:26:31.907297Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 9, "elapsed_sec": 20.207}
+{"ts": "2026-02-21T09:26:35.990488Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 33949.389, "error": null}
+{"ts": "2026-02-21T09:26:35.990488Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:26:36.628304Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 34093.727, "error": null}
+{"ts": "2026-02-21T09:26:36.629308Z", "event": "turn_started", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:26:42.992376Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 8, "elapsed_sec": 20.151}
+{"ts": "2026-02-21T09:26:43.871092Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 32169.075, "error": null}
+{"ts": "2026-02-21T09:26:43.871092Z", "event": "turn_started", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:26:52.809664Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 29968.465, "error": null}
+{"ts": "2026-02-21T09:26:52.810671Z", "event": "turn_started", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:26:56.167734Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 12, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:26:56.807002Z", "event": "turn_heartbeat", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 12, "elapsed_sec": 20.178}
+{"ts": "2026-02-21T09:27:04.057625Z", "event": "turn_heartbeat", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 10, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:27:10.498504Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 34506.716, "error": null}
+{"ts": "2026-02-21T09:27:10.498504Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:27:13.033449Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9, "elapsed_sec": 20.223}
+{"ts": "2026-02-21T09:27:16.842197Z", "event": "turn_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "dataset_index": 13, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 40213.154, "error": null}
+{"ts": "2026-02-21T09:27:16.845315Z", "event": "dialog_done", "dialog_id": "0a8ba57f-5458-48da-b02e-41a27ee77542", "status": "ok", "turns": 12}
+{"ts": "2026-02-21T09:27:17.216814Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:27:18.160259Z", "event": "turn_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "dataset_index": 15, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 34286.905, "error": null}
+{"ts": "2026-02-21T09:27:18.164680Z", "event": "dialog_done", "dialog_id": "7c3cfe11-94fb-4c9d-ab5d-2bb703bf39d0", "status": "ok", "turns": 10}
+{"ts": "2026-02-21T09:27:18.529475Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:27:30.712988Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 13, "elapsed_sec": 20.214}
+{"ts": "2026-02-21T09:27:33.243311Z", "event": "turn_heartbeat", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9, "elapsed_sec": 40.433}
+{"ts": "2026-02-21T09:27:35.639725Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 25140.86, "error": null}
+{"ts": "2026-02-21T09:27:35.640733Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:27:37.425722Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 1, "elapsed_sec": 20.209}
+{"ts": "2026-02-21T09:27:38.715121Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 1, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:27:44.136720Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 26915.817, "error": null}
+{"ts": "2026-02-21T09:27:44.137740Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:27:51.089858Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 32558.883, "error": null}
+{"ts": "2026-02-21T09:27:51.089858Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:27:51.552403Z", "event": "turn_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "dataset_index": 16, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 58741.223, "error": null}
+{"ts": "2026-02-21T09:27:51.555232Z", "event": "dialog_done", "dialog_id": "ccfb14cf-682b-4ab1-898a-3ba122133a26", "status": "ok", "turns": 9}
+{"ts": "2026-02-21T09:27:51.921595Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:27:55.838051Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 14, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:28:04.319790Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 2, "elapsed_sec": 20.182}
+{"ts": "2026-02-21T09:28:07.717024Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 32076.253, "error": null}
+{"ts": "2026-02-21T09:28:07.718036Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:28:11.312347Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 2, "elapsed_sec": 20.222}
+{"ts": "2026-02-21T09:28:12.126185Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 1, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:28:12.818334Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 28679.845, "error": null}
+{"ts": "2026-02-21T09:28:12.819252Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:28:22.648528Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 31557.256, "error": null}
+{"ts": "2026-02-21T09:28:22.649444Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:28:26.539096Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 34616.804, "error": null}
+{"ts": "2026-02-21T09:28:26.540025Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:28:27.920441Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 15, "elapsed_sec": 20.202}
+{"ts": "2026-02-21T09:28:33.006923Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 3, "elapsed_sec": 20.188}
+{"ts": "2026-02-21T09:28:42.536432Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 34818.009, "error": null}
+{"ts": "2026-02-21T09:28:42.536432Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:28:42.851945Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 3, "elapsed_sec": 20.202}
+{"ts": "2026-02-21T09:28:46.750874Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2, "elapsed_sec": 20.21}
+{"ts": "2026-02-21T09:28:49.366327Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 36546.365, "error": null}
+{"ts": "2026-02-21T09:28:49.366327Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:28:57.838102Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 35187.268, "error": null}
+{"ts": "2026-02-21T09:28:57.838102Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:29:02.740170Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 16, "elapsed_sec": 20.203}
+{"ts": "2026-02-21T09:29:06.968344Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2, "elapsed_sec": 40.428}
+{"ts": "2026-02-21T09:29:09.565747Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 4, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:29:12.662444Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 46120.185, "error": null}
+{"ts": "2026-02-21T09:29:12.662444Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:29:15.786947Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 33249.588, "error": null}
+{"ts": "2026-02-21T09:29:15.787950Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:29:18.041157Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 4, "elapsed_sec": 20.203}
+{"ts": "2026-02-21T09:29:22.835211Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 33467.841, "error": null}
+{"ts": "2026-02-21T09:29:22.835211Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:29:32.842188Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3, "elapsed_sec": 20.18}
+{"ts": "2026-02-21T09:29:35.981952Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 17, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:29:38.048113Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 40208.474, "error": null}
+{"ts": "2026-02-21T09:29:38.049392Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:29:43.021843Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 5, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:29:51.196469Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 35406.996, "error": null}
+{"ts": "2026-02-21T09:29:51.196469Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:29:53.066989Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3, "elapsed_sec": 40.404}
+{"ts": "2026-02-21T09:29:54.115720Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 41452.991, "error": null}
+{"ts": "2026-02-21T09:29:54.116719Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:29:58.254505Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 5, "elapsed_sec": 20.205}
+{"ts": "2026-02-21T09:30:00.842074Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 38006.138, "error": null}
+{"ts": "2026-02-21T09:30:00.843096Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:30:08.384519Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 30334.094, "error": null}
+{"ts": "2026-02-21T09:30:08.385442Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:30:11.404283Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 18, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:30:14.316787Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 4, "elapsed_sec": 20.2}
+{"ts": "2026-02-21T09:30:21.052074Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 6, "elapsed_sec": 20.209}
+{"ts": "2026-02-21T09:30:27.203231Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 33083.997, "error": null}
+{"ts": "2026-02-21T09:30:27.203231Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:30:27.203231Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 26358.64, "error": null}
+{"ts": "2026-02-21T09:30:27.208410Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:30:28.586724Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 6, "elapsed_sec": 20.202}
+{"ts": "2026-02-21T09:30:29.281016Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 38083.533, "error": null}
+{"ts": "2026-02-21T09:30:29.282030Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:30:47.367773Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 5, "elapsed_sec": 20.164}
+{"ts": "2026-02-21T09:30:47.368794Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 7, "elapsed_sec": 20.161}
+{"ts": "2026-02-21T09:30:47.584586Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 39198.003, "error": null}
+{"ts": "2026-02-21T09:30:47.584586Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:30:49.452086Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 19, "elapsed_sec": 20.17}
+{"ts": "2026-02-21T09:30:53.344985Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 26135.834, "error": null}
+{"ts": "2026-02-21T09:30:53.344985Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:31:03.336669Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 34053.749, "error": null}
+{"ts": "2026-02-21T09:31:03.336669Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 20}
+{"ts": "2026-02-21T09:31:04.504675Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 37300.14, "error": null}
+{"ts": "2026-02-21T09:31:04.504675Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:31:07.784588Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 7, "elapsed_sec": 20.2}
+{"ts": "2026-02-21T09:31:13.573794Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 8, "elapsed_sec": 20.229}
+{"ts": "2026-02-21T09:31:18.263825Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30678.358, "error": null}
+{"ts": "2026-02-21T09:31:18.265320Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:31:23.526877Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 20, "elapsed_sec": 20.19}
+{"ts": "2026-02-21T09:31:24.725229Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6, "elapsed_sec": 20.22}
+{"ts": "2026-02-21T09:31:31.111052Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 37764.752, "error": null}
+{"ts": "2026-02-21T09:31:31.111052Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:31:37.913157Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 34574.523, "error": null}
+{"ts": "2026-02-21T09:31:37.913157Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 21}
+{"ts": "2026-02-21T09:31:38.461192Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 8, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:31:44.884212Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6, "elapsed_sec": 40.379}
+{"ts": "2026-02-21T09:31:46.393362Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 41887.69, "error": null}
+{"ts": "2026-02-21T09:31:46.394281Z", "event": "turn_started", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:31:51.310766Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 9, "elapsed_sec": 20.199}
+{"ts": "2026-02-21T09:31:52.514249Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 34248.196, "error": null}
+{"ts": "2026-02-21T09:31:52.515544Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:31:58.075834Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 21, "elapsed_sec": 20.162}
+{"ts": "2026-02-21T09:32:03.333127Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 32219.831, "error": null}
+{"ts": "2026-02-21T09:32:03.333127Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:32:06.605321Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7, "elapsed_sec": 20.211}
+{"ts": "2026-02-21T09:32:12.724110Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9, "elapsed_sec": 20.209}
+{"ts": "2026-02-21T09:32:15.344492Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 21, "turn_status": "ok", "latency_ms": 37429.027, "error": null}
+{"ts": "2026-02-21T09:32:15.344492Z", "event": "turn_started", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22}
+{"ts": "2026-02-21T09:32:23.555490Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10, "elapsed_sec": 20.222}
+{"ts": "2026-02-21T09:32:26.788953Z", "event": "turn_heartbeat", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7, "elapsed_sec": 40.395}
+{"ts": "2026-02-21T09:32:27.323290Z", "event": "turn_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "dataset_index": 19, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 40927.971, "error": null}
+{"ts": "2026-02-21T09:32:27.326249Z", "event": "dialog_done", "dialog_id": "f515dddc-9a5e-4a62-87bf-52ba2c3bab2b", "status": "ok", "turns": 7}
+{"ts": "2026-02-21T09:32:27.705655Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:32:32.922900Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9, "elapsed_sec": 40.408}
+{"ts": "2026-02-21T09:32:33.912745Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 41396.607, "error": null}
+{"ts": "2026-02-21T09:32:33.913749Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:32:35.547886Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "elapsed_sec": 20.203}
+{"ts": "2026-02-21T09:32:43.773554Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10, "elapsed_sec": 40.44}
+{"ts": "2026-02-21T09:32:44.899562Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 41564.632, "error": null}
+{"ts": "2026-02-21T09:32:44.899562Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:32:47.902223Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 1, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:32:54.126329Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10, "elapsed_sec": 20.212}
+{"ts": "2026-02-21T09:32:55.745805Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "elapsed_sec": 40.401}
+{"ts": "2026-02-21T09:32:58.392822Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 30686.214, "error": null}
+{"ts": "2026-02-21T09:32:58.393834Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:33:05.118879Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 11, "elapsed_sec": 20.219}
+{"ts": "2026-02-21T09:33:14.330987Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10, "elapsed_sec": 40.416}
+{"ts": "2026-02-21T09:33:15.942275Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "elapsed_sec": 60.597}
+{"ts": "2026-02-21T09:33:17.925529Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 44009.587, "error": null}
+{"ts": "2026-02-21T09:33:17.926467Z", "event": "turn_started", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:33:18.564730Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 2, "elapsed_sec": 20.171}
+{"ts": "2026-02-21T09:33:21.259667Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 36358.295, "error": null}
+{"ts": "2026-02-21T09:33:21.260582Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:33:27.322169Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 28927.471, "error": null}
+{"ts": "2026-02-21T09:33:27.322169Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:33:36.137150Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "elapsed_sec": 80.793}
+{"ts": "2026-02-21T09:33:38.123311Z", "event": "turn_heartbeat", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 11, "elapsed_sec": 20.197}
+{"ts": "2026-02-21T09:33:41.420895Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 12, "elapsed_sec": 20.16}
+{"ts": "2026-02-21T09:33:47.460496Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 3, "elapsed_sec": 20.138}
+{"ts": "2026-02-21T09:33:47.957458Z", "event": "turn_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "dataset_index": 18, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 30029.842, "error": null}
+{"ts": "2026-02-21T09:33:47.959686Z", "event": "dialog_done", "dialog_id": "ac45c77a-64a9-48f1-8c79-0e3639153572", "status": "ok", "turns": 11}
+{"ts": "2026-02-21T09:33:48.333531Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:33:52.288918Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 31027.246, "error": null}
+{"ts": "2026-02-21T09:33:52.290026Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:33:56.299348Z", "event": "turn_heartbeat", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "elapsed_sec": 100.954}
+{"ts": "2026-02-21T09:33:56.409190Z", "event": "turn_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "dataset_index": 14, "turn_pair_id": 22, "turn_status": "ok", "latency_ms": 101063.585, "error": null}
+{"ts": "2026-02-21T09:33:56.414440Z", "event": "dialog_done", "dialog_id": "1c9557c1-03e2-4725-a7ba-c0518cb5b5ec", "status": "ok", "turns": 22}
+{"ts": "2026-02-21T09:33:56.781110Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:33:57.268892Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 29945.15, "error": null}
+{"ts": "2026-02-21T09:33:57.268892Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:34:08.501009Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 1, "elapsed_sec": 20.168}
+{"ts": "2026-02-21T09:34:12.461370Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13, "elapsed_sec": 20.171}
+{"ts": "2026-02-21T09:34:16.965062Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 1, "elapsed_sec": 20.184}
+{"ts": "2026-02-21T09:34:17.462766Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 4, "elapsed_sec": 20.193}
+{"ts": "2026-02-21T09:34:20.366132Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 32032.888, "error": null}
+{"ts": "2026-02-21T09:34:20.367468Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:34:25.904908Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 29123.486, "error": null}
+{"ts": "2026-02-21T09:34:25.904908Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:34:32.652146Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13, "elapsed_sec": 40.362}
+{"ts": "2026-02-21T09:34:35.718767Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 43427.506, "error": null}
+{"ts": "2026-02-21T09:34:35.718767Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:34:37.327268Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 40057.341, "error": null}
+{"ts": "2026-02-21T09:34:37.327268Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:34:40.538633Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 2, "elapsed_sec": 20.171}
+{"ts": "2026-02-21T09:34:46.079518Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 2, "elapsed_sec": 20.174}
+{"ts": "2026-02-21T09:34:53.874268Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 33505.954, "error": null}
+{"ts": "2026-02-21T09:34:53.874268Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:34:55.894368Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 14, "elapsed_sec": 20.175}
+{"ts": "2026-02-21T09:34:57.490227Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 5, "elapsed_sec": 20.162}
+{"ts": "2026-02-21T09:34:58.368707Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 32463.207, "error": null}
+{"ts": "2026-02-21T09:34:58.369708Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:35:07.417837Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 30089.913, "error": null}
+{"ts": "2026-02-21T09:35:07.418844Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:35:11.195494Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 35475.293, "error": null}
+{"ts": "2026-02-21T09:35:11.196387Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:35:14.052425Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:35:18.549741Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3, "elapsed_sec": 20.18}
+{"ts": "2026-02-21T09:35:27.578746Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 6, "elapsed_sec": 20.16}
+{"ts": "2026-02-21T09:35:31.348973Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 15, "elapsed_sec": 20.152}
+{"ts": "2026-02-21T09:35:34.214385Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3, "elapsed_sec": 40.339}
+{"ts": "2026-02-21T09:35:36.095621Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 42220.639, "error": null}
+{"ts": "2026-02-21T09:35:36.096623Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:35:36.879256Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 29460.136, "error": null}
+{"ts": "2026-02-21T09:35:36.880251Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:35:38.706252Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3, "elapsed_sec": 40.336}
+{"ts": "2026-02-21T09:35:44.608717Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 33410.308, "error": null}
+{"ts": "2026-02-21T09:35:44.608717Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:35:45.156542Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 46785.4, "error": null}
+{"ts": "2026-02-21T09:35:45.157465Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:35:56.285925Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 4, "elapsed_sec": 20.189}
+{"ts": "2026-02-21T09:35:57.035436Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 7, "elapsed_sec": 20.154}
+{"ts": "2026-02-21T09:36:04.849810Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 16, "elapsed_sec": 20.24}
+{"ts": "2026-02-21T09:36:05.379164Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 4, "elapsed_sec": 20.222}
+{"ts": "2026-02-21T09:36:09.557012Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 33458.752, "error": null}
+{"ts": "2026-02-21T09:36:09.557012Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:36:11.695952Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 34814.53, "error": null}
+{"ts": "2026-02-21T09:36:11.697035Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:36:21.868651Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 37257.812, "error": null}
+{"ts": "2026-02-21T09:36:21.869658Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:36:24.469872Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 39311.616, "error": null}
+{"ts": "2026-02-21T09:36:24.470871Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:36:29.756757Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5, "elapsed_sec": 20.2}
+{"ts": "2026-02-21T09:36:31.906690Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 8, "elapsed_sec": 20.21}
+{"ts": "2026-02-21T09:36:42.038488Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 30341.253, "error": null}
+{"ts": "2026-02-21T09:36:42.039486Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:36:42.097905Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 17, "elapsed_sec": 20.228}
+{"ts": "2026-02-21T09:36:44.691466Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 5, "elapsed_sec": 20.22}
+{"ts": "2026-02-21T09:36:49.966044Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5, "elapsed_sec": 40.409}
+{"ts": "2026-02-21T09:36:56.245951Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 34375.114, "error": null}
+{"ts": "2026-02-21T09:36:56.248170Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:37:02.207118Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9, "elapsed_sec": 20.167}
+{"ts": "2026-02-21T09:37:03.208394Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 38735.636, "error": null}
+{"ts": "2026-02-21T09:37:03.209391Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:37:07.975606Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 58417.355, "error": null}
+{"ts": "2026-02-21T09:37:07.976611Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:37:16.484467Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18, "elapsed_sec": 20.236}
+{"ts": "2026-02-21T09:37:22.413188Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9, "elapsed_sec": 40.373}
+{"ts": "2026-02-21T09:37:23.424167Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 6, "elapsed_sec": 20.215}
+{"ts": "2026-02-21T09:37:28.202342Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 6, "elapsed_sec": 20.226}
+{"ts": "2026-02-21T09:37:28.623624Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 46581.149, "error": null}
+{"ts": "2026-02-21T09:37:28.624619Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:37:36.716608Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18, "elapsed_sec": 40.469}
+{"ts": "2026-02-21T09:37:37.141939Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 40892.741, "error": null}
+{"ts": "2026-02-21T09:37:37.142883Z", "event": "turn_started", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:37:42.983192Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 35005.016, "error": null}
+{"ts": "2026-02-21T09:37:42.983192Z", "event": "turn_started", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:37:43.093760Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 39883.062, "error": null}
+{"ts": "2026-02-21T09:37:43.093760Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:37:48.839488Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 10, "elapsed_sec": 20.215}
+{"ts": "2026-02-21T09:37:56.286277Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 27660.525, "error": null}
+{"ts": "2026-02-21T09:37:56.287204Z", "event": "turn_started", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:37:57.339019Z", "event": "turn_heartbeat", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 19, "elapsed_sec": 20.196}
+{"ts": "2026-02-21T09:38:03.139195Z", "event": "turn_heartbeat", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 7, "elapsed_sec": 20.156}
+{"ts": "2026-02-21T09:38:03.247354Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7, "elapsed_sec": 20.153}
+{"ts": "2026-02-21T09:38:04.985778Z", "event": "turn_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "dataset_index": 17, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 27841.236, "error": null}
+{"ts": "2026-02-21T09:38:04.994171Z", "event": "dialog_done", "dialog_id": "7a4bfe84-9ca4-4679-bee8-e55fbf05269a", "status": "ok", "turns": 19}
+{"ts": "2026-02-21T09:38:05.399101Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:38:16.495576Z", "event": "turn_heartbeat", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 11, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:38:17.816720Z", "event": "turn_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "dataset_index": 21, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 34832.327, "error": null}
+{"ts": "2026-02-21T09:38:17.818732Z", "event": "dialog_done", "dialog_id": "e39cb611-a855-402b-b791-7986fda1bc79", "status": "ok", "turns": 7}
+{"ts": "2026-02-21T09:38:18.184187Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 1}
+{"ts": "2026-02-21T09:38:23.423352Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7, "elapsed_sec": 40.329}
+{"ts": "2026-02-21T09:38:23.445922Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 40350.34, "error": null}
+{"ts": "2026-02-21T09:38:23.446845Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:38:25.572009Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 1, "elapsed_sec": 20.173}
+{"ts": "2026-02-21T09:38:30.276113Z", "event": "turn_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "dataset_index": 20, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 33986.631, "error": null}
+{"ts": "2026-02-21T09:38:30.280743Z", "event": "dialog_done", "dialog_id": "21fb049e-f24e-4716-9050-4a3466667180", "status": "ok", "turns": 11}
+{"ts": "2026-02-21T09:38:38.315498Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 32915.056, "error": null}
+{"ts": "2026-02-21T09:38:38.316704Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:38:38.366511Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 1, "elapsed_sec": 20.182}
+{"ts": "2026-02-21T09:38:43.634030Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8, "elapsed_sec": 20.187}
+{"ts": "2026-02-21T09:38:55.296084Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 37111.224, "error": null}
+{"ts": "2026-02-21T09:38:55.296084Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 2}
+{"ts": "2026-02-21T09:38:58.524096Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 2, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:39:03.813996Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8, "elapsed_sec": 40.367}
+{"ts": "2026-02-21T09:39:08.022324Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 44574.135, "error": null}
+{"ts": "2026-02-21T09:39:08.023500Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:39:15.463914Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 2, "elapsed_sec": 20.167}
+{"ts": "2026-02-21T09:39:15.580807Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 37262.139, "error": null}
+{"ts": "2026-02-21T09:39:15.580807Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:39:26.845904Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 2, "turn_status": "ok", "latency_ms": 31548.69, "error": null}
+{"ts": "2026-02-21T09:39:26.845904Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 3}
+{"ts": "2026-02-21T09:39:28.200365Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 9, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:39:35.765033Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 3, "elapsed_sec": 20.184}
+{"ts": "2026-02-21T09:39:37.301522Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 29276.636, "error": null}
+{"ts": "2026-02-21T09:39:37.301862Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:39:44.922266Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 29340.04, "error": null}
+{"ts": "2026-02-21T09:39:44.923269Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:39:47.009529Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 3, "elapsed_sec": 20.163}
+{"ts": "2026-02-21T09:39:49.051037Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 3, "turn_status": "ok", "latency_ms": 22204.548, "error": null}
+{"ts": "2026-02-21T09:39:49.051037Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 4}
+{"ts": "2026-02-21T09:39:57.479771Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 10, "elapsed_sec": 20.178}
+{"ts": "2026-02-21T09:40:04.964430Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 27661.045, "error": null}
+{"ts": "2026-02-21T09:40:04.965435Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:40:05.095977Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 4, "elapsed_sec": 20.173}
+{"ts": "2026-02-21T09:40:09.223672Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 4, "elapsed_sec": 20.172}
+{"ts": "2026-02-21T09:40:10.721049Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 21668.641, "error": null}
+{"ts": "2026-02-21T09:40:10.722056Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:40:14.642562Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 4, "turn_status": "ok", "latency_ms": 29717.502, "error": null}
+{"ts": "2026-02-21T09:40:14.643472Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 5}
+{"ts": "2026-02-21T09:40:25.146199Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 11, "elapsed_sec": 20.18}
+{"ts": "2026-02-21T09:40:30.884237Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 5, "elapsed_sec": 20.162}
+{"ts": "2026-02-21T09:40:32.411794Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 27444.417, "error": null}
+{"ts": "2026-02-21T09:40:32.413014Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:40:34.809460Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 5, "elapsed_sec": 20.166}
+{"ts": "2026-02-21T09:40:36.980352Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 26256.777, "error": null}
+{"ts": "2026-02-21T09:40:36.982181Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:40:40.892526Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 5, "turn_status": "ok", "latency_ms": 26247.201, "error": null}
+{"ts": "2026-02-21T09:40:40.893625Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 6}
+{"ts": "2026-02-21T09:40:52.603139Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12, "elapsed_sec": 20.19}
+{"ts": "2026-02-21T09:40:57.189981Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 6, "elapsed_sec": 20.208}
+{"ts": "2026-02-21T09:41:01.088139Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 6, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:41:12.250447Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 35266.665, "error": null}
+{"ts": "2026-02-21T09:41:12.250447Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:41:12.809362Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12, "elapsed_sec": 40.396}
+{"ts": "2026-02-21T09:41:12.870887Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 40455.393, "error": null}
+{"ts": "2026-02-21T09:41:12.870887Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:41:17.131477Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 6, "turn_status": "ok", "latency_ms": 36235.892, "error": null}
+{"ts": "2026-02-21T09:41:17.132439Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 7}
+{"ts": "2026-02-21T09:41:32.445054Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 7, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:41:33.077533Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 13, "elapsed_sec": 20.206}
+{"ts": "2026-02-21T09:41:37.332677Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 7, "elapsed_sec": 20.2}
+{"ts": "2026-02-21T09:41:42.924453Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 30052.033, "error": null}
+{"ts": "2026-02-21T09:41:42.924453Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:41:48.071279Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 30938.204, "error": null}
+{"ts": "2026-02-21T09:41:48.072646Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:41:49.184160Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 7, "turn_status": "ok", "latency_ms": 36933.06, "error": null}
+{"ts": "2026-02-21T09:41:49.185164Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8}
+{"ts": "2026-02-21T09:42:03.082576Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 14, "elapsed_sec": 20.158}
+{"ts": "2026-02-21T09:42:08.236382Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 8, "elapsed_sec": 20.164}
+{"ts": "2026-02-21T09:42:09.368623Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8, "elapsed_sec": 20.184}
+{"ts": "2026-02-21T09:42:14.735107Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 31809.788, "error": null}
+{"ts": "2026-02-21T09:42:14.735763Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:42:18.960282Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 30886.255, "error": null}
+{"ts": "2026-02-21T09:42:18.961367Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:42:29.519717Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8, "elapsed_sec": 40.335}
+{"ts": "2026-02-21T09:42:31.839581Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 8, "turn_status": "ok", "latency_ms": 42653.923, "error": null}
+{"ts": "2026-02-21T09:42:31.840595Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 9}
+{"ts": "2026-02-21T09:42:34.886179Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 15, "elapsed_sec": 20.15}
+{"ts": "2026-02-21T09:42:39.117798Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9, "elapsed_sec": 20.156}
+{"ts": "2026-02-21T09:42:47.287974Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 32551.531, "error": null}
+{"ts": "2026-02-21T09:42:47.288480Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:42:52.024065Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 9, "elapsed_sec": 20.183}
+{"ts": "2026-02-21T09:42:59.318482Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9, "elapsed_sec": 40.358}
+{"ts": "2026-02-21T09:43:00.783934Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 41821.48, "error": null}
+{"ts": "2026-02-21T09:43:00.784939Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:43:02.879347Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 9, "turn_status": "ok", "latency_ms": 31036.983, "error": null}
+{"ts": "2026-02-21T09:43:02.880343Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 10}
+{"ts": "2026-02-21T09:43:07.479229Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 16, "elapsed_sec": 20.19}
+{"ts": "2026-02-21T09:43:20.476623Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 33186.928, "error": null}
+{"ts": "2026-02-21T09:43:20.477623Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:43:20.961378Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10, "elapsed_sec": 20.177}
+{"ts": "2026-02-21T09:43:23.050708Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 10, "elapsed_sec": 20.171}
+{"ts": "2026-02-21T09:43:40.668677Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 17, "elapsed_sec": 20.191}
+{"ts": "2026-02-21T09:43:41.163333Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10, "elapsed_sec": 40.378}
+{"ts": "2026-02-21T09:43:41.607085Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 38725.219, "error": null}
+{"ts": "2026-02-21T09:43:41.607085Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:43:44.667155Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 10, "turn_status": "ok", "latency_ms": 43881.0, "error": null}
+{"ts": "2026-02-21T09:43:44.668049Z", "event": "turn_started", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 11}
+{"ts": "2026-02-21T09:43:56.024310Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 35546.045, "error": null}
+{"ts": "2026-02-21T09:43:56.025314Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:44:01.787339Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 11, "elapsed_sec": 20.179}
+{"ts": "2026-02-21T09:44:04.862043Z", "event": "turn_heartbeat", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 11, "elapsed_sec": 20.194}
+{"ts": "2026-02-21T09:44:14.365685Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 32756.697, "error": null}
+{"ts": "2026-02-21T09:44:14.366743Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 12}
+{"ts": "2026-02-21T09:44:16.229360Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 18, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:44:21.678574Z", "event": "turn_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "dataset_index": 23, "turn_pair_id": 11, "turn_status": "ok", "latency_ms": 37008.765, "error": null}
+{"ts": "2026-02-21T09:44:21.681589Z", "event": "dialog_done", "dialog_id": "f1af3a45-d30d-4d22-abe9-da7d8a9e0ee1", "status": "ok", "turns": 11}
+{"ts": "2026-02-21T09:44:28.443606Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 32417.69, "error": null}
+{"ts": "2026-02-21T09:44:28.444114Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:44:34.570143Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 12, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:44:48.592059Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 19, "elapsed_sec": 20.147}
+{"ts": "2026-02-21T09:44:50.415435Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 12, "turn_status": "ok", "latency_ms": 36047.487, "error": null}
+{"ts": "2026-02-21T09:44:50.415435Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 13}
+{"ts": "2026-02-21T09:45:03.774045Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 35328.788, "error": null}
+{"ts": "2026-02-21T09:45:03.774940Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 20}
+{"ts": "2026-02-21T09:45:10.576382Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 13, "elapsed_sec": 20.16}
+{"ts": "2026-02-21T09:45:23.926460Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 20, "elapsed_sec": 20.151}
+{"ts": "2026-02-21T09:45:28.872873Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 20, "turn_status": "ok", "latency_ms": 25096.972, "error": null}
+{"ts": "2026-02-21T09:45:28.873992Z", "event": "turn_started", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 21}
+{"ts": "2026-02-21T09:45:30.042271Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 13, "turn_status": "ok", "latency_ms": 39625.529, "error": null}
+{"ts": "2026-02-21T09:45:30.042271Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 14}
+{"ts": "2026-02-21T09:45:49.080571Z", "event": "turn_heartbeat", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 21, "elapsed_sec": 20.207}
+{"ts": "2026-02-21T09:45:50.246362Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 14, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:45:57.434144Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 14, "turn_status": "ok", "latency_ms": 27391.339, "error": null}
+{"ts": "2026-02-21T09:45:57.435162Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15}
+{"ts": "2026-02-21T09:46:04.372524Z", "event": "turn_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "dataset_index": 22, "turn_pair_id": 21, "turn_status": "ok", "latency_ms": 35497.548, "error": null}
+{"ts": "2026-02-21T09:46:04.374525Z", "event": "dialog_done", "dialog_id": "ef21b326-9936-40db-8945-86439a205941", "status": "ok", "turns": 21}
+{"ts": "2026-02-21T09:46:17.633136Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15, "elapsed_sec": 20.198}
+{"ts": "2026-02-21T09:46:37.852012Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15, "elapsed_sec": 40.417}
+{"ts": "2026-02-21T09:46:38.651258Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 15, "turn_status": "ok", "latency_ms": 41214.633, "error": null}
+{"ts": "2026-02-21T09:46:38.651258Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 16}
+{"ts": "2026-02-21T09:46:58.855653Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 16, "elapsed_sec": 20.204}
+{"ts": "2026-02-21T09:47:10.671867Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 16, "turn_status": "ok", "latency_ms": 32020.161, "error": null}
+{"ts": "2026-02-21T09:47:10.672872Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 17}
+{"ts": "2026-02-21T09:47:30.858578Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 17, "elapsed_sec": 20.186}
+{"ts": "2026-02-21T09:47:47.309869Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 17, "turn_status": "ok", "latency_ms": 36635.832, "error": null}
+{"ts": "2026-02-21T09:47:47.309869Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 18}
+{"ts": "2026-02-21T09:48:07.503534Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 18, "elapsed_sec": 20.193}
+{"ts": "2026-02-21T09:48:18.160075Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 18, "turn_status": "ok", "latency_ms": 30847.924, "error": null}
+{"ts": "2026-02-21T09:48:18.160075Z", "event": "turn_started", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 19}
+{"ts": "2026-02-21T09:48:38.374262Z", "event": "turn_heartbeat", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 19, "elapsed_sec": 20.214}
+{"ts": "2026-02-21T09:48:54.559276Z", "event": "turn_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "dataset_index": 24, "turn_pair_id": 19, "turn_status": "ok", "latency_ms": 36397.116, "error": null}
+{"ts": "2026-02-21T09:48:54.561200Z", "event": "dialog_done", "dialog_id": "912f8bab-fbc1-4563-86a4-5350a3707a30", "status": "ok", "turns": 19}
+{"ts": "2026-02-21T09:48:54.596150Z", "event": "metrics_done", "run_id": "20260221_085707", "turn_rows": 316}
+{"ts": "2026-02-21T09:48:54.596150Z", "event": "run_finished", "run_id": "20260221_085707", "total_dialogs": 24, "valid_dialogs": 24, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 316}

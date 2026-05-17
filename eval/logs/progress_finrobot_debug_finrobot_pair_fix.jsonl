@@ -1,0 +1,8 @@
+{"ts": "2026-02-22T05:42:34.474613Z", "event": "run_started", "run_id": "debug_finrobot_pair_fix", "dataset_path": "eval/datasets/_debug_one_pair.jsonl", "dialogs": 1, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-22T05:42:34.474613Z", "event": "dialog_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1}
+{"ts": "2026-02-22T05:42:34.996345Z", "event": "turn_started", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1}
+{"ts": "2026-02-22T05:43:05.261145Z", "event": "turn_heartbeat", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "elapsed_sec": 30.264}
+{"ts": "2026-02-22T05:43:09.518454Z", "event": "turn_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "dataset_index": 1, "turn_pair_id": 1, "turn_status": "ok", "latency_ms": 34520.604, "error": null}
+{"ts": "2026-02-22T05:43:09.519459Z", "event": "dialog_done", "dialog_id": "dbdfcafa-0de6-454c-a064-ea1dca72a153", "status": "ok", "turns": 1}
+{"ts": "2026-02-22T05:43:09.520456Z", "event": "metrics_done", "run_id": "debug_finrobot_pair_fix", "turn_rows": 1, "metric_errors": {}}
+{"ts": "2026-02-22T05:43:09.520456Z", "event": "run_finished", "run_id": "debug_finrobot_pair_fix", "total_dialogs": 1, "valid_dialogs": 1, "skipped_dialogs": 0, "failed_dialogs": 0, "total_turn_pairs": 1}

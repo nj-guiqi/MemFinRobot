@@ -1,0 +1,9 @@
+{"ts": "2026-02-22T05:26:04.069713Z", "event": "run_started", "run_id": "debug_finrobot_one", "dataset_path": "eval/datasets/_debug_one_dialog.jsonl", "dialogs": 1, "resumed_completed_dialogs": 0}
+{"ts": "2026-02-22T05:26:04.070712Z", "event": "dialog_started", "dialog_id": "invalid_json_line_1", "dataset_index": 1}
+{"ts": "2026-02-22T05:26:04.072175Z", "event": "dialog_done", "dialog_id": "invalid_json_line_1", "status": "skipped", "turns": 0}
+{"ts": "2026-02-22T05:26:04.072679Z", "event": "metrics_done", "run_id": "debug_finrobot_one", "turn_rows": 0, "metric_errors": {}}
+{"ts": "2026-02-22T05:26:04.072679Z", "event": "run_finished", "run_id": "debug_finrobot_one", "total_dialogs": 1, "valid_dialogs": 0, "skipped_dialogs": 1, "failed_dialogs": 0, "total_turn_pairs": 0}
+{"ts": "2026-02-22T05:26:25.510826Z", "event": "run_started", "run_id": "debug_finrobot_one", "dataset_path": "eval/datasets/_debug_one_dialog.jsonl", "dialogs": 1, "resumed_completed_dialogs": 1}
+{"ts": "2026-02-22T05:26:25.510826Z", "event": "dialog_skipped_resume", "dialog_id": "invalid_json_line_1", "dataset_index": 1}
+{"ts": "2026-02-22T05:26:25.510826Z", "event": "metrics_done", "run_id": "debug_finrobot_one", "turn_rows": 0, "metric_errors": {}}
+{"ts": "2026-02-22T05:26:25.510826Z", "event": "run_finished", "run_id": "debug_finrobot_one", "total_dialogs": 1, "valid_dialogs": 0, "skipped_dialogs": 1, "failed_dialogs": 0, "total_turn_pairs": 0}
